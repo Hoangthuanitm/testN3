@@ -14873,6 +14873,6041 @@ const KANJI_TESTS_2_9 = {
 };
 
 
+// Du lieu 15 de Viet-Nhat (Chuong 5,7-20)
+const VIETNHAT_TESTS = {
+ "5": [
+  {
+   "type": "VN2JP",
+   "prompt": "「Chúng ta」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "複数の女性、姉さんたち（話者より年上の女性への親しみを込めた呼び方）",
+    "おばあさん（目上の女性への尊敬を込めた呼び方）",
+    "彼女、あの女性（独身の女性や同等の年齢の女性への敬称）",
+    "私たち（話者と聞き手を含む、もっと広範なグループ）"
+   ],
+   "answer": "私たち（話者と聞き手を含む、もっと広範なグループ）",
+   "q_num": 1
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「おじさん（父親の年齢層の男性）」 tiếng Việt là gì?",
+   "options": [
+    "Chị",
+    "Chú",
+    "Tôi",
+    "Bà"
+   ],
+   "answer": "Chú",
+   "q_num": 2
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Các ông ấy」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "その複数のおじいさんたち、年上の男性たち",
+    "複数の女性、姉さんたち（話者より年上の女性への親しみを込めた呼び方）",
+    "私たち（フォーマル、聞き手を含まない場合）",
+    "その複数の弟たち、妹たち（話者より年下）"
+   ],
+   "answer": "その複数のおじいさんたち、年上の男性たち",
+   "q_num": 3
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「おばあさん（目上の女性への尊敬を込めた呼び方）」 tiếng Việt là gì?",
+   "options": [
+    "Họ",
+    "Bà",
+    "Cô ấy",
+    "Chị"
+   ],
+   "answer": "Bà",
+   "q_num": 4
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「みんな、皆さん（複数の人を一括りにして呼ぶ場合）」 tiếng Việt là gì?",
+   "options": [
+    "Các cháu",
+    "Em",
+    "Mọi người",
+    "Các chị"
+   ],
+   "answer": "Mọi người",
+   "q_num": 5
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「私たち（話者と聞き手を含む、もっと広範なグループ）」 tiếng Việt là gì?",
+   "options": [
+    "Các cháu ấy",
+    "Chúng ta",
+    "Các bà",
+    "Em"
+   ],
+   "answer": "Chúng ta",
+   "q_num": 6
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Các cháu」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "その友達、彼/彼女",
+    "おばあさん（目上の女性への尊敬を込めた呼び方）",
+    "その複数のおじいさんたち、年上の男性たち",
+    "複数の子供たち（話者より年下）"
+   ],
+   "answer": "複数の子供たち（話者より年下）",
+   "q_num": 7
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「複数の子供たち（話者より年下）」 tiếng Việt là gì?",
+   "options": [
+    "Chúng ta",
+    "Các cháu",
+    "Các ông ấy",
+    "Các em ấy"
+   ],
+   "answer": "Các cháu",
+   "q_num": 8
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「私（自分を指す非常に親密な形）」 tiếng Việt là gì?",
+   "options": [
+    "Mình",
+    "Bạn ấy",
+    "Anh",
+    "Các bà"
+   ],
+   "answer": "Mình",
+   "q_num": 9
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「兄さん、あなた（男性に対して、同等かやや年上の場合）」 tiếng Việt là gì?",
+   "options": [
+    "Anh",
+    "Các bà",
+    "Các cháu",
+    "Chúng mình"
+   ],
+   "answer": "Anh",
+   "q_num": 10
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「複数のおばあさん」 tiếng Việt là gì?",
+   "options": [
+    "Chú",
+    "Các cháu ấy",
+    "Chúng tôi",
+    "Các bà"
+   ],
+   "answer": "Các bà",
+   "q_num": 11
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Chị」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "みんな、皆さん（複数の人を一括りにして呼ぶ場合）",
+    "おじさん（父親の年齢層の男性）",
+    "複数のおじさんたち（父親の年齢層の男性）",
+    "姉さん、あなた（女性に対して、同等かやや年上の場合）"
+   ],
+   "answer": "姉さん、あなた（女性に対して、同等かやや年上の場合）",
+   "q_num": 12
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Các chị」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "複数の女性、姉さんたち（話者より年上の女性への親しみを込めた呼び方）",
+    "私たち（フォーマル、聞き手を含まない場合）",
+    "彼ら、彼女ら（第三者の複数形）",
+    "その複数の弟たち、妹たち（話者より年下）"
+   ],
+   "answer": "複数の女性、姉さんたち（話者より年上の女性への親しみを込めた呼び方）",
+   "q_num": 13
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Bạn ấy」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "彼ら、彼女ら（第三者の複数形）",
+    "私たち（話者と聞き手を含む、もっと広範なグループ）",
+    "兄さん、あなた（男性に対して、同等かやや年上の場合）",
+    "その友達、彼/彼女"
+   ],
+   "answer": "その友達、彼/彼女",
+   "q_num": 14
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Em」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "おじさん（父親の年齢層の男性）",
+    "私（一般的な一人称単数形、フォーマルな場面でよく使われる）",
+    "彼女/彼（自分より15歳以内の）年下の男女",
+    "妹/弟（自分より15歳以内の）年下の男女"
+   ],
+   "answer": "妹/弟（自分より15歳以内の）年下の男女",
+   "q_num": 15
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Các bà」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "兄さん、あなた（男性に対して、同等かやや年上の場合）",
+    "私たち（話者と聞き手、または話者が属するグループ）",
+    "複数のおばあさん",
+    "その複数のおじいさんたち、年上の男性たち"
+   ],
+   "answer": "複数のおばあさん",
+   "q_num": 16
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Mọi người」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "複数のおじさんたち（父親の年齢層の男性）",
+    "複数のおばあさん",
+    "私たち（話者と聞き手、または話者が属するグループ）",
+    "みんな、皆さん（複数の人を一括りにして呼ぶ場合）"
+   ],
+   "answer": "みんな、皆さん（複数の人を一括りにして呼ぶ場合）",
+   "q_num": 17
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Các em ấy」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "彼ら、彼女ら（第三者の複数形）",
+    "その複数の弟たち、妹たち（話者より年下）",
+    "複数の男性、兄さんたち",
+    "私（一般的な一人称単数形、フォーマルな場面でよく使われる）"
+   ],
+   "answer": "その複数の弟たち、妹たち（話者より年下）",
+   "q_num": 18
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Các anh」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "複数の男性、兄さんたち",
+    "私たち（フォーマル、聞き手を含まない場合）",
+    "妹/弟（自分より15歳以内の）年下の男女",
+    "おばあさん（目上の女性への尊敬を込めた呼び方）"
+   ],
+   "answer": "複数の男性、兄さんたち",
+   "q_num": 19
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「私（一般的な一人称単数形、フォーマルな場面でよく使われる）」 tiếng Việt là gì?",
+   "options": [
+    "Tôi",
+    "Mọi người",
+    "Các ông ấy",
+    "Bà"
+   ],
+   "answer": "Tôi",
+   "q_num": 20
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「その複数のおじいさんたち、年上の男性たち」 tiếng Việt là gì?",
+   "options": [
+    "Mình",
+    "Các ông ấy",
+    "Em ấy",
+    "Tôi"
+   ],
+   "answer": "Các ông ấy",
+   "q_num": 21
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「複数のおじさんたち（父親の年齢層の男性）」 tiếng Việt là gì?",
+   "options": [
+    "Các chú",
+    "Bạn ấy",
+    "Các em ấy",
+    "Bà"
+   ],
+   "answer": "Các chú",
+   "q_num": 22
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Họ」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "おばあさん（目上の女性への尊敬を込めた呼び方）",
+    "彼ら、彼女ら（第三者の複数形）",
+    "私たち（話者と聞き手を含む、もっと広範なグループ）",
+    "私（自分を指す非常に親密な形）"
+   ],
+   "answer": "彼ら、彼女ら（第三者の複数形）",
+   "q_num": 23
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Cô ấy」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "彼女、あの女性（独身の女性や同等の年齢の女性への敬称）",
+    "兄さん、あなた（男性に対して、同等かやや年上の場合）",
+    "彼ら、彼女ら（第三者の複数形）",
+    "その複数の弟たち、妹たち（話者より年下）"
+   ],
+   "answer": "彼女、あの女性（独身の女性や同等の年齢の女性への敬称）",
+   "q_num": 24
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「私たち（話者と聞き手、または話者が属するグループ）」 tiếng Việt là gì?",
+   "options": [
+    "Bạn ấy",
+    "Các bà",
+    "Chúng mình",
+    "Các anh"
+   ],
+   "answer": "Chúng mình",
+   "q_num": 25
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「その複数の子供たち」 tiếng Việt là gì?",
+   "options": [
+    "Em",
+    "Các anh",
+    "Các cháu ấy",
+    "Anh"
+   ],
+   "answer": "Các cháu ấy",
+   "q_num": 26
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「妹/弟（自分より15歳以内の）年下の男女」 tiếng Việt là gì?",
+   "options": [
+    "Em",
+    "Chị",
+    "Bà",
+    "Các cháu"
+   ],
+   "answer": "Em",
+   "q_num": 27
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Em ấy」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "おじさん（父親の年齢層の男性）",
+    "彼女/彼（自分より15歳以内の）年下の男女",
+    "複数の子供たち（話者より年下）",
+    "彼女、あの女性（独身の女性や同等の年齢の女性への敬称）"
+   ],
+   "answer": "彼女/彼（自分より15歳以内の）年下の男女",
+   "q_num": 28
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Các chú」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "複数のおじさんたち（父親の年齢層の男性）",
+    "彼ら、彼女ら（第三者の複数形）",
+    "複数の女性、姉さんたち（話者より年上の女性への親しみを込めた呼び方）",
+    "姉さん、あなた（女性に対して、同等かやや年上の場合）"
+   ],
+   "answer": "複数のおじさんたち（父親の年齢層の男性）",
+   "q_num": 29
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「複数の女性、姉さんたち（話者より年上の女性への親しみを込めた呼び方）」 tiếng Việt là gì?",
+   "options": [
+    "Các chị",
+    "Bà",
+    "Cô ấy",
+    "Các anh"
+   ],
+   "answer": "Các chị",
+   "q_num": 30
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「私たち（フォーマル、聞き手を含まない場合）」 tiếng Việt là gì?",
+   "options": [
+    "Chúng tôi",
+    "Chú",
+    "Các em ấy",
+    "Chúng ta"
+   ],
+   "answer": "Chúng tôi",
+   "q_num": 31
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Mình」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "妹/弟（自分より15歳以内の）年下の男女",
+    "おばあさん（目上の女性への尊敬を込めた呼び方）",
+    "みんな、皆さん（複数の人を一括りにして呼ぶ場合）",
+    "私（自分を指す非常に親密な形）"
+   ],
+   "answer": "私（自分を指す非常に親密な形）",
+   "q_num": 32
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Tôi」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "複数の女性、姉さんたち（話者より年上の女性への親しみを込めた呼び方）",
+    "姉さん、あなた（女性に対して、同等かやや年上の場合）",
+    "複数の子供たち（話者より年下）",
+    "私（一般的な一人称単数形、フォーマルな場面でよく使われる）"
+   ],
+   "answer": "私（一般的な一人称単数形、フォーマルな場面でよく使われる）",
+   "q_num": 33
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Bà」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "複数の子供たち（話者より年下）",
+    "私たち（フォーマル、聞き手を含まない場合）",
+    "私たち（話者と聞き手、または話者が属するグループ）",
+    "おばあさん（目上の女性への尊敬を込めた呼び方）"
+   ],
+   "answer": "おばあさん（目上の女性への尊敬を込めた呼び方）",
+   "q_num": 34
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Chú」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "おじさん（父親の年齢層の男性）",
+    "その複数のおじいさんたち、年上の男性たち",
+    "妹/弟（自分より15歳以内の）年下の男女",
+    "私（一般的な一人称単数形、フォーマルな場面でよく使われる）"
+   ],
+   "answer": "おじさん（父親の年齢層の男性）",
+   "q_num": 35
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「その友達、彼/彼女」 tiếng Việt là gì?",
+   "options": [
+    "Bạn ấy",
+    "Mọi người",
+    "Các em ấy",
+    "Chú"
+   ],
+   "answer": "Bạn ấy",
+   "q_num": 36
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「彼ら、彼女ら（第三者の複数形）」 tiếng Việt là gì?",
+   "options": [
+    "Các em ấy",
+    "Họ",
+    "Bà",
+    "Các bà"
+   ],
+   "answer": "Họ",
+   "q_num": 37
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「複数の男性、兄さんたち」 tiếng Việt là gì?",
+   "options": [
+    "Bà",
+    "Các anh",
+    "Chúng mình",
+    "Các chú"
+   ],
+   "answer": "Các anh",
+   "q_num": 38
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「その複数の弟たち、妹たち（話者より年下）」 tiếng Việt là gì?",
+   "options": [
+    "Chị",
+    "Các cháu ấy",
+    "Bà",
+    "Các em ấy"
+   ],
+   "answer": "Các em ấy",
+   "q_num": 39
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「姉さん、あなた（女性に対して、同等かやや年上の場合）」 tiếng Việt là gì?",
+   "options": [
+    "Chú",
+    "Các em ấy",
+    "Chị",
+    "Bạn ấy"
+   ],
+   "answer": "Chị",
+   "q_num": 40
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Chúng tôi」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "その友達、彼/彼女",
+    "私（一般的な一人称単数形、フォーマルな場面でよく使われる）",
+    "彼女、あの女性（独身の女性や同等の年齢の女性への敬称）",
+    "私たち（フォーマル、聞き手を含まない場合）"
+   ],
+   "answer": "私たち（フォーマル、聞き手を含まない場合）",
+   "q_num": 41
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Các cháu ấy」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "彼ら、彼女ら（第三者の複数形）",
+    "複数のおじさんたち（父親の年齢層の男性）",
+    "複数のおばあさん",
+    "その複数の子供たち"
+   ],
+   "answer": "その複数の子供たち",
+   "q_num": 42
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Chúng mình」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "おじさん（父親の年齢層の男性）",
+    "妹/弟（自分より15歳以内の）年下の男女",
+    "複数の子供たち（話者より年下）",
+    "私たち（話者と聞き手、または話者が属するグループ）"
+   ],
+   "answer": "私たち（話者と聞き手、または話者が属するグループ）",
+   "q_num": 43
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Anh」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "複数の男性、兄さんたち",
+    "彼女、あの女性（独身の女性や同等の年齢の女性への敬称）",
+    "兄さん、あなた（男性に対して、同等かやや年上の場合）",
+    "その複数のおじいさんたち、年上の男性たち"
+   ],
+   "answer": "兄さん、あなた（男性に対して、同等かやや年上の場合）",
+   "q_num": 44
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「彼女、あの女性（独身の女性や同等の年齢の女性への敬称）」 tiếng Việt là gì?",
+   "options": [
+    "Chúng mình",
+    "Anh",
+    "Em",
+    "Cô ấy"
+   ],
+   "answer": "Cô ấy",
+   "q_num": 45
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「彼女/彼（自分より15歳以内の）年下の男女」 tiếng Việt là gì?",
+   "options": [
+    "Họ",
+    "Em ấy",
+    "Các cháu ấy",
+    "Mọi người"
+   ],
+   "answer": "Em ấy",
+   "q_num": 46
+  }
+ ],
+ "7": [
+  {
+   "type": "JP2VN",
+   "prompt": "「ジャーナリスト」 tiếng Việt là gì?",
+   "options": [
+    "Phi công",
+    "Cảnh sát",
+    "Nông dân",
+    "Nhà báo"
+   ],
+   "answer": "Nhà báo",
+   "q_num": 1
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Dược sĩ」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "インド",
+    "薬剤師",
+    "日本人",
+    "日本"
+   ],
+   "answer": "薬剤師",
+   "q_num": 2
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「フランス」 tiếng Việt là gì?",
+   "options": [
+    "Pháp",
+    "Người Mỹ",
+    "Đài Loan",
+    "Nông dân"
+   ],
+   "answer": "Pháp",
+   "q_num": 3
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Tài xế」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "マネージャー",
+    "韓国",
+    "銀行員",
+    "運転手"
+   ],
+   "answer": "運転手",
+   "q_num": 4
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「アメリカ人」 tiếng Việt là gì?",
+   "options": [
+    "Thợ làm tóc",
+    "Phi công",
+    "Sinh viên",
+    "Người Mỹ"
+   ],
+   "answer": "Người Mỹ",
+   "q_num": 5
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「台湾」 tiếng Việt là gì?",
+   "options": [
+    "Đài Loan",
+    "Pháp",
+    "Nhân viên ngân hàng",
+    "Làm việc tự do"
+   ],
+   "answer": "Đài Loan",
+   "q_num": 6
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Pháp」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "美容師",
+    "科学者",
+    "教師",
+    "フランス"
+   ],
+   "answer": "フランス",
+   "q_num": 7
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Giáo viên」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "弁護士",
+    "台湾",
+    "薬剤師",
+    "教師"
+   ],
+   "answer": "教師",
+   "q_num": 8
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Nhân viên công ty」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "フランス",
+    "中国",
+    "教師",
+    "会社員"
+   ],
+   "answer": "会社員",
+   "q_num": 9
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Nhân viên bán hàng」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "農家",
+    "電気技師",
+    "自営業",
+    "販売員"
+   ],
+   "answer": "販売員",
+   "q_num": 10
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「販売員」 tiếng Việt là gì?",
+   "options": [
+    "Nông dân",
+    "Nhân viên bán hàng",
+    "Pháp",
+    "Thợ điện"
+   ],
+   "answer": "Nhân viên bán hàng",
+   "q_num": 11
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「美容師」 tiếng Việt là gì?",
+   "options": [
+    "Ý",
+    "Đức",
+    "Thợ làm tóc",
+    "Đài Loan"
+   ],
+   "answer": "Thợ làm tóc",
+   "q_num": 12
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Sinh viên」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "マネージャー",
+    "オーストラリア",
+    "学生",
+    "韓国"
+   ],
+   "answer": "学生",
+   "q_num": 13
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「学生」 tiếng Việt là gì?",
+   "options": [
+    "Mỹ",
+    "Sinh viên",
+    "Thợ làm tóc",
+    "Đầu bếp"
+   ],
+   "answer": "Sinh viên",
+   "q_num": 14
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「会社員」 tiếng Việt là gì?",
+   "options": [
+    "Nhân viên công ty",
+    "Người Nhật (Bản)",
+    "Việt Nam",
+    "Úc"
+   ],
+   "answer": "Nhân viên công ty",
+   "q_num": 15
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Nông dân」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "農家",
+    "社長",
+    "中国",
+    "韓国"
+   ],
+   "answer": "農家",
+   "q_num": 16
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「インド」 tiếng Việt là gì?",
+   "options": [
+    "Sinh viên",
+    "Nhân viên ngân hàng",
+    "Nhân viên văn phòng",
+    "Ấn Độ"
+   ],
+   "answer": "Ấn Độ",
+   "q_num": 17
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Ấn Độ」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "中国",
+    "台湾",
+    "インド",
+    "フランス"
+   ],
+   "answer": "インド",
+   "q_num": 18
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「銀行員」 tiếng Việt là gì?",
+   "options": [
+    "Làm việc tự do",
+    "Đài Loan",
+    "Nhân viên ngân hàng",
+    "Nhân viên công ty"
+   ],
+   "answer": "Nhân viên ngân hàng",
+   "q_num": 19
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「教師」 tiếng Việt là gì?",
+   "options": [
+    "Làm việc tự do",
+    "Giáo viên",
+    "Nhà báo",
+    "Đầu bếp"
+   ],
+   "answer": "Giáo viên",
+   "q_num": 20
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Phi công」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "事務員",
+    "韓国",
+    "フランス",
+    "パイロット"
+   ],
+   "answer": "パイロット",
+   "q_num": 21
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Nhật Bản」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "運転手",
+    "ドイツ",
+    "アメリカ人",
+    "日本"
+   ],
+   "answer": "日本",
+   "q_num": 22
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「日本人」 tiếng Việt là gì?",
+   "options": [
+    "Dược sĩ",
+    "Úc",
+    "Người Nhật (Bản)",
+    "Nhật Bản"
+   ],
+   "answer": "Người Nhật (Bản)",
+   "q_num": 23
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「タイ」 tiếng Việt là gì?",
+   "options": [
+    "Luật sư",
+    "Thái Lan",
+    "Nhân viên bán hàng",
+    "Nhật Bản"
+   ],
+   "answer": "Thái Lan",
+   "q_num": 24
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Thái Lan」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "医師",
+    "自営業",
+    "韓国",
+    "タイ"
+   ],
+   "answer": "タイ",
+   "q_num": 25
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Ý」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "イタリア",
+    "建設労働者",
+    "薬剤師",
+    "台湾"
+   ],
+   "answer": "イタリア",
+   "q_num": 26
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「事務員」 tiếng Việt là gì?",
+   "options": [
+    "Cảnh sát",
+    "Dược sĩ",
+    "Hàn Quốc",
+    "Nhân viên văn phòng"
+   ],
+   "answer": "Nhân viên văn phòng",
+   "q_num": 27
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「デザイナー」 tiếng Việt là gì?",
+   "options": [
+    "Thợ làm tóc",
+    "Thái Lan",
+    "Nhật Bản",
+    "Nhà thiết kế"
+   ],
+   "answer": "Nhà thiết kế",
+   "q_num": 28
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「ベトナム人」 tiếng Việt là gì?",
+   "options": [
+    "Người Việt (Nam)",
+    "Giáo viên",
+    "Kỹ sư",
+    "Người Mỹ"
+   ],
+   "answer": "Người Việt (Nam)",
+   "q_num": 29
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「中国」 tiếng Việt là gì?",
+   "options": [
+    "Luật sư",
+    "Trung Quốc",
+    "Bác sĩ",
+    "Đức"
+   ],
+   "answer": "Trung Quốc",
+   "q_num": 30
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Mỹ」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "アメリカ",
+    "建設労働者",
+    "インド",
+    "ドイツ"
+   ],
+   "answer": "アメリカ",
+   "q_num": 31
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Nhân viên ngân hàng」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "韓国",
+    "会社員",
+    "銀行員",
+    "医師"
+   ],
+   "answer": "銀行員",
+   "q_num": 32
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「農家」 tiếng Việt là gì?",
+   "options": [
+    "Nông dân",
+    "Giáo viên",
+    "Nhân viên ngân hàng",
+    "Úc"
+   ],
+   "answer": "Nông dân",
+   "q_num": 33
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Giám đốc」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "社長",
+    "マネージャー",
+    "アメリカ人",
+    "学生"
+   ],
+   "answer": "社長",
+   "q_num": 34
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Người Việt (Nam)」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "社長",
+    "ベトナム人",
+    "建設労働者",
+    "日本人"
+   ],
+   "answer": "ベトナム人",
+   "q_num": 35
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Nhà báo」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "ジャーナリスト",
+    "建設労働者",
+    "ベトナム人",
+    "インド"
+   ],
+   "answer": "ジャーナリスト",
+   "q_num": 36
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Bác sĩ」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "医師",
+    "シェフ",
+    "アメリカ人",
+    "薬剤師"
+   ],
+   "answer": "医師",
+   "q_num": 37
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Luật sư」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "弁護士",
+    "台湾",
+    "パイロット",
+    "農家"
+   ],
+   "answer": "弁護士",
+   "q_num": 38
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「弁護士」 tiếng Việt là gì?",
+   "options": [
+    "Nhân viên văn phòng",
+    "Luật sư",
+    "Thợ làm tóc",
+    "Nhân viên ngân hàng"
+   ],
+   "answer": "Luật sư",
+   "q_num": 39
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「薬剤師」 tiếng Việt là gì?",
+   "options": [
+    "Nhà khoa học",
+    "Dược sĩ",
+    "Hàn Quốc",
+    "Ý"
+   ],
+   "answer": "Dược sĩ",
+   "q_num": 40
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Người Mỹ」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "シェフ",
+    "アメリカ人",
+    "社長",
+    "電気技師"
+   ],
+   "answer": "アメリカ人",
+   "q_num": 41
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Thợ điện」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "インド",
+    "タイ",
+    "農家",
+    "電気技師"
+   ],
+   "answer": "電気技師",
+   "q_num": 42
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Nhân viên văn phòng」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "事務員",
+    "日本人",
+    "電気技師",
+    "デザイナー"
+   ],
+   "answer": "事務員",
+   "q_num": 43
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「科学者」 tiếng Việt là gì?",
+   "options": [
+    "Luật sư",
+    "Thái Lan",
+    "Thợ xây",
+    "Nhà khoa học"
+   ],
+   "answer": "Nhà khoa học",
+   "q_num": 44
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quản lý」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "マネージャー",
+    "アメリカ人",
+    "ドイツ",
+    "銀行員"
+   ],
+   "answer": "マネージャー",
+   "q_num": 45
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Hàn Quốc」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "韓国",
+    "自営業",
+    "科学者",
+    "デザイナー"
+   ],
+   "answer": "韓国",
+   "q_num": 46
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Nhà khoa học」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "日本人",
+    "ベトナム人",
+    "電気技師",
+    "科学者"
+   ],
+   "answer": "科学者",
+   "q_num": 47
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Úc」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "弁護士",
+    "フランス",
+    "エンジニア",
+    "オーストラリア"
+   ],
+   "answer": "オーストラリア",
+   "q_num": 48
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Làm việc tự do」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "ベトナム",
+    "会社員",
+    "自営業",
+    "美容師"
+   ],
+   "answer": "自営業",
+   "q_num": 49
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「ドイツ」 tiếng Việt là gì?",
+   "options": [
+    "Nhật Bản",
+    "Đức",
+    "Người Mỹ",
+    "Quản lý"
+   ],
+   "answer": "Đức",
+   "q_num": 50
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「エンジニア」 tiếng Việt là gì?",
+   "options": [
+    "Nhân viên ngân hàng",
+    "Úc",
+    "Nhà khoa học",
+    "Kỹ sư"
+   ],
+   "answer": "Kỹ sư",
+   "q_num": 51
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「イタリア」 tiếng Việt là gì?",
+   "options": [
+    "Ý",
+    "Nhân viên công ty",
+    "Thợ làm tóc",
+    "Nông dân"
+   ],
+   "answer": "Ý",
+   "q_num": 52
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「パイロット」 tiếng Việt là gì?",
+   "options": [
+    "Kỹ sư",
+    "Phi công",
+    "Sinh viên",
+    "Việt Nam"
+   ],
+   "answer": "Phi công",
+   "q_num": 53
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「警察官」 tiếng Việt là gì?",
+   "options": [
+    "Thái Lan",
+    "Cảnh sát",
+    "Nông dân",
+    "Nhật Bản"
+   ],
+   "answer": "Cảnh sát",
+   "q_num": 54
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「マネージャー」 tiếng Việt là gì?",
+   "options": [
+    "Quản lý",
+    "Hàn Quốc",
+    "Đài Loan",
+    "Thợ xây"
+   ],
+   "answer": "Quản lý",
+   "q_num": 55
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Trung Quốc」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "中国",
+    "タイ",
+    "マネージャー",
+    "運転手"
+   ],
+   "answer": "中国",
+   "q_num": 56
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Người Nhật (Bản)」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "教師",
+    "運転手",
+    "美容師",
+    "日本人"
+   ],
+   "answer": "日本人",
+   "q_num": 57
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Cảnh sát」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "デザイナー",
+    "警察官",
+    "電気技師",
+    "教師"
+   ],
+   "answer": "警察官",
+   "q_num": 58
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Thợ xây」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "エンジニア",
+    "自営業",
+    "銀行員",
+    "建設労働者"
+   ],
+   "answer": "建設労働者",
+   "q_num": 59
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Nhà thiết kế」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "社長",
+    "ベトナム",
+    "デザイナー",
+    "ベトナム人"
+   ],
+   "answer": "デザイナー",
+   "q_num": 60
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Việt Nam」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "フランス",
+    "ジャーナリスト",
+    "ベトナム",
+    "韓国"
+   ],
+   "answer": "ベトナム",
+   "q_num": 61
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Thợ làm tóc」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "運転手",
+    "ジャーナリスト",
+    "医師",
+    "美容師"
+   ],
+   "answer": "美容師",
+   "q_num": 62
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「社長」 tiếng Việt là gì?",
+   "options": [
+    "Nhật Bản",
+    "Thợ làm tóc",
+    "Giám đốc",
+    "Sinh viên"
+   ],
+   "answer": "Giám đốc",
+   "q_num": 63
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Đức」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "運転手",
+    "美容師",
+    "ベトナム",
+    "ドイツ"
+   ],
+   "answer": "ドイツ",
+   "q_num": 64
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「建設労働者」 tiếng Việt là gì?",
+   "options": [
+    "Sinh viên",
+    "Thợ xây",
+    "Nhân viên ngân hàng",
+    "Thợ làm tóc"
+   ],
+   "answer": "Thợ xây",
+   "q_num": 65
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「電気技師」 tiếng Việt là gì?",
+   "options": [
+    "Thợ điện",
+    "Nông dân",
+    "Nhà thiết kế",
+    "Đầu bếp"
+   ],
+   "answer": "Thợ điện",
+   "q_num": 66
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Đài Loan」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "台湾",
+    "農家",
+    "シェフ",
+    "運転手"
+   ],
+   "answer": "台湾",
+   "q_num": 67
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「ベトナム」 tiếng Việt là gì?",
+   "options": [
+    "Hàn Quốc",
+    "Việt Nam",
+    "Thợ làm tóc",
+    "Nhân viên văn phòng"
+   ],
+   "answer": "Việt Nam",
+   "q_num": 68
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「日本」 tiếng Việt là gì?",
+   "options": [
+    "Hàn Quốc",
+    "Nhật Bản",
+    "Pháp",
+    "Người Nhật (Bản)"
+   ],
+   "answer": "Nhật Bản",
+   "q_num": 69
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「シェフ」 tiếng Việt là gì?",
+   "options": [
+    "Đầu bếp",
+    "Thợ làm tóc",
+    "Người Mỹ",
+    "Kỹ sư"
+   ],
+   "answer": "Đầu bếp",
+   "q_num": 70
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Kỹ sư」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "会社員",
+    "ベトナム人",
+    "エンジニア",
+    "建設労働者"
+   ],
+   "answer": "エンジニア",
+   "q_num": 71
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「自営業」 tiếng Việt là gì?",
+   "options": [
+    "Nhân viên bán hàng",
+    "Mỹ",
+    "Người Việt (Nam)",
+    "Làm việc tự do"
+   ],
+   "answer": "Làm việc tự do",
+   "q_num": 72
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「アメリカ」 tiếng Việt là gì?",
+   "options": [
+    "Úc",
+    "Mỹ",
+    "Nhật Bản",
+    "Nhân viên văn phòng"
+   ],
+   "answer": "Mỹ",
+   "q_num": 73
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Đầu bếp」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "中国",
+    "タイ",
+    "電気技師",
+    "シェフ"
+   ],
+   "answer": "シェフ",
+   "q_num": 74
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「運転手」 tiếng Việt là gì?",
+   "options": [
+    "Quản lý",
+    "Làm việc tự do",
+    "Tài xế",
+    "Thợ điện"
+   ],
+   "answer": "Tài xế",
+   "q_num": 75
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「オーストラリア」 tiếng Việt là gì?",
+   "options": [
+    "Tài xế",
+    "Đầu bếp",
+    "Úc",
+    "Nhân viên công ty"
+   ],
+   "answer": "Úc",
+   "q_num": 76
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「医師」 tiếng Việt là gì?",
+   "options": [
+    "Nhân viên văn phòng",
+    "Người Nhật (Bản)",
+    "Giám đốc",
+    "Bác sĩ"
+   ],
+   "answer": "Bác sĩ",
+   "q_num": 77
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「韓国」 tiếng Việt là gì?",
+   "options": [
+    "Trung Quốc",
+    "Hàn Quốc",
+    "Nhân viên ngân hàng",
+    "Quản lý"
+   ],
+   "answer": "Hàn Quốc",
+   "q_num": 78
+  }
+ ],
+ "8": [
+  {
+   "type": "JP2VN",
+   "prompt": "「～歳」 tiếng Việt là gì?",
+   "options": [
+    "Một",
+    "Tuổi",
+    "Hai (mươi) tư / Hai (mươi) bốn",
+    "Bảy"
+   ],
+   "answer": "Tuổi",
+   "q_num": 1
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「一」 tiếng Việt là gì?",
+   "options": [
+    "Hai",
+    "Bốn",
+    "Một",
+    "Hai (mươi) tư / Hai (mươi) bốn"
+   ],
+   "answer": "Một",
+   "q_num": 2
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Bốn」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "二",
+    "五",
+    "六",
+    "四"
+   ],
+   "answer": "四",
+   "q_num": 3
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「十五」 tiếng Việt là gì?",
+   "options": [
+    "Bảy",
+    "Một",
+    "Mười lăm",
+    "Năm"
+   ],
+   "answer": "Mười lăm",
+   "q_num": 4
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Mười」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "九",
+    "十",
+    "二十一",
+    "一"
+   ],
+   "answer": "十",
+   "q_num": 5
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「六」 tiếng Việt là gì?",
+   "options": [
+    "Ba",
+    "Mười",
+    "Sáu",
+    "Bốn"
+   ],
+   "answer": "Sáu",
+   "q_num": 6
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Bảy」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "七",
+    "十五",
+    "～歳",
+    "八"
+   ],
+   "answer": "七",
+   "q_num": 7
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「二十」 tiếng Việt là gì?",
+   "options": [
+    "Hai (mươi) mốt",
+    "Hai mươi",
+    "Bốn",
+    "Một"
+   ],
+   "answer": "Hai mươi",
+   "q_num": 8
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Chín」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "二",
+    "九",
+    "八",
+    "二十"
+   ],
+   "answer": "九",
+   "q_num": 9
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Sáu」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "四",
+    "六",
+    "十",
+    "八"
+   ],
+   "answer": "六",
+   "q_num": 10
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Năm」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "五",
+    "二十四",
+    "十",
+    "二十一"
+   ],
+   "answer": "五",
+   "q_num": 11
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Hai」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "七",
+    "二十",
+    "二",
+    "三"
+   ],
+   "answer": "二",
+   "q_num": 12
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「二」 tiếng Việt là gì?",
+   "options": [
+    "Mười",
+    "Bốn",
+    "Hai",
+    "Sáu"
+   ],
+   "answer": "Hai",
+   "q_num": 13
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「九」 tiếng Việt là gì?",
+   "options": [
+    "Ba",
+    "Năm",
+    "Chín",
+    "Hai"
+   ],
+   "answer": "Chín",
+   "q_num": 14
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「七」 tiếng Việt là gì?",
+   "options": [
+    "Tám",
+    "Bảy",
+    "Hai mươi",
+    "Mười lăm"
+   ],
+   "answer": "Bảy",
+   "q_num": 15
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「十」 tiếng Việt là gì?",
+   "options": [
+    "Hai",
+    "Hai (mươi) mốt",
+    "Mười",
+    "Một"
+   ],
+   "answer": "Mười",
+   "q_num": 16
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「二十四」 tiếng Việt là gì?",
+   "options": [
+    "Tuổi",
+    "Hai (mươi) tư / Hai (mươi) bốn",
+    "Mười lăm",
+    "Năm"
+   ],
+   "answer": "Hai (mươi) tư / Hai (mươi) bốn",
+   "q_num": 17
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Tám」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "四",
+    "五",
+    "八",
+    "十"
+   ],
+   "answer": "八",
+   "q_num": 18
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Hai (mươi) tư / Hai (mươi) bốn」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "二十一",
+    "五",
+    "七",
+    "二十四"
+   ],
+   "answer": "二十四",
+   "q_num": 19
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Hai mươi」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "二十",
+    "九",
+    "二十四",
+    "二"
+   ],
+   "answer": "二十",
+   "q_num": 20
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「二十一」 tiếng Việt là gì?",
+   "options": [
+    "Tám",
+    "Một",
+    "Mười lăm",
+    "Hai (mươi) mốt"
+   ],
+   "answer": "Hai (mươi) mốt",
+   "q_num": 21
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「八」 tiếng Việt là gì?",
+   "options": [
+    "Tám",
+    "Mười lăm",
+    "Tuổi",
+    "Hai"
+   ],
+   "answer": "Tám",
+   "q_num": 22
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「三」 tiếng Việt là gì?",
+   "options": [
+    "Sáu",
+    "Ba",
+    "Tuổi",
+    "Hai (mươi) tư / Hai (mươi) bốn"
+   ],
+   "answer": "Ba",
+   "q_num": 23
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「五」 tiếng Việt là gì?",
+   "options": [
+    "Hai mươi",
+    "Năm",
+    "Tuổi",
+    "Tám"
+   ],
+   "answer": "Năm",
+   "q_num": 24
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「四」 tiếng Việt là gì?",
+   "options": [
+    "Mười",
+    "Bốn",
+    "Mười lăm",
+    "Tám"
+   ],
+   "answer": "Bốn",
+   "q_num": 25
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Một」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "一",
+    "十",
+    "十五",
+    "三"
+   ],
+   "answer": "一",
+   "q_num": 26
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Hai (mươi) mốt」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "二",
+    "二十一",
+    "四",
+    "一"
+   ],
+   "answer": "二十一",
+   "q_num": 27
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Tuổi」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "～歳",
+    "二十一",
+    "一",
+    "八"
+   ],
+   "answer": "～歳",
+   "q_num": 28
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Ba」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "三",
+    "二",
+    "～歳",
+    "九"
+   ],
+   "answer": "三",
+   "q_num": 29
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Mười lăm」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "八",
+    "十五",
+    "二十四",
+    "二十"
+   ],
+   "answer": "十五",
+   "q_num": 30
+  }
+ ],
+ "9": [
+  {
+   "type": "JP2VN",
+   "prompt": "「かばん」 tiếng Việt là gì?",
+   "options": [
+    "Quả nho",
+    "Cái túi",
+    "Quả táo",
+    "Con chó"
+   ],
+   "answer": "Cái túi",
+   "q_num": 1
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「犬」 tiếng Việt là gì?",
+   "options": [
+    "Quả dứa",
+    "Con chó",
+    "Con gà",
+    "Quyển từ điển"
+   ],
+   "answer": "Con chó",
+   "q_num": 2
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quả thanh long」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "ドラゴンフルーツ",
+    "ぶどう",
+    "ドリアン",
+    "牛"
+   ],
+   "answer": "ドラゴンフルーツ",
+   "q_num": 3
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Cái bút」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "ドラゴンフルーツ",
+    "パパイヤ",
+    "スターフルーツ",
+    "ペン"
+   ],
+   "answer": "ペン",
+   "q_num": 4
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quyển từ điển」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "辞書",
+    "シャープペンシル、鉛筆",
+    "本",
+    "ジャックフルーツ"
+   ],
+   "answer": "辞書",
+   "q_num": 5
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Con bò」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "グアバ",
+    "牛",
+    "水牛",
+    "雑誌"
+   ],
+   "answer": "牛",
+   "q_num": 6
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quả chôm chôm」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "机、テーブル",
+    "ランブタン",
+    "パパイヤ",
+    "鶏"
+   ],
+   "answer": "ランブタン",
+   "q_num": 7
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「ペン」 tiếng Việt là gì?",
+   "options": [
+    "Cái bút",
+    "Quả xoài",
+    "Quả trứng",
+    "Con bò"
+   ],
+   "answer": "Cái bút",
+   "q_num": 8
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quả dứa」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "猫",
+    "ドリアン",
+    "本",
+    "パイナップル"
+   ],
+   "answer": "パイナップル",
+   "q_num": 9
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「水牛」 tiếng Việt là gì?",
+   "options": [
+    "Con trâu",
+    "Quả na",
+    "Con bò",
+    "Quả dứa"
+   ],
+   "answer": "Con trâu",
+   "q_num": 10
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「ドリアン」 tiếng Việt là gì?",
+   "options": [
+    "Con chó",
+    "Quả sầu riêng",
+    "Con trâu",
+    "Quả táo"
+   ],
+   "answer": "Quả sầu riêng",
+   "q_num": 11
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「スターフルーツ」 tiếng Việt là gì?",
+   "options": [
+    "Quyển sách",
+    "Quả chuối",
+    "Quyển vở",
+    "Quả khế"
+   ],
+   "answer": "Quả khế",
+   "q_num": 12
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Con gà」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "鶏",
+    "ランブタン",
+    "犬",
+    "ジャックフルーツ"
+   ],
+   "answer": "鶏",
+   "q_num": 13
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quả nho」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "ぶどう",
+    "ドリアン",
+    "シャープペンシル、鉛筆",
+    "りんご"
+   ],
+   "answer": "ぶどう",
+   "q_num": 14
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quả đu đủ」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "雑誌",
+    "卵",
+    "パパイヤ",
+    "ドラゴンフルーツ"
+   ],
+   "answer": "パパイヤ",
+   "q_num": 15
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quả chuối」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "ノート",
+    "犬",
+    "カスタードアップル",
+    "バナナ"
+   ],
+   "answer": "バナナ",
+   "q_num": 16
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quyển vở」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "ノート",
+    "雑誌",
+    "シャープペンシル、鉛筆",
+    "りんご"
+   ],
+   "answer": "ノート",
+   "q_num": 17
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「パイナップル」 tiếng Việt là gì?",
+   "options": [
+    "Quyển từ điển",
+    "Quả dứa",
+    "Con mèo",
+    "Con chó"
+   ],
+   "answer": "Quả dứa",
+   "q_num": 18
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「りんご」 tiếng Việt là gì?",
+   "options": [
+    "Con mèo",
+    "Quyển tạp chí",
+    "Cái bút",
+    "Quả táo"
+   ],
+   "answer": "Quả táo",
+   "q_num": 19
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「カスタードアップル」 tiếng Việt là gì?",
+   "options": [
+    "Quyển từ điển",
+    "Quả trứng",
+    "Quả na",
+    "Quả chuối"
+   ],
+   "answer": "Quả na",
+   "q_num": 20
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「牛」 tiếng Việt là gì?",
+   "options": [
+    "Cái bàn",
+    "Con bò",
+    "Bút chì",
+    "Con trâu"
+   ],
+   "answer": "Con bò",
+   "q_num": 21
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quả mít」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "ジャックフルーツ",
+    "ぶどう",
+    "辞書",
+    "机、テーブル"
+   ],
+   "answer": "ジャックフルーツ",
+   "q_num": 22
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Cái bàn」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "机、テーブル",
+    "アボカド",
+    "猫",
+    "ジャックフルーツ"
+   ],
+   "answer": "机、テーブル",
+   "q_num": 23
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「猫」 tiếng Việt là gì?",
+   "options": [
+    "Con mèo",
+    "Quả bơ",
+    "Quả đu đủ",
+    "Quả thanh long"
+   ],
+   "answer": "Con mèo",
+   "q_num": 24
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「ぶどう」 tiếng Việt là gì?",
+   "options": [
+    "Con chó",
+    "Quả trứng",
+    "Quả nho",
+    "Con gà"
+   ],
+   "answer": "Quả nho",
+   "q_num": 25
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「ノート」 tiếng Việt là gì?",
+   "options": [
+    "Quyển vở",
+    "Quả trứng",
+    "Con trâu",
+    "Quả mít"
+   ],
+   "answer": "Quyển vở",
+   "q_num": 26
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Con chó」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "カスタードアップル",
+    "犬",
+    "マンゴー",
+    "スターフルーツ"
+   ],
+   "answer": "犬",
+   "q_num": 27
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「アボカド」 tiếng Việt là gì?",
+   "options": [
+    "Cái bàn",
+    "Quả nho",
+    "Quả đu đủ",
+    "Quả bơ"
+   ],
+   "answer": "Quả bơ",
+   "q_num": 28
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quả trứng」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "ペン",
+    "机、テーブル",
+    "鶏",
+    "卵"
+   ],
+   "answer": "卵",
+   "q_num": 29
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quả na」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "パイナップル",
+    "カスタードアップル",
+    "卵",
+    "ノート"
+   ],
+   "answer": "カスタードアップル",
+   "q_num": 30
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Cái túi」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "りんご",
+    "猫",
+    "かばん",
+    "シャープペンシル、鉛筆"
+   ],
+   "answer": "かばん",
+   "q_num": 31
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「ランブタン」 tiếng Việt là gì?",
+   "options": [
+    "Quả chôm chôm",
+    "Quả trứng",
+    "Quả chuối",
+    "Quả táo"
+   ],
+   "answer": "Quả chôm chôm",
+   "q_num": 32
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「パパイヤ」 tiếng Việt là gì?",
+   "options": [
+    "Quả ổi",
+    "Quả đu đủ",
+    "Quả mít",
+    "Con bò"
+   ],
+   "answer": "Quả đu đủ",
+   "q_num": 33
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Bút bi」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "ボールペン",
+    "カスタードアップル",
+    "アボカド",
+    "ドリアン"
+   ],
+   "answer": "ボールペン",
+   "q_num": 34
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Con trâu」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "りんご",
+    "グアバ",
+    "水牛",
+    "鶏"
+   ],
+   "answer": "水牛",
+   "q_num": 35
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「グアバ」 tiếng Việt là gì?",
+   "options": [
+    "Quả khế",
+    "Quả ổi",
+    "Quả chuối",
+    "Bút chì"
+   ],
+   "answer": "Quả ổi",
+   "q_num": 36
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quả xoài」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "ペン",
+    "ランブタン",
+    "牛",
+    "マンゴー"
+   ],
+   "answer": "マンゴー",
+   "q_num": 37
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quả ổi」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "ボールペン",
+    "本",
+    "グアバ",
+    "水牛"
+   ],
+   "answer": "グアバ",
+   "q_num": 38
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「ボールペン」 tiếng Việt là gì?",
+   "options": [
+    "Quả bơ",
+    "Quả dứa",
+    "Bút bi",
+    "Quả thanh long"
+   ],
+   "answer": "Bút bi",
+   "q_num": 39
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「辞書」 tiếng Việt là gì?",
+   "options": [
+    "Quả xoài",
+    "Quyển tạp chí",
+    "Quyển từ điển",
+    "Con gà"
+   ],
+   "answer": "Quyển từ điển",
+   "q_num": 40
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quyển sách」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "バナナ",
+    "りんご",
+    "グアバ",
+    "本"
+   ],
+   "answer": "本",
+   "q_num": 41
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「本」 tiếng Việt là gì?",
+   "options": [
+    "Quyển tạp chí",
+    "Quyển sách",
+    "Con trâu",
+    "Cái bàn"
+   ],
+   "answer": "Quyển sách",
+   "q_num": 42
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「卵」 tiếng Việt là gì?",
+   "options": [
+    "Bút bi",
+    "Quả trứng",
+    "Quyển từ điển",
+    "Quả na"
+   ],
+   "answer": "Quả trứng",
+   "q_num": 43
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「ドラゴンフルーツ」 tiếng Việt là gì?",
+   "options": [
+    "Quả chôm chôm",
+    "Quả chuối",
+    "Quả bơ",
+    "Quả thanh long"
+   ],
+   "answer": "Quả thanh long",
+   "q_num": 44
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quyển tạp chí」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "雑誌",
+    "ノート",
+    "鶏",
+    "ぶどう"
+   ],
+   "answer": "雑誌",
+   "q_num": 45
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quả khế」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "猫",
+    "本",
+    "マンゴー",
+    "スターフルーツ"
+   ],
+   "answer": "スターフルーツ",
+   "q_num": 46
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「バナナ」 tiếng Việt là gì?",
+   "options": [
+    "Quyển sách",
+    "Quả chuối",
+    "Bút chì",
+    "Con trâu"
+   ],
+   "answer": "Quả chuối",
+   "q_num": 47
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Bút chì」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "グアバ",
+    "カスタードアップル",
+    "シャープペンシル、鉛筆",
+    "ジャックフルーツ"
+   ],
+   "answer": "シャープペンシル、鉛筆",
+   "q_num": 48
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「ジャックフルーツ」 tiếng Việt là gì?",
+   "options": [
+    "Quả sầu riêng",
+    "Con gà",
+    "Quả mít",
+    "Quyển vở"
+   ],
+   "answer": "Quả mít",
+   "q_num": 49
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quả táo」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "卵",
+    "猫",
+    "机、テーブル",
+    "りんご"
+   ],
+   "answer": "りんご",
+   "q_num": 50
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「机、テーブル」 tiếng Việt là gì?",
+   "options": [
+    "Bút bi",
+    "Con gà",
+    "Quả mít",
+    "Cái bàn"
+   ],
+   "answer": "Cái bàn",
+   "q_num": 51
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quả sầu riêng」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "パイナップル",
+    "ドリアン",
+    "卵",
+    "パパイヤ"
+   ],
+   "answer": "ドリアン",
+   "q_num": 52
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「雑誌」 tiếng Việt là gì?",
+   "options": [
+    "Quyển từ điển",
+    "Quyển tạp chí",
+    "Quả dứa",
+    "Quả trứng"
+   ],
+   "answer": "Quyển tạp chí",
+   "q_num": 53
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「マンゴー」 tiếng Việt là gì?",
+   "options": [
+    "Quả chôm chôm",
+    "Quyển từ điển",
+    "Quả xoài",
+    "Quả dứa"
+   ],
+   "answer": "Quả xoài",
+   "q_num": 54
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「鶏」 tiếng Việt là gì?",
+   "options": [
+    "Con gà",
+    "Quả sầu riêng",
+    "Cái bút",
+    "Quả xoài"
+   ],
+   "answer": "Con gà",
+   "q_num": 55
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Con mèo」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "ノート",
+    "グアバ",
+    "猫",
+    "バナナ"
+   ],
+   "answer": "猫",
+   "q_num": 56
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quả bơ」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "辞書",
+    "本",
+    "アボカド",
+    "シャープペンシル、鉛筆"
+   ],
+   "answer": "アボカド",
+   "q_num": 57
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「シャープペンシル、鉛筆」 tiếng Việt là gì?",
+   "options": [
+    "Con mèo",
+    "Bút chì",
+    "Quả dứa",
+    "Quả nho"
+   ],
+   "answer": "Bút chì",
+   "q_num": 58
+  }
+ ],
+ "10": [
+  {
+   "type": "VN2JP",
+   "prompt": "「Xe máy」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "パソコン、コンピューター",
+    "バイク",
+    "カメラ",
+    "ワイン"
+   ],
+   "answer": "バイク",
+   "q_num": 1
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「パソコン、コンピューター」 tiếng Việt là gì?",
+   "options": [
+    "Bố mẹ",
+    "Máy tính",
+    "Xe ô tô",
+    "Xe máy"
+   ],
+   "answer": "Máy tính",
+   "q_num": 2
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「自動車」 tiếng Việt là gì?",
+   "options": [
+    "Xe ô tô",
+    "Máy tính",
+    "Rượu vang",
+    "Xe máy"
+   ],
+   "answer": "Xe ô tô",
+   "q_num": 3
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Máy tính」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "ワイン",
+    "バイク",
+    "両親",
+    "パソコン、コンピューター"
+   ],
+   "answer": "パソコン、コンピューター",
+   "q_num": 4
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「両親」 tiếng Việt là gì?",
+   "options": [
+    "Rượu vang",
+    "Xe máy",
+    "Xe ô tô",
+    "Bố mẹ"
+   ],
+   "answer": "Bố mẹ",
+   "q_num": 5
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「バイク」 tiếng Việt là gì?",
+   "options": [
+    "Xe máy",
+    "Máy tính",
+    "Rượu vang",
+    "Bố mẹ"
+   ],
+   "answer": "Xe máy",
+   "q_num": 6
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Bố mẹ」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "ワイン",
+    "両親",
+    "パソコン、コンピューター",
+    "カメラ"
+   ],
+   "answer": "両親",
+   "q_num": 7
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「カメラ」 tiếng Việt là gì?",
+   "options": [
+    "Rượu vang",
+    "Máy ảnh",
+    "Xe ô tô",
+    "Máy tính"
+   ],
+   "answer": "Máy ảnh",
+   "q_num": 8
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Xe ô tô」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "パソコン、コンピューター",
+    "バイク",
+    "カメラ",
+    "自動車"
+   ],
+   "answer": "自動車",
+   "q_num": 9
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Rượu vang」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "カメラ",
+    "バイク",
+    "両親",
+    "ワイン"
+   ],
+   "answer": "ワイン",
+   "q_num": 10
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Máy ảnh」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "両親",
+    "パソコン、コンピューター",
+    "カメラ",
+    "自動車"
+   ],
+   "answer": "カメラ",
+   "q_num": 11
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「ワイン」 tiếng Việt là gì?",
+   "options": [
+    "Máy ảnh",
+    "Xe ô tô",
+    "Rượu vang",
+    "Máy tính"
+   ],
+   "answer": "Rượu vang",
+   "q_num": 12
+  }
+ ],
+ "11": [
+  {
+   "type": "JP2VN",
+   "prompt": "「～億」 tiếng Việt là gì?",
+   "options": [
+    "~ tỷ",
+    "~ triệu",
+    "~ trăm triệu",
+    "~ nghìn"
+   ],
+   "answer": "~ trăm triệu",
+   "q_num": 1
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「～十万」 tiếng Việt là gì?",
+   "options": [
+    "~ mươi triệu",
+    "~ trăm triệu",
+    "~ trăm nghìn",
+    "Bao nhiêu tiền"
+   ],
+   "answer": "~ trăm nghìn",
+   "q_num": 2
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「~ mươi nghìn」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "～万",
+    "～十万",
+    "～千万",
+    "百"
+   ],
+   "answer": "～万",
+   "q_num": 3
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「~ trăm nghìn」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "～千万",
+    "いくら",
+    "～億",
+    "～十万"
+   ],
+   "answer": "～十万",
+   "q_num": 4
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「千」 tiếng Việt là gì?",
+   "options": [
+    "~ nghìn",
+    "~ trăm triệu",
+    "~ mươi nghìn",
+    "Bao nhiêu tiền"
+   ],
+   "answer": "~ nghìn",
+   "q_num": 5
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「~ tỷ」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "～億",
+    "～十億",
+    "百",
+    "～百万"
+   ],
+   "answer": "～十億",
+   "q_num": 6
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「~ trăm triệu」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "百",
+    "～十億",
+    "～億",
+    "千"
+   ],
+   "answer": "～億",
+   "q_num": 7
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「～万」 tiếng Việt là gì?",
+   "options": [
+    "~ mươi nghìn",
+    "~ nghìn",
+    "~ trăm triệu",
+    "~ tỷ"
+   ],
+   "answer": "~ mươi nghìn",
+   "q_num": 8
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「～千万」 tiếng Việt là gì?",
+   "options": [
+    "~ trăm",
+    "~ triệu",
+    "~ nghìn",
+    "~ mươi triệu"
+   ],
+   "answer": "~ mươi triệu",
+   "q_num": 9
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「～百万」 tiếng Việt là gì?",
+   "options": [
+    "~ trăm",
+    "~ triệu",
+    "~ trăm triệu",
+    "~ mươi nghìn"
+   ],
+   "answer": "~ triệu",
+   "q_num": 10
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Bao nhiêu tiền」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "百",
+    "いくら",
+    "～百万",
+    "～十万"
+   ],
+   "answer": "いくら",
+   "q_num": 11
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「~ triệu」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "千",
+    "～千万",
+    "～百万",
+    "～十万"
+   ],
+   "answer": "～百万",
+   "q_num": 12
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「~ trăm」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "百",
+    "～百万",
+    "～万",
+    "～十万"
+   ],
+   "answer": "百",
+   "q_num": 13
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「百」 tiếng Việt là gì?",
+   "options": [
+    "~ nghìn",
+    "~ trăm",
+    "~ trăm triệu",
+    "~ trăm nghìn"
+   ],
+   "answer": "~ trăm",
+   "q_num": 14
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「~ nghìn」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "～億",
+    "百",
+    "いくら",
+    "千"
+   ],
+   "answer": "千",
+   "q_num": 15
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「いくら」 tiếng Việt là gì?",
+   "options": [
+    "~ tỷ",
+    "~ trăm nghìn",
+    "Bao nhiêu tiền",
+    "~ triệu"
+   ],
+   "answer": "Bao nhiêu tiền",
+   "q_num": 16
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「～十億」 tiếng Việt là gì?",
+   "options": [
+    "~ mươi triệu",
+    "Bao nhiêu tiền",
+    "~ tỷ",
+    "~ triệu"
+   ],
+   "answer": "~ tỷ",
+   "q_num": 17
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「~ mươi triệu」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "～万",
+    "～百万",
+    "～十万",
+    "～千万"
+   ],
+   "answer": "～千万",
+   "q_num": 18
+  }
+ ],
+ "12": [
+  {
+   "type": "JP2VN",
+   "prompt": "「トイレ」 tiếng Việt là gì?",
+   "options": [
+    "Nhà vệ sinh",
+    "Nhà",
+    "Thang máy",
+    "Cầu thang"
+   ],
+   "answer": "Nhà vệ sinh",
+   "q_num": 1
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「階段」 tiếng Việt là gì?",
+   "options": [
+    "Cầu thang",
+    "Nhà",
+    "Thang máy",
+    "Phòng họp"
+   ],
+   "answer": "Cầu thang",
+   "q_num": 2
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Phòng họp」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "家",
+    "エスカレーター",
+    "会議室",
+    "エレベーター"
+   ],
+   "answer": "会議室",
+   "q_num": 3
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Thang cuốn」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "会議室",
+    "階段",
+    "エレベーター",
+    "エスカレーター"
+   ],
+   "answer": "エスカレーター",
+   "q_num": 4
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Thang máy」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "エレベーター",
+    "家",
+    "会議室",
+    "エスカレーター"
+   ],
+   "answer": "エレベーター",
+   "q_num": 5
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Nhà」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "エレベーター",
+    "トイレ",
+    "会議室",
+    "家"
+   ],
+   "answer": "家",
+   "q_num": 6
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「エスカレーター」 tiếng Việt là gì?",
+   "options": [
+    "Thang cuốn",
+    "Phòng họp",
+    "Cầu thang",
+    "Nhà"
+   ],
+   "answer": "Thang cuốn",
+   "q_num": 7
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Nhà vệ sinh」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "家",
+    "エレベーター",
+    "エスカレーター",
+    "トイレ"
+   ],
+   "answer": "トイレ",
+   "q_num": 8
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Cầu thang」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "家",
+    "トイレ",
+    "会議室",
+    "階段"
+   ],
+   "answer": "階段",
+   "q_num": 9
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「家」 tiếng Việt là gì?",
+   "options": [
+    "Cầu thang",
+    "Nhà",
+    "Thang cuốn",
+    "Thang máy"
+   ],
+   "answer": "Nhà",
+   "q_num": 10
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「エレベーター」 tiếng Việt là gì?",
+   "options": [
+    "Thang máy",
+    "Thang cuốn",
+    "Nhà vệ sinh",
+    "Phòng họp"
+   ],
+   "answer": "Thang máy",
+   "q_num": 11
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「会議室」 tiếng Việt là gì?",
+   "options": [
+    "Phòng họp",
+    "Thang máy",
+    "Nhà vệ sinh",
+    "Cầu thang"
+   ],
+   "answer": "Phòng họp",
+   "q_num": 12
+  }
+ ],
+ "13": [
+  {
+   "type": "VN2JP",
+   "prompt": "「Thứ Tư」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "水曜日",
+    "～分前",
+    "昼",
+    "土曜日"
+   ],
+   "answer": "水曜日",
+   "q_num": 1
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Giờ」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "～時",
+    "昼",
+    "水曜日",
+    "昨日"
+   ],
+   "answer": "～時",
+   "q_num": 2
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「～分」 tiếng Việt là gì?",
+   "options": [
+    "Giây",
+    "Phút",
+    "Bao nhiêu",
+    "Hôm qua"
+   ],
+   "answer": "Phút",
+   "q_num": 3
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Hôm kia」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "～半",
+    "木曜日",
+    "一昨日",
+    "朝"
+   ],
+   "answer": "一昨日",
+   "q_num": 4
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「昼」 tiếng Việt là gì?",
+   "options": [
+    "Thứ Năm",
+    "Hôm kia",
+    "Hôm nay",
+    "Trưa"
+   ],
+   "answer": "Trưa",
+   "q_num": 5
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Chủ nhật」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "～分前",
+    "～秒",
+    "日曜日",
+    "明後日"
+   ],
+   "answer": "日曜日",
+   "q_num": 6
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「木曜日」 tiếng Việt là gì?",
+   "options": [
+    "Kém",
+    "Chủ nhật",
+    "Thứ mấy",
+    "Thứ Năm"
+   ],
+   "answer": "Thứ Năm",
+   "q_num": 7
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「火曜日」 tiếng Việt là gì?",
+   "options": [
+    "Giờ",
+    "Giây",
+    "Ngày nghỉ",
+    "Thứ Ba"
+   ],
+   "answer": "Thứ Ba",
+   "q_num": 8
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Hôm nay」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "昨日",
+    "（10以下）いくつ",
+    "今日",
+    "夜中"
+   ],
+   "answer": "今日",
+   "q_num": 9
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「～時」 tiếng Việt là gì?",
+   "options": [
+    "Giờ",
+    "Thứ Ba",
+    "Khuya",
+    "Thứ Sáu"
+   ],
+   "answer": "Giờ",
+   "q_num": 10
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「一昨日」 tiếng Việt là gì?",
+   "options": [
+    "Hôm kia",
+    "Hôm qua",
+    "Đêm",
+    "Mấy"
+   ],
+   "answer": "Hôm kia",
+   "q_num": 11
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「日曜日」 tiếng Việt là gì?",
+   "options": [
+    "Bao nhiêu",
+    "Khuya",
+    "Giờ",
+    "Chủ nhật"
+   ],
+   "answer": "Chủ nhật",
+   "q_num": 12
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Tối」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "夜",
+    "休みの日",
+    "一昨日",
+    "～半"
+   ],
+   "answer": "夜",
+   "q_num": 13
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「真夜中」 tiếng Việt là gì?",
+   "options": [
+    "Kém",
+    "Khuya",
+    "Thứ Sáu",
+    "Thứ Ba"
+   ],
+   "answer": "Khuya",
+   "q_num": 14
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Thứ Sáu」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "（10以上）いくつ",
+    "月曜日",
+    "金曜日",
+    "～分前"
+   ],
+   "answer": "金曜日",
+   "q_num": 15
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「午後」 tiếng Việt là gì?",
+   "options": [
+    "Ngày kia",
+    "Thứ Ba",
+    "Chiều",
+    "Thứ Hai"
+   ],
+   "answer": "Chiều",
+   "q_num": 16
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Rưỡi」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "（10以下）いくつ",
+    "一昨日",
+    "土曜日",
+    "～半"
+   ],
+   "answer": "～半",
+   "q_num": 17
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Ngày kia」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "何曜日",
+    "明後日",
+    "今日",
+    "～時"
+   ],
+   "answer": "明後日",
+   "q_num": 18
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「（10以上）いくつ」 tiếng Việt là gì?",
+   "options": [
+    "Tối",
+    "Bao nhiêu",
+    "Ngày nghỉ",
+    "Thứ Ba"
+   ],
+   "answer": "Bao nhiêu",
+   "q_num": 19
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「夜中」 tiếng Việt là gì?",
+   "options": [
+    "Hôm kia",
+    "Tối",
+    "Đêm",
+    "Trưa"
+   ],
+   "answer": "Đêm",
+   "q_num": 20
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Đêm」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "昼",
+    "日曜日",
+    "夜中",
+    "一昨日"
+   ],
+   "answer": "夜中",
+   "q_num": 21
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Mấy」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "月曜日",
+    "（10以下）いくつ",
+    "休みの日",
+    "昨日"
+   ],
+   "answer": "（10以下）いくつ",
+   "q_num": 22
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「月曜日」 tiếng Việt là gì?",
+   "options": [
+    "Mấy",
+    "Thứ Hai",
+    "Sáng",
+    "Hôm kia"
+   ],
+   "answer": "Thứ Hai",
+   "q_num": 23
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「朝」 tiếng Việt là gì?",
+   "options": [
+    "Thứ Năm",
+    "Khuya",
+    "Rưỡi",
+    "Sáng"
+   ],
+   "answer": "Sáng",
+   "q_num": 24
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Bao nhiêu」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "（10以上）いくつ",
+    "～半",
+    "日曜日",
+    "何曜日"
+   ],
+   "answer": "（10以上）いくつ",
+   "q_num": 25
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「～半」 tiếng Việt là gì?",
+   "options": [
+    "Phút",
+    "Bao nhiêu",
+    "Thứ Năm",
+    "Rưỡi"
+   ],
+   "answer": "Rưỡi",
+   "q_num": 26
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Ngày nghỉ」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "休みの日",
+    "朝",
+    "土曜日",
+    "夜"
+   ],
+   "answer": "休みの日",
+   "q_num": 27
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Ngày mai」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "明日",
+    "～時",
+    "～半",
+    "夜中"
+   ],
+   "answer": "明日",
+   "q_num": 28
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Khuya」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "～時",
+    "真夜中",
+    "月曜日",
+    "水曜日"
+   ],
+   "answer": "真夜中",
+   "q_num": 29
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「明後日」 tiếng Việt là gì?",
+   "options": [
+    "Mấy",
+    "Bao nhiêu",
+    "Ngày kia",
+    "Hôm nay"
+   ],
+   "answer": "Ngày kia",
+   "q_num": 30
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「夜」 tiếng Việt là gì?",
+   "options": [
+    "Trưa",
+    "Tối",
+    "Thứ Năm",
+    "Thứ Sáu"
+   ],
+   "answer": "Tối",
+   "q_num": 31
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Thứ mấy」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "何曜日",
+    "～分",
+    "真夜中",
+    "木曜日"
+   ],
+   "answer": "何曜日",
+   "q_num": 32
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「金曜日」 tiếng Việt là gì?",
+   "options": [
+    "Giây",
+    "Ngày mai",
+    "Thứ Sáu",
+    "Thứ Bảy"
+   ],
+   "answer": "Thứ Sáu",
+   "q_num": 33
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Thứ Hai」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "明日",
+    "火曜日",
+    "月曜日",
+    "～分"
+   ],
+   "answer": "月曜日",
+   "q_num": 34
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Thứ Ba」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "昼",
+    "日曜日",
+    "朝",
+    "火曜日"
+   ],
+   "answer": "火曜日",
+   "q_num": 35
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「明日」 tiếng Việt là gì?",
+   "options": [
+    "Rưỡi",
+    "Thứ Sáu",
+    "Ngày mai",
+    "Giờ"
+   ],
+   "answer": "Ngày mai",
+   "q_num": 36
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Hôm qua」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "（10以下）いくつ",
+    "（10以上）いくつ",
+    "昨日",
+    "木曜日"
+   ],
+   "answer": "昨日",
+   "q_num": 37
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「（10以下）いくつ」 tiếng Việt là gì?",
+   "options": [
+    "Thứ Ba",
+    "Tối",
+    "Bao nhiêu",
+    "Mấy"
+   ],
+   "answer": "Mấy",
+   "q_num": 38
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Giây」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "今日",
+    "～分",
+    "昨日",
+    "～秒"
+   ],
+   "answer": "～秒",
+   "q_num": 39
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Trưa」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "水曜日",
+    "休みの日",
+    "昼",
+    "明後日"
+   ],
+   "answer": "昼",
+   "q_num": 40
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「水曜日」 tiếng Việt là gì?",
+   "options": [
+    "Hôm qua",
+    "Thứ Năm",
+    "Thứ Tư",
+    "Phút"
+   ],
+   "answer": "Thứ Tư",
+   "q_num": 41
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「何曜日」 tiếng Việt là gì?",
+   "options": [
+    "Thứ mấy",
+    "Giờ",
+    "Giây",
+    "Thứ Sáu"
+   ],
+   "answer": "Thứ mấy",
+   "q_num": 42
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「～分前」 tiếng Việt là gì?",
+   "options": [
+    "Thứ Ba",
+    "Kém",
+    "Phút",
+    "Thứ Hai"
+   ],
+   "answer": "Kém",
+   "q_num": 43
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Kém」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "月曜日",
+    "昨日",
+    "～分前",
+    "水曜日"
+   ],
+   "answer": "～分前",
+   "q_num": 44
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Thứ Năm」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "木曜日",
+    "金曜日",
+    "明後日",
+    "朝"
+   ],
+   "answer": "木曜日",
+   "q_num": 45
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「～秒」 tiếng Việt là gì?",
+   "options": [
+    "Giây",
+    "Thứ Tư",
+    "Thứ Sáu",
+    "Mấy"
+   ],
+   "answer": "Giây",
+   "q_num": 46
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Thứ Bảy」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "真夜中",
+    "土曜日",
+    "～時",
+    "日曜日"
+   ],
+   "answer": "土曜日",
+   "q_num": 47
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「土曜日」 tiếng Việt là gì?",
+   "options": [
+    "Mấy",
+    "Thứ mấy",
+    "Thứ Ba",
+    "Thứ Bảy"
+   ],
+   "answer": "Thứ Bảy",
+   "q_num": 48
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Sáng」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "朝",
+    "（10以下）いくつ",
+    "明後日",
+    "夜中"
+   ],
+   "answer": "朝",
+   "q_num": 49
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「休みの日」 tiếng Việt là gì?",
+   "options": [
+    "Thứ Bảy",
+    "Thứ Hai",
+    "Hôm kia",
+    "Ngày nghỉ"
+   ],
+   "answer": "Ngày nghỉ",
+   "q_num": 50
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Chiều」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "夜中",
+    "午後",
+    "木曜日",
+    "朝"
+   ],
+   "answer": "午後",
+   "q_num": 51
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「今日」 tiếng Việt là gì?",
+   "options": [
+    "Thứ Tư",
+    "Phút",
+    "Kém",
+    "Hôm nay"
+   ],
+   "answer": "Hôm nay",
+   "q_num": 52
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Phút」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "明日",
+    "土曜日",
+    "金曜日",
+    "～分"
+   ],
+   "answer": "～分",
+   "q_num": 53
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「昨日」 tiếng Việt là gì?",
+   "options": [
+    "Bao nhiêu",
+    "Giây",
+    "Chiều",
+    "Hôm qua"
+   ],
+   "answer": "Hôm qua",
+   "q_num": 54
+  }
+ ],
+ "14": [
+  {
+   "type": "JP2VN",
+   "prompt": "「公園」 tiếng Việt là gì?",
+   "options": [
+    "Đọc sách",
+    "Văn phòng",
+    "Nghe nhạc",
+    "Công viên"
+   ],
+   "answer": "Công viên",
+   "q_num": 1
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「会社」 tiếng Việt là gì?",
+   "options": [
+    "Uống nước",
+    "Nghe nhạc",
+    "Công ty",
+    "Đọc sách"
+   ],
+   "answer": "Công ty",
+   "q_num": 2
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Thức dậy」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "休む",
+    "働く",
+    "起きる",
+    "本を読む"
+   ],
+   "answer": "起きる",
+   "q_num": 3
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Công ty」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "会社",
+    "博物館",
+    "メールを送る",
+    "起きる"
+   ],
+   "answer": "会社",
+   "q_num": 4
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Gửi mail」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "メールを送る",
+    "起きる",
+    "写真を撮る",
+    "音楽を聴く"
+   ],
+   "answer": "メールを送る",
+   "q_num": 5
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「起きる」 tiếng Việt là gì?",
+   "options": [
+    "Thức dậy",
+    "Bảo tàng",
+    "Nghỉ",
+    "Văn phòng"
+   ],
+   "answer": "Thức dậy",
+   "q_num": 6
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「働く」 tiếng Việt là gì?",
+   "options": [
+    "Làm việc",
+    "Uống nước",
+    "Đọc sách",
+    "Bảo tàng"
+   ],
+   "answer": "Làm việc",
+   "q_num": 7
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Đọc sách」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "水を飲む",
+    "メールを送る",
+    "本を読む",
+    "写真を撮る"
+   ],
+   "answer": "本を読む",
+   "q_num": 8
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Học」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "勉強する",
+    "休む",
+    "働く",
+    "音楽を聴く"
+   ],
+   "answer": "勉強する",
+   "q_num": 9
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「勉強する」 tiếng Việt là gì?",
+   "options": [
+    "Uống nước",
+    "Chụp ảnh",
+    "Bảo tàng",
+    "Học"
+   ],
+   "answer": "Học",
+   "q_num": 10
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「博物館」 tiếng Việt là gì?",
+   "options": [
+    "Bảo tàng",
+    "Văn phòng",
+    "Làm việc",
+    "Học"
+   ],
+   "answer": "Bảo tàng",
+   "q_num": 11
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「本を読む」 tiếng Việt là gì?",
+   "options": [
+    "Đọc sách",
+    "Thức dậy",
+    "Gửi mail",
+    "Làm việc"
+   ],
+   "answer": "Đọc sách",
+   "q_num": 12
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Công viên」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "公園",
+    "オフィス",
+    "写真を撮る",
+    "博物館"
+   ],
+   "answer": "公園",
+   "q_num": 13
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「寝る」 tiếng Việt là gì?",
+   "options": [
+    "Nghỉ",
+    "Nghe nhạc",
+    "Công ty",
+    "Đi ngủ"
+   ],
+   "answer": "Đi ngủ",
+   "q_num": 14
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「水を飲む」 tiếng Việt là gì?",
+   "options": [
+    "Nghỉ",
+    "Văn phòng",
+    "Học",
+    "Uống nước"
+   ],
+   "answer": "Uống nước",
+   "q_num": 15
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「休む」 tiếng Việt là gì?",
+   "options": [
+    "Nghỉ",
+    "Bảo tàng",
+    "Làm việc",
+    "Công ty"
+   ],
+   "answer": "Nghỉ",
+   "q_num": 16
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「音楽を聴く」 tiếng Việt là gì?",
+   "options": [
+    "Bảo tàng",
+    "Nghe nhạc",
+    "Công ty",
+    "Gửi mail"
+   ],
+   "answer": "Nghe nhạc",
+   "q_num": 17
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Bảo tàng」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "本を読む",
+    "博物館",
+    "水を飲む",
+    "オフィス"
+   ],
+   "answer": "博物館",
+   "q_num": 18
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Nghỉ」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "勉強する",
+    "公園",
+    "働く",
+    "休む"
+   ],
+   "answer": "休む",
+   "q_num": 19
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「オフィス」 tiếng Việt là gì?",
+   "options": [
+    "Đi ngủ",
+    "Thức dậy",
+    "Chụp ảnh",
+    "Văn phòng"
+   ],
+   "answer": "Văn phòng",
+   "q_num": 20
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「メールを送る」 tiếng Việt là gì?",
+   "options": [
+    "Gửi mail",
+    "Bảo tàng",
+    "Học",
+    "Văn phòng"
+   ],
+   "answer": "Gửi mail",
+   "q_num": 21
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Văn phòng」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "オフィス",
+    "勉強する",
+    "休む",
+    "起きる"
+   ],
+   "answer": "オフィス",
+   "q_num": 22
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Uống nước」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "水を飲む",
+    "起きる",
+    "会社",
+    "メールを送る"
+   ],
+   "answer": "水を飲む",
+   "q_num": 23
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Làm việc」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "働く",
+    "オフィス",
+    "メールを送る",
+    "会社"
+   ],
+   "answer": "働く",
+   "q_num": 24
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Chụp ảnh」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "会社",
+    "写真を撮る",
+    "休む",
+    "本を読む"
+   ],
+   "answer": "写真を撮る",
+   "q_num": 25
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Đi ngủ」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "寝る",
+    "休む",
+    "起きる",
+    "音楽を聴く"
+   ],
+   "answer": "寝る",
+   "q_num": 26
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Nghe nhạc」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "オフィス",
+    "起きる",
+    "勉強する",
+    "音楽を聴く"
+   ],
+   "answer": "音楽を聴く",
+   "q_num": 27
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「写真を撮る」 tiếng Việt là gì?",
+   "options": [
+    "Nghỉ",
+    "Bảo tàng",
+    "Chụp ảnh",
+    "Gửi mail"
+   ],
+   "answer": "Chụp ảnh",
+   "q_num": 28
+  }
+ ],
+ "15": [
+  {
+   "type": "JP2VN",
+   "prompt": "「仕事に行く」 tiếng Việt là gì?",
+   "options": [
+    "Khoảng",
+    "Đi làm",
+    "Mỗi tối",
+    "Nghỉ trưa"
+   ],
+   "answer": "Đi làm",
+   "q_num": 1
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「昼休みをする」 tiếng Việt là gì?",
+   "options": [
+    "Nghỉ trưa",
+    "Hàng ngày",
+    "Đi làm",
+    "Lúc"
+   ],
+   "answer": "Nghỉ trưa",
+   "q_num": 2
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Mỗi sáng」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "（～時）頃",
+    "毎朝",
+    "毎晩",
+    "昼休みをする"
+   ],
+   "answer": "毎朝",
+   "q_num": 3
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「毎月」 tiếng Việt là gì?",
+   "options": [
+    "Đi làm",
+    "Khoảng",
+    "Lúc",
+    "Hàng tháng"
+   ],
+   "answer": "Hàng tháng",
+   "q_num": 4
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Mỗi tối」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "（～時）に",
+    "（～時）頃",
+    "毎日",
+    "毎晩"
+   ],
+   "answer": "毎晩",
+   "q_num": 5
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「（～時）に」 tiếng Việt là gì?",
+   "options": [
+    "Nghỉ trưa",
+    "Khoảng",
+    "Mỗi sáng",
+    "Lúc"
+   ],
+   "answer": "Lúc",
+   "q_num": 6
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Nghỉ trưa」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "毎晩",
+    "昼休みをする",
+    "毎朝",
+    "毎週"
+   ],
+   "answer": "昼休みをする",
+   "q_num": 7
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「毎朝」 tiếng Việt là gì?",
+   "options": [
+    "Đi làm",
+    "Hàng ngày",
+    "Hàng tuần",
+    "Mỗi sáng"
+   ],
+   "answer": "Mỗi sáng",
+   "q_num": 8
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Khoảng」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "毎晩",
+    "（～時）頃",
+    "毎週",
+    "毎月"
+   ],
+   "answer": "（～時）頃",
+   "q_num": 9
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Lúc」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "毎朝",
+    "（～時）に",
+    "仕事に行く",
+    "毎日"
+   ],
+   "answer": "（～時）に",
+   "q_num": 10
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「（～時）頃」 tiếng Việt là gì?",
+   "options": [
+    "Đi làm",
+    "Lúc",
+    "Khoảng",
+    "Hàng ngày"
+   ],
+   "answer": "Khoảng",
+   "q_num": 11
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「毎晩」 tiếng Việt là gì?",
+   "options": [
+    "Lúc",
+    "Đi làm",
+    "Khoảng",
+    "Mỗi tối"
+   ],
+   "answer": "Mỗi tối",
+   "q_num": 12
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「毎日」 tiếng Việt là gì?",
+   "options": [
+    "Lúc",
+    "Hàng ngày",
+    "Nghỉ trưa",
+    "Hàng tháng"
+   ],
+   "answer": "Hàng ngày",
+   "q_num": 13
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「毎週」 tiếng Việt là gì?",
+   "options": [
+    "Hàng tuần",
+    "Khoảng",
+    "Đi làm",
+    "Hàng tháng"
+   ],
+   "answer": "Hàng tuần",
+   "q_num": 14
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Hàng ngày」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "毎月",
+    "毎日",
+    "毎週",
+    "（～時）に"
+   ],
+   "answer": "毎日",
+   "q_num": 15
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Hàng tuần」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "毎週",
+    "（～時）に",
+    "毎朝",
+    "毎月"
+   ],
+   "answer": "毎週",
+   "q_num": 16
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Hàng tháng」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "毎日",
+    "（～時）頃",
+    "仕事に行く",
+    "毎月"
+   ],
+   "answer": "毎月",
+   "q_num": 17
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Đi làm」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "仕事に行く",
+    "毎日",
+    "毎朝",
+    "（～時）頃"
+   ],
+   "answer": "仕事に行く",
+   "q_num": 18
+  }
+ ],
+ "16": [
+  {
+   "type": "JP2VN",
+   "prompt": "「自転車」 tiếng Việt là gì?",
+   "options": [
+    "Xe đạp",
+    "Tàu điện",
+    "Bạn trai",
+    "Đồng nghiệp"
+   ],
+   "answer": "Xe đạp",
+   "q_num": 1
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「彼女」 tiếng Việt là gì?",
+   "options": [
+    "Đi bộ",
+    "Đi",
+    "Ăn",
+    "Bạn gái"
+   ],
+   "answer": "Bạn gái",
+   "q_num": 2
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「銀行」 tiếng Việt là gì?",
+   "options": [
+    "Ngân hàng",
+    "Siêu thị",
+    "Bạn",
+    "Đi"
+   ],
+   "answer": "Ngân hàng",
+   "q_num": 3
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Bạn trai」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "彼氏",
+    "会う",
+    "行く",
+    "郵便局"
+   ],
+   "answer": "彼氏",
+   "q_num": 4
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Bạn gái」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "食べる",
+    "彼女",
+    "家族",
+    "一人で"
+   ],
+   "answer": "彼女",
+   "q_num": 5
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「デパート」 tiếng Việt là gì?",
+   "options": [
+    "Trung tâm thương mại",
+    "Ngân hàng",
+    "Bưu điện",
+    "Bạn"
+   ],
+   "answer": "Trung tâm thương mại",
+   "q_num": 6
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「電車」 tiếng Việt là gì?",
+   "options": [
+    "Tàu điện",
+    "Đến",
+    "Bạn trai",
+    "Đi"
+   ],
+   "answer": "Tàu điện",
+   "q_num": 7
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Trung tâm thương mại」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "食べる",
+    "彼女",
+    "友達",
+    "デパート"
+   ],
+   "answer": "デパート",
+   "q_num": 8
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Đi」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "銀行",
+    "美術館",
+    "行く",
+    "スーパー"
+   ],
+   "answer": "行く",
+   "q_num": 9
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Về」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "スーパー",
+    "銀行",
+    "帰る",
+    "同僚"
+   ],
+   "answer": "帰る",
+   "q_num": 10
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「会う」 tiếng Việt là gì?",
+   "options": [
+    "Gia đình",
+    "Tàu điện",
+    "Xe đạp",
+    "Gặp"
+   ],
+   "answer": "Gặp",
+   "q_num": 11
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Bảo tàng mỹ thuật」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "食べる",
+    "美術館",
+    "デパート",
+    "彼女"
+   ],
+   "answer": "美術館",
+   "q_num": 12
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Siêu thị」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "一人で",
+    "美術館",
+    "スーパー",
+    "彼女"
+   ],
+   "answer": "スーパー",
+   "q_num": 13
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「歩く」 tiếng Việt là gì?",
+   "options": [
+    "Về",
+    "Ăn",
+    "Đi",
+    "Đi bộ"
+   ],
+   "answer": "Đi bộ",
+   "q_num": 14
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「同僚」 tiếng Việt là gì?",
+   "options": [
+    "Đồng nghiệp",
+    "Ăn",
+    "Siêu thị",
+    "Về"
+   ],
+   "answer": "Đồng nghiệp",
+   "q_num": 15
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Xe đạp」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "帰る",
+    "同僚",
+    "家族",
+    "自転車"
+   ],
+   "answer": "自転車",
+   "q_num": 16
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「来る」 tiếng Việt là gì?",
+   "options": [
+    "Bảo tàng mỹ thuật",
+    "Một mình",
+    "Đến",
+    "Đồng nghiệp"
+   ],
+   "answer": "Đến",
+   "q_num": 17
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Xe buýt」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "来る",
+    "バス",
+    "銀行",
+    "美術館"
+   ],
+   "answer": "バス",
+   "q_num": 18
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「行く」 tiếng Việt là gì?",
+   "options": [
+    "Đi",
+    "Gặp",
+    "Ăn",
+    "Trung tâm thương mại"
+   ],
+   "answer": "Đi",
+   "q_num": 19
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Gia đình」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "美術館",
+    "来る",
+    "家族",
+    "同僚"
+   ],
+   "answer": "家族",
+   "q_num": 20
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Bạn」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "郵便局",
+    "友達",
+    "自転車",
+    "来る"
+   ],
+   "answer": "友達",
+   "q_num": 21
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Đồng nghiệp」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "歩く",
+    "行く",
+    "友達",
+    "同僚"
+   ],
+   "answer": "同僚",
+   "q_num": 22
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「スーパー」 tiếng Việt là gì?",
+   "options": [
+    "Xe buýt",
+    "Bạn gái",
+    "Siêu thị",
+    "Trung tâm thương mại"
+   ],
+   "answer": "Siêu thị",
+   "q_num": 23
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「一人で」 tiếng Việt là gì?",
+   "options": [
+    "Về",
+    "Bưu điện",
+    "Một mình",
+    "Trung tâm thương mại"
+   ],
+   "answer": "Một mình",
+   "q_num": 24
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Tàu điện」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "銀行",
+    "電車",
+    "食べる",
+    "来る"
+   ],
+   "answer": "電車",
+   "q_num": 25
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「家族」 tiếng Việt là gì?",
+   "options": [
+    "Bạn gái",
+    "Xe buýt",
+    "Bưu điện",
+    "Gia đình"
+   ],
+   "answer": "Gia đình",
+   "q_num": 26
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Gặp」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "一人で",
+    "友達",
+    "会う",
+    "美術館"
+   ],
+   "answer": "会う",
+   "q_num": 27
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Đến」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "来る",
+    "食べる",
+    "郵便局",
+    "歩く"
+   ],
+   "answer": "来る",
+   "q_num": 28
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Ngân hàng」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "バス",
+    "銀行",
+    "友達",
+    "行く"
+   ],
+   "answer": "銀行",
+   "q_num": 29
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「友達」 tiếng Việt là gì?",
+   "options": [
+    "Bạn",
+    "Xe đạp",
+    "Trung tâm thương mại",
+    "Đến"
+   ],
+   "answer": "Bạn",
+   "q_num": 30
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「食べる」 tiếng Việt là gì?",
+   "options": [
+    "Bạn trai",
+    "Ăn",
+    "Bạn",
+    "Đồng nghiệp"
+   ],
+   "answer": "Ăn",
+   "q_num": 31
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「郵便局」 tiếng Việt là gì?",
+   "options": [
+    "Tàu điện",
+    "Gia đình",
+    "Đến",
+    "Bưu điện"
+   ],
+   "answer": "Bưu điện",
+   "q_num": 32
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「彼氏」 tiếng Việt là gì?",
+   "options": [
+    "Bưu điện",
+    "Xe buýt",
+    "Bạn trai",
+    "Siêu thị"
+   ],
+   "answer": "Bạn trai",
+   "q_num": 33
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「帰る」 tiếng Việt là gì?",
+   "options": [
+    "Trung tâm thương mại",
+    "Về",
+    "Đi",
+    "Tàu điện"
+   ],
+   "answer": "Về",
+   "q_num": 34
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「美術館」 tiếng Việt là gì?",
+   "options": [
+    "Đồng nghiệp",
+    "Bảo tàng mỹ thuật",
+    "Gia đình",
+    "Ăn"
+   ],
+   "answer": "Bảo tàng mỹ thuật",
+   "q_num": 35
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Đi bộ」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "彼女",
+    "帰る",
+    "歩く",
+    "会う"
+   ],
+   "answer": "歩く",
+   "q_num": 36
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「バス」 tiếng Việt là gì?",
+   "options": [
+    "Bưu điện",
+    "Một mình",
+    "Siêu thị",
+    "Xe buýt"
+   ],
+   "answer": "Xe buýt",
+   "q_num": 37
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Ăn」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "一人で",
+    "食べる",
+    "歩く",
+    "美術館"
+   ],
+   "answer": "食べる",
+   "q_num": 38
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Bưu điện」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "友達",
+    "家族",
+    "郵便局",
+    "デパート"
+   ],
+   "answer": "郵便局",
+   "q_num": 39
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Một mình」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "同僚",
+    "一人で",
+    "デパート",
+    "スーパー"
+   ],
+   "answer": "一人で",
+   "q_num": 40
+  }
+ ],
+ "17": [
+  {
+   "type": "VN2JP",
+   "prompt": "「Sang năm」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "図書館",
+    "来年",
+    "たばこを吸う",
+    "テレビを見る"
+   ],
+   "answer": "来年",
+   "q_num": 1
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Hút thuốc (lá)」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "3日後",
+    "先月",
+    "去年",
+    "たばこを吸う"
+   ],
+   "answer": "たばこを吸う",
+   "q_num": 2
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Năm trước」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "コンビニ",
+    "3日後",
+    "去年",
+    "お酒"
+   ],
+   "answer": "去年",
+   "q_num": 3
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Viết báo cáo」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "部屋",
+    "料理をする",
+    "図書館",
+    "レポートを書く"
+   ],
+   "answer": "レポートを書く",
+   "q_num": 4
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「新聞」 tiếng Việt là gì?",
+   "options": [
+    "Báo",
+    "Phòng",
+    "Năm trước",
+    "Về nước"
+   ],
+   "answer": "Báo",
+   "q_num": 5
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「3日前」 tiếng Việt là gì?",
+   "options": [
+    "Năm tới",
+    "Xem tivi",
+    "3 ngày trước",
+    "Tuần tới"
+   ],
+   "answer": "3 ngày trước",
+   "q_num": 6
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Tuần tới」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "来週",
+    "レポートを書く",
+    "3日後",
+    "去年"
+   ],
+   "answer": "来週",
+   "q_num": 7
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「3 ngày trước」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "お酒",
+    "3日前",
+    "コンビニ",
+    "旅行に行く"
+   ],
+   "answer": "3日前",
+   "q_num": 8
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「3日後」 tiếng Việt là gì?",
+   "options": [
+    "3 ngày sau",
+    "Tháng trước",
+    "Rượu",
+    "Con tôi"
+   ],
+   "answer": "3 ngày sau",
+   "q_num": 9
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「来年」 tiếng Việt là gì?",
+   "options": [
+    "Hút thuốc (lá)",
+    "Sang năm",
+    "Kết hôn",
+    "Rượu"
+   ],
+   "answer": "Sang năm",
+   "q_num": 10
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「帰国する」 tiếng Việt là gì?",
+   "options": [
+    "Về nước",
+    "Tuần tới",
+    "Năm trước",
+    "Đi du lịch"
+   ],
+   "answer": "Về nước",
+   "q_num": 11
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「コンビニ」 tiếng Việt là gì?",
+   "options": [
+    "Tuần trước",
+    "Về nước",
+    "Năm trước",
+    "Cửa hàng tiện lợi"
+   ],
+   "answer": "Cửa hàng tiện lợi",
+   "q_num": 12
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「図書館」 tiếng Việt là gì?",
+   "options": [
+    "Thư viện",
+    "Con tôi",
+    "3 ngày trước",
+    "Viết báo cáo"
+   ],
+   "answer": "Thư viện",
+   "q_num": 13
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「結婚する」 tiếng Việt là gì?",
+   "options": [
+    "Cà phê",
+    "Kết hôn",
+    "Tháng trước",
+    "Sang năm"
+   ],
+   "answer": "Kết hôn",
+   "q_num": 14
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Đi du lịch」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "来月",
+    "テレビを見る",
+    "旅行に行く",
+    "3日前"
+   ],
+   "answer": "旅行に行く",
+   "q_num": 15
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「来年」 tiếng Việt là gì?",
+   "options": [
+    "Hút thuốc (lá)",
+    "Nấu ăn",
+    "Năm tới",
+    "Năm sau"
+   ],
+   "answer": "Năm tới",
+   "q_num": 16
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「来月」 tiếng Việt là gì?",
+   "options": [
+    "Tuần tới",
+    "Tháng trước",
+    "Tháng tới",
+    "Sang năm"
+   ],
+   "answer": "Tháng tới",
+   "q_num": 17
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Năm ngoái」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "去年",
+    "レポートを書く",
+    "旅行に行く",
+    "結婚する"
+   ],
+   "answer": "去年",
+   "q_num": 18
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Xem tivi」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "コーヒー",
+    "新聞",
+    "料理をする",
+    "テレビを見る"
+   ],
+   "answer": "テレビを見る",
+   "q_num": 19
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「去年」 tiếng Việt là gì?",
+   "options": [
+    "Con tôi",
+    "Năm ngoái",
+    "Tuần tới",
+    "Nấu ăn"
+   ],
+   "answer": "Năm ngoái",
+   "q_num": 20
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Thư viện」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "来年",
+    "新聞",
+    "図書館",
+    "去年"
+   ],
+   "answer": "図書館",
+   "q_num": 21
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「先月」 tiếng Việt là gì?",
+   "options": [
+    "Năm tới",
+    "Tháng trước",
+    "Cửa hàng tiện lợi",
+    "Hút thuốc (lá)"
+   ],
+   "answer": "Tháng trước",
+   "q_num": 22
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Tuần sau」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "来月",
+    "3日前",
+    "来週",
+    "旅行に行く"
+   ],
+   "answer": "来週",
+   "q_num": 23
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Con tôi」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "コンビニ",
+    "先週",
+    "私の子供",
+    "部屋"
+   ],
+   "answer": "私の子供",
+   "q_num": 24
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「レポートを書く」 tiếng Việt là gì?",
+   "options": [
+    "Cửa hàng tiện lợi",
+    "Tuần sau",
+    "Viết báo cáo",
+    "Thư viện"
+   ],
+   "answer": "Viết báo cáo",
+   "q_num": 25
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「部屋」 tiếng Việt là gì?",
+   "options": [
+    "Phòng",
+    "Tuần trước",
+    "Hút thuốc (lá)",
+    "Tuần sau"
+   ],
+   "answer": "Phòng",
+   "q_num": 26
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Nấu ăn」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "先週",
+    "食べ物",
+    "料理をする",
+    "新聞"
+   ],
+   "answer": "料理をする",
+   "q_num": 27
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「来月」 tiếng Việt là gì?",
+   "options": [
+    "Tháng sau",
+    "Báo",
+    "Tuần sau",
+    "Tháng trước"
+   ],
+   "answer": "Tháng sau",
+   "q_num": 28
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「来年」 tiếng Việt là gì?",
+   "options": [
+    "Tháng sau",
+    "Con tôi",
+    "Năm sau",
+    "Cửa hàng tiện lợi"
+   ],
+   "answer": "Năm sau",
+   "q_num": 29
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「私の子供」 tiếng Việt là gì?",
+   "options": [
+    "Cà phê",
+    "Sống",
+    "Xem tivi",
+    "Con tôi"
+   ],
+   "answer": "Con tôi",
+   "q_num": 30
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Tuần trước」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "たばこを吸う",
+    "先週",
+    "レポートを書く",
+    "お酒"
+   ],
+   "answer": "先週",
+   "q_num": 31
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「コーヒー」 tiếng Việt là gì?",
+   "options": [
+    "Cà phê",
+    "Rượu",
+    "3 ngày sau",
+    "Cửa hàng tiện lợi"
+   ],
+   "answer": "Cà phê",
+   "q_num": 32
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Tháng sau」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "来年",
+    "去年",
+    "先週",
+    "来月"
+   ],
+   "answer": "来月",
+   "q_num": 33
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Rượu」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "コンビニ",
+    "レポートを書く",
+    "お酒",
+    "旅行に行く"
+   ],
+   "answer": "お酒",
+   "q_num": 34
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Năm tới」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "私の子供",
+    "3日前",
+    "来年",
+    "料理をする"
+   ],
+   "answer": "来年",
+   "q_num": 35
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「住む」 tiếng Việt là gì?",
+   "options": [
+    "Kết hôn",
+    "Sống",
+    "Tuần trước",
+    "Năm sau"
+   ],
+   "answer": "Sống",
+   "q_num": 36
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「旅行に行く」 tiếng Việt là gì?",
+   "options": [
+    "Viết báo cáo",
+    "Hút thuốc (lá)",
+    "Đi du lịch",
+    "Rượu"
+   ],
+   "answer": "Đi du lịch",
+   "q_num": 37
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「テレビを見る」 tiếng Việt là gì?",
+   "options": [
+    "Viết báo cáo",
+    "Con tôi",
+    "Xem tivi",
+    "Cà phê"
+   ],
+   "answer": "Xem tivi",
+   "q_num": 38
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「3 ngày sau」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "先週",
+    "レポートを書く",
+    "3日後",
+    "先月"
+   ],
+   "answer": "3日後",
+   "q_num": 39
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「お酒」 tiếng Việt là gì?",
+   "options": [
+    "Năm tới",
+    "Tháng tới",
+    "Rượu",
+    "Con tôi"
+   ],
+   "answer": "Rượu",
+   "q_num": 40
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Tháng trước」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "去年",
+    "先月",
+    "レポートを書く",
+    "コーヒー"
+   ],
+   "answer": "先月",
+   "q_num": 41
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「たばこを吸う」 tiếng Việt là gì?",
+   "options": [
+    "Đi du lịch",
+    "Năm tới",
+    "Hút thuốc (lá)",
+    "Nấu ăn"
+   ],
+   "answer": "Hút thuốc (lá)",
+   "q_num": 42
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「食べ物」 tiếng Việt là gì?",
+   "options": [
+    "Đồ ăn",
+    "Xem tivi",
+    "Cà phê",
+    "Về nước"
+   ],
+   "answer": "Đồ ăn",
+   "q_num": 43
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Báo」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "帰国する",
+    "コーヒー",
+    "先月",
+    "新聞"
+   ],
+   "answer": "新聞",
+   "q_num": 44
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「料理をする」 tiếng Việt là gì?",
+   "options": [
+    "Xem tivi",
+    "Sống",
+    "Nấu ăn",
+    "3 ngày sau"
+   ],
+   "answer": "Nấu ăn",
+   "q_num": 45
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Đồ ăn」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "食べ物",
+    "去年",
+    "住む",
+    "帰国する"
+   ],
+   "answer": "食べ物",
+   "q_num": 46
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Tháng tới」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "食べ物",
+    "帰国する",
+    "お酒",
+    "来月"
+   ],
+   "answer": "来月",
+   "q_num": 47
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Về nước」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "来年",
+    "帰国する",
+    "お酒",
+    "図書館"
+   ],
+   "answer": "帰国する",
+   "q_num": 48
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Phòng」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "先週",
+    "部屋",
+    "私の子供",
+    "テレビを見る"
+   ],
+   "answer": "部屋",
+   "q_num": 49
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「来週」 tiếng Việt là gì?",
+   "options": [
+    "Năm trước",
+    "Về nước",
+    "Viết báo cáo",
+    "Tuần sau"
+   ],
+   "answer": "Tuần sau",
+   "q_num": 50
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「先週」 tiếng Việt là gì?",
+   "options": [
+    "Tuần trước",
+    "Sang năm",
+    "Con tôi",
+    "Kết hôn"
+   ],
+   "answer": "Tuần trước",
+   "q_num": 51
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Năm sau」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "図書館",
+    "帰国する",
+    "来年",
+    "部屋"
+   ],
+   "answer": "来年",
+   "q_num": 52
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Kết hôn」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "たばこを吸う",
+    "帰国する",
+    "結婚する",
+    "図書館"
+   ],
+   "answer": "結婚する",
+   "q_num": 53
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Sống」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "新聞",
+    "住む",
+    "レポートを書く",
+    "結婚する"
+   ],
+   "answer": "住む",
+   "q_num": 54
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「去年」 tiếng Việt là gì?",
+   "options": [
+    "Tháng tới",
+    "Tháng sau",
+    "Tuần trước",
+    "Năm trước"
+   ],
+   "answer": "Năm trước",
+   "q_num": 55
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「来週」 tiếng Việt là gì?",
+   "options": [
+    "Nấu ăn",
+    "Tuần tới",
+    "Tuần sau",
+    "Viết báo cáo"
+   ],
+   "answer": "Tuần tới",
+   "q_num": 56
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Cửa hàng tiện lợi」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "来月",
+    "お酒",
+    "コンビニ",
+    "部屋"
+   ],
+   "answer": "コンビニ",
+   "q_num": 57
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Cà phê」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "去年",
+    "先月",
+    "来年",
+    "コーヒー"
+   ],
+   "answer": "コーヒー",
+   "q_num": 58
+  }
+ ],
+ "18": [
+  {
+   "type": "JP2VN",
+   "prompt": "「どの日」 tiếng Việt là gì?",
+   "options": [
+    "Ngày ~",
+    "Ngày nào",
+    "Năm ~",
+    "Ngày mùng ~"
+   ],
+   "answer": "Ngày nào",
+   "q_num": 1
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「誕生日」 tiếng Việt là gì?",
+   "options": [
+    "Năm ~",
+    "Sinh nhật",
+    "Bao giờ",
+    "Ngày mùng mấy"
+   ],
+   "answer": "Sinh nhật",
+   "q_num": 2
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「何日」 tiếng Việt là gì?",
+   "options": [
+    "Tháng ~",
+    "Ngày bao nhiêu",
+    "Ngày ~",
+    "Sinh nhật"
+   ],
+   "answer": "Ngày bao nhiêu",
+   "q_num": 3
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Tháng ~」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "何日",
+    "どの日",
+    "おめでとうございます",
+    "～月"
+   ],
+   "answer": "～月",
+   "q_num": 4
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Năm ~」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "～年",
+    "いつ",
+    "11日～31日",
+    "1日～10日"
+   ],
+   "answer": "～年",
+   "q_num": 5
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Ngày nào」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "どの日",
+    "いつ",
+    "1日～10日",
+    "おめでとうございます"
+   ],
+   "answer": "どの日",
+   "q_num": 6
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Chúc mừng」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "おめでとうございます",
+    "～月",
+    "～年",
+    "1日～10日"
+   ],
+   "answer": "おめでとうございます",
+   "q_num": 7
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Ngày mùng mấy」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "11日～31日",
+    "誕生日",
+    "おめでとうございます",
+    "何日"
+   ],
+   "answer": "何日",
+   "q_num": 8
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Bao giờ」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "11日～31日",
+    "1日～10日",
+    "いつ",
+    "おめでとうございます"
+   ],
+   "answer": "いつ",
+   "q_num": 9
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Ngày mùng ~」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "1日～10日",
+    "おめでとうございます",
+    "いつ",
+    "～月"
+   ],
+   "answer": "1日～10日",
+   "q_num": 10
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Lúc nào」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "11日～31日",
+    "いつ",
+    "～月",
+    "どの日"
+   ],
+   "answer": "いつ",
+   "q_num": 11
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「11日～31日」 tiếng Việt là gì?",
+   "options": [
+    "Lúc nào",
+    "Ngày ~",
+    "Ngày mùng mấy",
+    "Khi nào"
+   ],
+   "answer": "Ngày ~",
+   "q_num": 12
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「おめでとうございます」 tiếng Việt là gì?",
+   "options": [
+    "Chúc mừng",
+    "Ngày mùng mấy",
+    "Ngày ~",
+    "Ngày bao nhiêu"
+   ],
+   "answer": "Chúc mừng",
+   "q_num": 13
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Sinh nhật」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "いつ",
+    "誕生日",
+    "何日",
+    "おめでとうございます"
+   ],
+   "answer": "誕生日",
+   "q_num": 14
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「いつ」 tiếng Việt là gì?",
+   "options": [
+    "Khi nào",
+    "Lúc nào",
+    "Tháng ~",
+    "Ngày ~"
+   ],
+   "answer": "Lúc nào",
+   "q_num": 15
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「いつ」 tiếng Việt là gì?",
+   "options": [
+    "Ngày nào",
+    "Khi nào",
+    "Ngày mùng ~",
+    "Bao giờ"
+   ],
+   "answer": "Bao giờ",
+   "q_num": 16
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「～年」 tiếng Việt là gì?",
+   "options": [
+    "Ngày bao nhiêu",
+    "Năm ~",
+    "Bao giờ",
+    "Khi nào"
+   ],
+   "answer": "Năm ~",
+   "q_num": 17
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「何日」 tiếng Việt là gì?",
+   "options": [
+    "Ngày mùng mấy",
+    "Ngày nào",
+    "Ngày ~",
+    "Lúc nào"
+   ],
+   "answer": "Ngày mùng mấy",
+   "q_num": 18
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Ngày bao nhiêu」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "～年",
+    "11日～31日",
+    "何日",
+    "どの日"
+   ],
+   "answer": "何日",
+   "q_num": 19
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「～月」 tiếng Việt là gì?",
+   "options": [
+    "Tháng ~",
+    "Chúc mừng",
+    "Khi nào",
+    "Ngày mùng mấy"
+   ],
+   "answer": "Tháng ~",
+   "q_num": 20
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Khi nào」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "誕生日",
+    "何日",
+    "いつ",
+    "どの日"
+   ],
+   "answer": "いつ",
+   "q_num": 21
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Ngày ~」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "誕生日",
+    "11日～31日",
+    "どの日",
+    "～年"
+   ],
+   "answer": "11日～31日",
+   "q_num": 22
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「1日～10日」 tiếng Việt là gì?",
+   "options": [
+    "Năm ~",
+    "Ngày mùng ~",
+    "Chúc mừng",
+    "Ngày ~"
+   ],
+   "answer": "Ngày mùng ~",
+   "q_num": 23
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「いつ」 tiếng Việt là gì?",
+   "options": [
+    "Ngày bao nhiêu",
+    "Khi nào",
+    "Năm ~",
+    "Tháng ~"
+   ],
+   "answer": "Khi nào",
+   "q_num": 24
+  }
+ ],
+ "19": [
+  {
+   "type": "VN2JP",
+   "prompt": "「Bông hoa」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "花",
+    "ネクタイ",
+    "ビール",
+    "お金"
+   ],
+   "answer": "花",
+   "q_num": 1
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「お金」 tiếng Việt là gì?",
+   "options": [
+    "Cà vạt",
+    "Bia",
+    "Bông hoa",
+    "Tiền"
+   ],
+   "answer": "Tiền",
+   "q_num": 2
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Tiền」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "ビール",
+    "お金",
+    "ネクタイ",
+    "花"
+   ],
+   "answer": "お金",
+   "q_num": 3
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Bia」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "お金",
+    "ネクタイ",
+    "ビール",
+    "花"
+   ],
+   "answer": "ビール",
+   "q_num": 4
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「花」 tiếng Việt là gì?",
+   "options": [
+    "Tiền",
+    "Cà vạt",
+    "Bia",
+    "Bông hoa"
+   ],
+   "answer": "Bông hoa",
+   "q_num": 5
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「ネクタイ」 tiếng Việt là gì?",
+   "options": [
+    "Bia",
+    "Bông hoa",
+    "Tiền",
+    "Cà vạt"
+   ],
+   "answer": "Cà vạt",
+   "q_num": 6
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Cà vạt」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "ネクタイ",
+    "お金",
+    "花",
+    "ビール"
+   ],
+   "answer": "ネクタイ",
+   "q_num": 7
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「ビール」 tiếng Việt là gì?",
+   "options": [
+    "Tiền",
+    "Cà vạt",
+    "Bia",
+    "Bông hoa"
+   ],
+   "answer": "Bia",
+   "q_num": 8
+  }
+ ],
+ "20": [
+  {
+   "type": "JP2VN",
+   "prompt": "「プレゼント」 tiếng Việt là gì?",
+   "options": [
+    "Cho",
+    "Hoa quả",
+    "Giáng sinh",
+    "Quà"
+   ],
+   "answer": "Quà",
+   "q_num": 1
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Dạy」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "手紙",
+    "クリスマス",
+    "教える",
+    "プレゼント"
+   ],
+   "answer": "教える",
+   "q_num": 2
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「手紙」 tiếng Việt là gì?",
+   "options": [
+    "Quà",
+    "Thư",
+    "Hoa quả",
+    "Biếu"
+   ],
+   "answer": "Thư",
+   "q_num": 3
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「クリスマス」 tiếng Việt là gì?",
+   "options": [
+    "Quà",
+    "Cho",
+    "Giáng sinh",
+    "Biếu"
+   ],
+   "answer": "Giáng sinh",
+   "q_num": 4
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「あげる」 tiếng Việt là gì?",
+   "options": [
+    "Dạy",
+    "Tặng",
+    "Cho",
+    "Biếu"
+   ],
+   "answer": "Cho",
+   "q_num": 5
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Biếu」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "果物",
+    "クリスマス",
+    "差し上げる",
+    "手紙"
+   ],
+   "answer": "差し上げる",
+   "q_num": 6
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Thư」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "クリスマス",
+    "あげる",
+    "差し上げる",
+    "手紙"
+   ],
+   "answer": "手紙",
+   "q_num": 7
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「果物」 tiếng Việt là gì?",
+   "options": [
+    "Biếu",
+    "Quà",
+    "Thư",
+    "Hoa quả"
+   ],
+   "answer": "Hoa quả",
+   "q_num": 8
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Giáng sinh」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "果物",
+    "クリスマス",
+    "手紙",
+    "差し上げる"
+   ],
+   "answer": "クリスマス",
+   "q_num": 9
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Cho」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "果物",
+    "プレゼント",
+    "あげる",
+    "差し上げる"
+   ],
+   "answer": "あげる",
+   "q_num": 10
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「あげる」 tiếng Việt là gì?",
+   "options": [
+    "Tặng",
+    "Cho",
+    "Quà",
+    "Dạy"
+   ],
+   "answer": "Tặng",
+   "q_num": 11
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「差し上げる」 tiếng Việt là gì?",
+   "options": [
+    "Cho",
+    "Dạy",
+    "Hoa quả",
+    "Biếu"
+   ],
+   "answer": "Biếu",
+   "q_num": 12
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Tặng」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "クリスマス",
+    "教える",
+    "あげる",
+    "手紙"
+   ],
+   "answer": "あげる",
+   "q_num": 13
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Hoa quả」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "手紙",
+    "果物",
+    "教える",
+    "差し上げる"
+   ],
+   "answer": "果物",
+   "q_num": 14
+  },
+  {
+   "type": "JP2VN",
+   "prompt": "「教える」 tiếng Việt là gì?",
+   "options": [
+    "Quà",
+    "Thư",
+    "Dạy",
+    "Cho"
+   ],
+   "answer": "Dạy",
+   "q_num": 15
+  },
+  {
+   "type": "VN2JP",
+   "prompt": "「Quà」 nghĩa tiếng Nhật là gì?",
+   "options": [
+    "あげる",
+    "果物",
+    "プレゼント",
+    "教える"
+   ],
+   "answer": "プレゼント",
+   "q_num": 16
+  }
+ ]
+};
+
+
 /* ============================================================
    GIAI DOAN 2: Dang nhap thuc su bang Firebase Authentication +
    chan dang nhap da thiet bi bang Firestore (collection "testN3").
@@ -14951,6 +20986,9 @@ const KANJI_TESTS_META = [
   { id: 8, label: 'Chương 15 – 16', active: true },
   { id: 9, label: 'Chương 17 – 18 – 19', active: true },
 ];
+
+const VIETNHAT_CHAPTERS_META = [5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+  .map(ch => ({ ch, count: (VIETNHAT_TESTS[String(ch)] || []).length }));
 
 let state = {
   screen: 'login',
@@ -15046,12 +21084,18 @@ function renderSectionSelect() {
           <div class="u-name">Luyện Kanji N4</div>
           <div class="u-range">19 chương · 203 chữ Hán</div>
         </button>
+        <button class="unit-tile" id="sec-viet" style="text-align:left;">
+          <div class="u-num">越</div>
+          <div class="u-name">Luyện từ vựng tiếng Việt</div>
+          <div class="u-range">15 chương · 250 từ (tr.180–186)</div>
+        </button>
       </div>
     </div>
     <footer class="app-footer">Đã đăng nhập: ${escapeHtml((auth.currentUser && auth.currentUser.email) || '')} · <a href="#" id="logout-link">Đăng xuất</a></footer>
   `;
   document.getElementById('sec-n3').addEventListener('click', () => go('dashboard'));
   document.getElementById('sec-kanji').addEventListener('click', () => go('kanji-dashboard'));
+  document.getElementById('sec-viet').addEventListener('click', () => go('viet-dashboard'));
   document.getElementById('logout-link').addEventListener('click', (e) => {
     e.preventDefault();
     forceLogout('');
@@ -15428,6 +21472,157 @@ function renderKanjiResult() {
   document.getElementById('btn-home').addEventListener('click', () => go('kanji-dashboard'));
 }
 
+/* ============================================================
+   PHAN LUYEN TU VUNG TIENG VIET (tai su dung co che quiz giong Kanji,
+   khac nguon du lieu - dich nghia truc tiep Viet<->Nhat, khong co
+   co che gan am/gan hinh nhu Kanji).
+   ============================================================ */
+function renderVietDashboard() {
+  const tiles = VIETNHAT_CHAPTERS_META.map(t => `
+    <button class="unit-tile" data-viet-test="${t.ch}">
+      <div class="u-num">${t.ch}</div>
+      <div class="u-name">Chương ${t.ch}</div>
+      <div class="u-range">${t.count} câu</div>
+    </button>`).join('');
+
+  root.innerHTML = `
+    ${brandHeader()}
+    <div class="card">
+      <button class="btn btn-ghost" id="back-home" style="margin-bottom:16px;">← Trang chủ</button>
+      <div class="pill-header">Luyện từ vựng tiếng Việt — chọn chương</div>
+      <p style="color:var(--navy-deep); margin-top:-6px; font-size:0.88rem;">
+        Mỗi chương 1 đề, hỏi mỗi từ theo cả 2 chiều (Nhật→Việt và Việt→Nhật) —
+        số câu vì vậy khác nhau giữa các chương.
+      </p>
+      <div class="unit-grid">${tiles}</div>
+    </div>
+    <footer class="app-footer">Đã đăng nhập: ${escapeHtml((auth.currentUser && auth.currentUser.email) || '')} · <a href="#" id="logout-link">Đăng xuất</a></footer>
+  `;
+  document.getElementById('back-home').addEventListener('click', () => go('section-select'));
+  root.querySelectorAll('.unit-tile[data-viet-test]').forEach(el => {
+    el.addEventListener('click', () => startVietTest(parseInt(el.dataset.vietTest)));
+  });
+  document.getElementById('logout-link').addEventListener('click', (e) => {
+    e.preventDefault();
+    forceLogout('');
+  });
+}
+
+function startVietTest(chapterNo) {
+  const source = VIETNHAT_TESTS[String(chapterNo)];
+  const questions = JSON.parse(JSON.stringify(source));
+  go('viet-quiz', { vquiz: { questions, index: 0, answers: {}, testId: chapterNo } });
+}
+
+function renderVietQuiz() {
+  const { questions, index, answers, testId } = state.vquiz;
+  const q = questions[index];
+  const total = questions.length;
+  const selected = answers[q.q_num];
+
+  const optionsHtml = q.options.map((opt, i) => {
+    const letter = String.fromCharCode(65 + i);
+    const isSel = selected === opt;
+    const jpClass = q.type === 'VN2JP' ? 'jp' : '';
+    return `
+      <button class="option ${isSel ? 'selected' : ''}" data-opt="${escapeAttr(opt)}">
+        <span class="opt-letter">${letter}</span>
+        <span class="${jpClass}">${escapeHtml(opt)}</span>
+      </button>`;
+  }).join('');
+
+  const isLast = index === total - 1;
+  const kindLabel = q.type === 'JP2VN' ? 'Nhật → Việt' : 'Việt → Nhật';
+
+  root.innerHTML = `
+    ${brandHeader()}
+    <div class="card">
+      <div class="progress-row">
+        <div class="progress-track"><div class="progress-fill" style="width:${(index / total) * 100}%"></div></div>
+        <div class="progress-label">Câu ${index + 1}/${total}</div>
+      </div>
+      <div class="q-number-badge">${q.q_num}</div>
+      <div style="font-size:0.78rem; color:var(--terracotta); font-weight:600; margin-bottom:6px;">${kindLabel}</div>
+      <div class="q-prompt">${formatPrompt(q)}</div>
+      <div class="option-list">${optionsHtml}</div>
+      <div class="quiz-nav">
+        <button class="btn btn-ghost" id="btn-prev" ${index === 0 ? 'disabled' : ''}>← Câu trước</button>
+        <button class="btn btn-primary" id="btn-next" ${selected ? '' : 'disabled'}>
+          ${isLast ? 'Nộp bài' : 'Câu tiếp →'}
+        </button>
+      </div>
+    </div>
+  `;
+
+  root.querySelectorAll('.option').forEach(el => {
+    el.addEventListener('click', () => {
+      state.vquiz.answers[q.q_num] = el.dataset.opt;
+      renderVietQuiz();
+    });
+  });
+  document.getElementById('btn-prev').addEventListener('click', () => {
+    state.vquiz.index = Math.max(0, index - 1);
+    renderVietQuiz();
+  });
+  document.getElementById('btn-next').addEventListener('click', () => {
+    if (isLast) { submitVietQuiz(); } else { state.vquiz.index = index + 1; renderVietQuiz(); }
+  });
+}
+
+function submitVietQuiz() {
+  const { questions, answers, testId } = state.vquiz;
+  let correct = 0;
+  const detail = questions.map(q => {
+    const your = answers[q.q_num];
+    const ok = your === q.answer;
+    if (ok) correct++;
+    return Object.assign({}, q, { your, ok });
+  });
+  saveVietAttemptToFirestore(testId, correct, questions.length);
+  go('viet-result', { lastVietResult: { correct, total: questions.length, detail, testId } });
+}
+
+function saveVietAttemptToFirestore(testId, correct, total) {
+  const user = auth.currentUser;
+  if (!user) return;
+  db.collection(USERS_COLLECTION).doc(user.uid).collection('viet_attempts').add({
+    test: testId, score: correct, total: total,
+    createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+  }).catch(err => console.error('Khong luu duoc lich su lam bai tieng Viet:', err));
+}
+
+function renderVietResult() {
+  const { correct, total, detail, testId } = state.lastVietResult;
+  const pct = Math.round((correct / total) * 100);
+  const items = detail.map(d => `
+    <div class="review-item ${d.ok ? 'correct' : 'wrong'}">
+      <div class="r-prompt">Câu ${d.q_num}: ${formatPrompt(d)}</div>
+      ${d.ok
+        ? `<div class="r-line correct-ans">✓ Bạn chọn đúng: ${escapeHtml(d.answer)}</div>`
+        : `<div class="r-line your">✗ Bạn chọn: ${escapeHtml(d.your || '(bỏ trống)')}</div>
+           <div class="r-line correct-ans">✓ Đáp án đúng: ${escapeHtml(d.answer)}</div>`}
+    </div>
+  `).join('');
+
+  root.innerHTML = `
+    ${brandHeader()}
+    <div class="card">
+      <div class="score-hero">
+        <div class="score-num">${correct}/${total}</div>
+        <div class="score-sub">${pct}% chính xác — Tiếng Việt · Chương ${testId}</div>
+      </div>
+      <div style="display:flex; gap:12px; justify-content:center; margin-bottom:26px;">
+        <button class="btn btn-primary" id="btn-retry">Làm lại đề này</button>
+        <button class="btn btn-ghost" id="btn-home">Về danh sách đề</button>
+      </div>
+      <div class="pill-header">Xem lại đáp án</div>
+      ${items}
+    </div>
+  `;
+  document.getElementById('btn-retry').addEventListener('click', () => startVietTest(testId));
+  document.getElementById('btn-home').addEventListener('click', () => go('viet-dashboard'));
+}
+
 function render() {
   if (state.screen === 'login') return renderLogin();
   if (state.screen === 'section-select') return renderSectionSelect();
@@ -15438,6 +21633,9 @@ function render() {
   if (state.screen === 'kanji-dashboard') return renderKanjiDashboard();
   if (state.screen === 'kanji-quiz') return renderKanjiQuiz();
   if (state.screen === 'kanji-result') return renderKanjiResult();
+  if (state.screen === 'viet-dashboard') return renderVietDashboard();
+  if (state.screen === 'viet-quiz') return renderVietQuiz();
+  if (state.screen === 'viet-result') return renderVietResult();
 }
 
 /* Khoi dong: dung Firebase onAuthStateChanged de kiem tra da dang nhap chua.
