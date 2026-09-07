@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>耳から覚える N3 · Luyện từ vựng</title>
+<title>Luyện thi JLPT · N3 & N4</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
@@ -338,11 +338,9 @@ footer.app-footer {
   <div class="app-shell">
     <div id="app-root"></div>
   </div>
-
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
-
 <script>
 // Du lieu toan bo 24 de (12 Unit x 2 de, moi de 35 cau)
 const ALL_TESTS = {
@@ -11340,6 +11338,3540 @@ const ALL_TESTS = {
  }
 };
 
+// Du lieu De 1 Luyen Kanji N4 (Chuong 1+2)
+const KANJI_DE1 = [
+ {
+  "type": "H2K",
+  "prompt": "「ちず」 viết Kanji thế nào?",
+  "options": [
+   "地図",
+   "地下鉄",
+   "試着",
+   "空"
+  ],
+  "answer": "地図",
+  "nghia": "Bản đồ",
+  "q_num": 1
+ },
+ {
+  "type": "H2K",
+  "prompt": "「けいさん」 viết Kanji thế nào?",
+  "options": [
+   "空港",
+   "動画",
+   "計算",
+   "説明"
+  ],
+  "answer": "計算",
+  "nghia": "Tính toán",
+  "q_num": 2
+ },
+ {
+  "type": "H2K",
+  "prompt": "「とけい」 viết Kanji thế nào?",
+  "options": [
+   "時計",
+   "医者",
+   "知り合い",
+   "短気"
+  ],
+  "answer": "時計",
+  "nghia": "Đồng hồ",
+  "q_num": 3
+ },
+ {
+  "type": "K2H",
+  "prompt": "「女性」 đọc là gì?",
+  "options": [
+   "ふどうさんや",
+   "じめん",
+   "でんち",
+   "じょせい"
+  ],
+  "answer": "じょせい",
+  "nghia": "Nữ giới",
+  "q_num": 4
+ },
+ {
+  "type": "K2H",
+  "prompt": "「試合」 đọc là gì?",
+  "options": [
+   "しあい",
+   "くうき",
+   "はいしゃ",
+   "せいかく"
+  ],
+  "answer": "しあい",
+  "nghia": "Trận đấu",
+  "q_num": 5
+ },
+ {
+  "type": "K2H",
+  "prompt": "「地下鉄」 đọc là gì?",
+  "options": [
+   "たんき",
+   "そら",
+   "はたらく",
+   "ちかてつ"
+  ],
+  "answer": "ちかてつ",
+  "nghia": "Tàu điện ngầm",
+  "q_num": 6
+ },
+ {
+  "type": "H2K",
+  "prompt": "「ちしき」 viết Kanji thế nào?",
+  "options": [
+   "お知らせ",
+   "知識",
+   "協力",
+   "短い"
+  ],
+  "answer": "知識",
+  "nghia": "Kiến thức",
+  "q_num": 7
+ },
+ {
+  "type": "H2K",
+  "prompt": "「はたらく」 viết Kanji thế nào?",
+  "options": [
+   "電池",
+   "働く",
+   "地図",
+   "空気"
+  ],
+  "answer": "働く",
+  "nghia": "Làm việc",
+  "q_num": 8
+ },
+ {
+  "type": "K2H",
+  "prompt": "「工場」 đọc là gì?",
+  "options": [
+   "じどう",
+   "こうじょう",
+   "しちゃく",
+   "しる"
+  ],
+  "answer": "こうじょう",
+  "nghia": "Nhà máy, xí nghiệp",
+  "q_num": 9
+ },
+ {
+  "type": "H2K",
+  "prompt": "「いしゃ」 viết Kanji thế nào?",
+  "options": [
+   "動画",
+   "医者",
+   "短い",
+   "短気"
+  ],
+  "answer": "医者",
+  "nghia": "Bác sĩ",
+  "q_num": 10
+ },
+ {
+  "type": "K2H",
+  "prompt": "「血」 đọc là gì?",
+  "options": [
+   "いがく",
+   "ち",
+   "じどう",
+   "けいさん"
+  ],
+  "answer": "ち",
+  "nghia": "Máu",
+  "q_num": 11
+ },
+ {
+  "type": "H2K",
+  "prompt": "「どうが」 viết Kanji thế nào?",
+  "options": [
+   "思う",
+   "不思議",
+   "動画",
+   "協力"
+  ],
+  "answer": "動画",
+  "nghia": "Video, đoạn phim",
+  "q_num": 12
+ },
+ {
+  "type": "K2H",
+  "prompt": "「思う」 đọc là gì?",
+  "options": [
+   "おもう",
+   "くうき",
+   "きょうりょく",
+   "そら"
+  ],
+  "answer": "おもう",
+  "nghia": "Nghĩ, cho rằng",
+  "q_num": 13
+ },
+ {
+  "type": "K2H",
+  "prompt": "「電池」 đọc là gì?",
+  "options": [
+   "いけ",
+   "いしゃ",
+   "ちから",
+   "でんち"
+  ],
+  "answer": "でんち",
+  "nghia": "Pin (điện)",
+  "q_num": 14
+ },
+ {
+  "type": "K2H",
+  "prompt": "「お皿」 đọc là gì?",
+  "options": [
+   "おさら",
+   "ふしぎ",
+   "たんき",
+   "せつめい"
+  ],
+  "answer": "おさら",
+  "nghia": "Cái đĩa",
+  "q_num": 15
+ },
+ {
+  "type": "H2K",
+  "prompt": "「しちゃく」 viết Kanji thế nào?",
+  "options": [
+   "不思議",
+   "安心",
+   "池",
+   "試着"
+  ],
+  "answer": "試着",
+  "nghia": "Mặc thử (quần áo)",
+  "q_num": 16
+ },
+ {
+  "type": "H2K",
+  "prompt": "「しる」 viết Kanji thế nào?",
+  "options": [
+   "電池",
+   "地震",
+   "知る",
+   "短い"
+  ],
+  "answer": "知る",
+  "nghia": "Biết",
+  "q_num": 17
+ },
+ {
+  "type": "K2H",
+  "prompt": "「空港」 đọc là gì?",
+  "options": [
+   "けいさん",
+   "しけん",
+   "くうこう",
+   "ちず"
+  ],
+  "answer": "くうこう",
+  "nghia": "Sân bay",
+  "q_num": 18
+ },
+ {
+  "type": "K2H",
+  "prompt": "「地震」 đọc là gì?",
+  "options": [
+   "ちしき",
+   "あんしん",
+   "じしん",
+   "はたらく"
+  ],
+  "answer": "じしん",
+  "nghia": "Động đất",
+  "q_num": 19
+ },
+ {
+  "type": "H2K",
+  "prompt": "「しょうせつ」 viết Kanji thế nào?",
+  "options": [
+   "小説",
+   "地面",
+   "空",
+   "不動産屋"
+  ],
+  "answer": "小説",
+  "nghia": "Tiểu thuyết",
+  "q_num": 20
+ },
+ {
+  "type": "H2K",
+  "prompt": "「はいしゃ」 viết Kanji thế nào?",
+  "options": [
+   "歯医者",
+   "自動",
+   "試合",
+   "計画"
+  ],
+  "answer": "歯医者",
+  "nghia": "Nha sĩ",
+  "q_num": 21
+ },
+ {
+  "type": "K2H",
+  "prompt": "「説明書」 đọc là gì?",
+  "options": [
+   "いけ",
+   "きょうりょく",
+   "せつめいしょ",
+   "うごく"
+  ],
+  "answer": "せつめいしょ",
+  "nghia": "Sách hướng dẫn",
+  "q_num": 22
+ },
+ {
+  "type": "H2K",
+  "prompt": "「そら」 viết Kanji thế nào?",
+  "options": [
+   "空",
+   "地震",
+   "医学",
+   "知り合い"
+  ],
+  "answer": "空",
+  "nghia": "Bầu trời",
+  "q_num": 23
+ },
+ {
+  "type": "K2H",
+  "prompt": "「説明」 đọc là gì?",
+  "options": [
+   "はたらく",
+   "せつめい",
+   "うごく",
+   "おしらせ"
+  ],
+  "answer": "せつめい",
+  "nghia": "Giải thích",
+  "q_num": 24
+ },
+ {
+  "type": "K2H",
+  "prompt": "「知り合い」 đọc là gì?",
+  "options": [
+   "うんどう",
+   "けいさん",
+   "しりあい",
+   "こうじょう"
+  ],
+  "answer": "しりあい",
+  "nghia": "Người quen",
+  "q_num": 25
+ },
+ {
+  "type": "H2K",
+  "prompt": "「たんき」 viết Kanji thế nào?",
+  "options": [
+   "短気",
+   "試合",
+   "性格",
+   "医者"
+  ],
+  "answer": "短気",
+  "nghia": "Nóng tính, dễ cáu",
+  "q_num": 26
+ },
+ {
+  "type": "K2H",
+  "prompt": "「試験」 đọc là gì?",
+  "options": [
+   "たんき",
+   "しあい",
+   "いがく",
+   "しけん"
+  ],
+  "answer": "しけん",
+  "nghia": "Kỳ thi",
+  "q_num": 27
+ },
+ {
+  "type": "H2K",
+  "prompt": "「あんしん」 viết Kanji thế nào?",
+  "options": [
+   "安心",
+   "知り合い",
+   "説明会",
+   "性格"
+  ],
+  "answer": "安心",
+  "nghia": "An tâm",
+  "q_num": 28
+ },
+ {
+  "type": "K2H",
+  "prompt": "「運動」 đọc là gì?",
+  "options": [
+   "どうが",
+   "うんどう",
+   "しちゃく",
+   "けいかく"
+  ],
+  "answer": "うんどう",
+  "nghia": "Vận động, thể dục",
+  "q_num": 29
+ },
+ {
+  "type": "H2K",
+  "prompt": "「きょうりょく」 viết Kanji thế nào?",
+  "options": [
+   "運動",
+   "空気",
+   "協力",
+   "力"
+  ],
+  "answer": "協力",
+  "nghia": "Hợp tác",
+  "q_num": 30
+ }
+];
+
+// Du lieu De 2-9 Luyen Kanji N4
+const KANJI_TESTS_2_9 = {
+ "2": [
+  {
+   "type": "H2K",
+   "prompt": "「きる」 viết Kanji thế nào?",
+   "options": [
+    "切る",
+    "大切",
+    "開始",
+    "外国語"
+   ],
+   "answer": "切る",
+   "nghia": "Cắt",
+   "q_num": 1
+  },
+  {
+   "type": "H2K",
+   "prompt": "「がいこくご」 viết Kanji thế nào?",
+   "options": [
+    "台所",
+    "広い",
+    "外国語",
+    "所"
+   ],
+   "answer": "外国語",
+   "nghia": "Ngoại ngữ",
+   "q_num": 2
+  },
+  {
+   "type": "H2K",
+   "prompt": "「がいこく」 viết Kanji thế nào?",
+   "options": [
+    "外国",
+    "近く",
+    "政治",
+    "開始"
+   ],
+   "answer": "外国",
+   "nghia": "Nước ngoài",
+   "q_num": 3
+  },
+  {
+   "type": "K2H",
+   "prompt": "「辺」 đọc là gì?",
+   "options": [
+    "ほいくえん",
+    "ごしゅじん",
+    "きょねん",
+    "へん"
+   ],
+   "answer": "へん",
+   "nghia": "Vùng, khu vực",
+   "q_num": 4
+  },
+  {
+   "type": "K2H",
+   "prompt": "「水玉」 đọc là gì?",
+   "options": [
+    "みずたま",
+    "うんてんしゅ",
+    "くに",
+    "とおい"
+   ],
+   "answer": "みずたま",
+   "nghia": "Hoa văn chấm bi",
+   "q_num": 5
+  },
+  {
+   "type": "K2H",
+   "prompt": "「切符」 đọc là gì?",
+   "options": [
+    "こうえん",
+    "かいし",
+    "ところ",
+    "きっぷ"
+   ],
+   "answer": "きっぷ",
+   "nghia": "Vé",
+   "q_num": 6
+  },
+  {
+   "type": "H2K",
+   "prompt": "「どうぶつえん」 viết Kanji thế nào?",
+   "options": [
+    "転ぶ",
+    "動物園",
+    "住所",
+    "運転"
+   ],
+   "answer": "動物園",
+   "nghia": "Sở thú",
+   "q_num": 7
+  },
+  {
+   "type": "H2K",
+   "prompt": "「うんてんしゅ」 viết Kanji thế nào?",
+   "options": [
+    "保育園",
+    "運転手",
+    "広い",
+    "お正月"
+   ],
+   "answer": "運転手",
+   "nghia": "Người lái xe",
+   "q_num": 8
+  },
+  {
+   "type": "K2H",
+   "prompt": "「政治」 đọc là gì?",
+   "options": [
+    "しめきり",
+    "せいじ",
+    "へん",
+    "ちかい"
+   ],
+   "answer": "せいじ",
+   "nghia": "Chính trị",
+   "q_num": 9
+  },
+  {
+   "type": "H2K",
+   "prompt": "「たいふう」 viết Kanji thế nào?",
+   "options": [
+    "広い",
+    "台風",
+    "運転",
+    "住む"
+   ],
+   "answer": "台風",
+   "nghia": "Bão",
+   "q_num": 10
+  },
+  {
+   "type": "K2H",
+   "prompt": "「治す」 đọc là gì?",
+   "options": [
+    "どうぶつえん",
+    "なおす",
+    "きんじょ",
+    "たいせつ"
+   ],
+   "answer": "なおす",
+   "nghia": "Trị bệnh",
+   "q_num": 11
+  },
+  {
+   "type": "H2K",
+   "prompt": "「ころぶ」 viết Kanji thế nào?",
+   "options": [
+    "切符",
+    "始まる",
+    "転ぶ",
+    "住所"
+   ],
+   "answer": "転ぶ",
+   "nghia": "Ngã",
+   "q_num": 12
+  },
+  {
+   "type": "K2H",
+   "prompt": "「市役所」 đọc là gì?",
+   "options": [
+    "しやくしょ",
+    "うんてんしゅ",
+    "かいし",
+    "だいどころ"
+   ],
+   "answer": "しやくしょ",
+   "nghia": "Tòa thị chính",
+   "q_num": 13
+  },
+  {
+   "type": "K2H",
+   "prompt": "「親切」 đọc là gì?",
+   "options": [
+    "ひろい",
+    "たいせつ",
+    "ころぶ",
+    "しんせつ"
+   ],
+   "answer": "しんせつ",
+   "nghia": "Tốt bụng",
+   "q_num": 14
+  },
+  {
+   "type": "K2H",
+   "prompt": "「開始」 đọc là gì?",
+   "options": [
+    "かいし",
+    "せいじ",
+    "こうえん",
+    "ただしい"
+   ],
+   "answer": "かいし",
+   "nghia": "Khai mạc, bắt đầu",
+   "q_num": 15
+  },
+  {
+   "type": "H2K",
+   "prompt": "「くに」 viết Kanji thế nào?",
+   "options": [
+    "始まる",
+    "開始",
+    "切る",
+    "国"
+   ],
+   "answer": "国",
+   "nghia": "Nước, quốc gia",
+   "q_num": 16
+  },
+  {
+   "type": "H2K",
+   "prompt": "「じてんしゃ」 viết Kanji thế nào?",
+   "options": [
+    "保育園",
+    "近い",
+    "自転車",
+    "この辺"
+   ],
+   "answer": "自転車",
+   "nghia": "Xe đạp",
+   "q_num": 17
+  },
+  {
+   "type": "K2H",
+   "prompt": "「お正月」 đọc là gì?",
+   "options": [
+    "くに",
+    "じてんしゃ",
+    "おしょうがつ",
+    "おとしだま"
+   ],
+   "answer": "おしょうがつ",
+   "nghia": "Tết",
+   "q_num": 18
+  },
+  {
+   "type": "K2H",
+   "prompt": "「締め切り」 đọc là gì?",
+   "options": [
+    "ちかく",
+    "おしょうがつ",
+    "しめきり",
+    "ところ"
+   ],
+   "answer": "しめきり",
+   "nghia": "Hạn chót",
+   "q_num": 19
+  },
+  {
+   "type": "H2K",
+   "prompt": "「かいぬし」 viết Kanji thế nào?",
+   "options": [
+    "飼い主",
+    "遠い",
+    "去年",
+    "水玉"
+   ],
+   "answer": "飼い主",
+   "nghia": "Chủ nuôi",
+   "q_num": 20
+  },
+  {
+   "type": "H2K",
+   "prompt": "「はじまる」 viết Kanji thế nào?",
+   "options": [
+    "始まる",
+    "この辺",
+    "飼い主",
+    "動物園"
+   ],
+   "answer": "始まる",
+   "nghia": "Bắt đầu (tự động)",
+   "q_num": 21
+  },
+  {
+   "type": "K2H",
+   "prompt": "「住所」 đọc là gì?",
+   "options": [
+    "ひろい",
+    "さいきん",
+    "じゅうしょ",
+    "しゅじんこう"
+   ],
+   "answer": "じゅうしょ",
+   "nghia": "Địa chỉ",
+   "q_num": 22
+  },
+  {
+   "type": "H2K",
+   "prompt": "「ただしい」 viết Kanji thế nào?",
+   "options": [
+    "正しい",
+    "近い",
+    "始まる",
+    "政治"
+   ],
+   "answer": "正しい",
+   "nghia": "Đúng",
+   "q_num": 23
+  },
+  {
+   "type": "K2H",
+   "prompt": "「ご主人」 đọc là gì?",
+   "options": [
+    "ところ",
+    "ごしゅじん",
+    "しゅじんこう",
+    "きって"
+   ],
+   "answer": "ごしゅじん",
+   "nghia": "Chồng (cách gọi lịch sự)",
+   "q_num": 24
+  },
+  {
+   "type": "K2H",
+   "prompt": "「遊園地」 đọc là gì?",
+   "options": [
+    "はじめる",
+    "たいせつ",
+    "ゆうえんち",
+    "このへん"
+   ],
+   "answer": "ゆうえんち",
+   "nghia": "Công viên giải trí",
+   "q_num": 25
+  },
+  {
+   "type": "H2K",
+   "prompt": "「だいどころ」 viết Kanji thế nào?",
+   "options": [
+    "台所",
+    "始める",
+    "市役所",
+    "切手"
+   ],
+   "answer": "台所",
+   "nghia": "Nhà bếp",
+   "q_num": 26
+  },
+  {
+   "type": "K2H",
+   "prompt": "「お年玉」 đọc là gì?",
+   "options": [
+    "へん",
+    "がいこくご",
+    "どうぶつえん",
+    "おとしだま"
+   ],
+   "answer": "おとしだま",
+   "nghia": "Tiền lì xì",
+   "q_num": 27
+  },
+  {
+   "type": "H2K",
+   "prompt": "「ところ」 viết Kanji thế nào?",
+   "options": [
+    "所",
+    "政治",
+    "台風",
+    "市役所"
+   ],
+   "answer": "所",
+   "nghia": "Nơi, chỗ",
+   "q_num": 28
+  },
+  {
+   "type": "K2H",
+   "prompt": "「去年」 đọc là gì?",
+   "options": [
+    "おしょうがつ",
+    "きょねん",
+    "ところ",
+    "なおる"
+   ],
+   "answer": "きょねん",
+   "nghia": "Năm ngoái",
+   "q_num": 29
+  },
+  {
+   "type": "H2K",
+   "prompt": "「しゅじんこう」 viết Kanji thế nào?",
+   "options": [
+    "お年玉",
+    "お正月",
+    "主人公",
+    "治る"
+   ],
+   "answer": "主人公",
+   "nghia": "Nhân vật chính",
+   "q_num": 30
+  }
+ ],
+ "3": [
+  {
+   "type": "H2K",
+   "prompt": "「ちゃいろ」 viết Kanji thế nào?",
+   "options": [
+    "使用",
+    "強い",
+    "出発",
+    "茶色"
+   ],
+   "answer": "茶色",
+   "nghia": "Màu nâu",
+   "q_num": 1
+  },
+  {
+   "type": "H2K",
+   "prompt": "「いろんな」 viết Kanji thế nào?",
+   "options": [
+    "歩く",
+    "暗証番号",
+    "色",
+    "色んな"
+   ],
+   "answer": "色んな",
+   "nghia": "Nhiều loại",
+   "q_num": 2
+  },
+  {
+   "type": "H2K",
+   "prompt": "「いろ」 viết Kanji thế nào?",
+   "options": [
+    "発見",
+    "台風",
+    "色",
+    "大使館"
+   ],
+   "answer": "色",
+   "nghia": "Màu",
+   "q_num": 3
+  },
+  {
+   "type": "H2K",
+   "prompt": "「かんじ」 viết Kanji thế nào?",
+   "options": [
+    "漢字",
+    "丸い",
+    "化粧品",
+    "景色"
+   ],
+   "answer": "漢字",
+   "nghia": "Chữ Hán",
+   "q_num": 4
+  },
+  {
+   "type": "K2H",
+   "prompt": "「台風」 đọc là gì?",
+   "options": [
+    "あんしょうばんごう",
+    "まる",
+    "たいふう",
+    "きめる"
+   ],
+   "answer": "たいふう",
+   "nghia": "Bão",
+   "q_num": 5
+  },
+  {
+   "type": "H2K",
+   "prompt": "「あぶら」 viết Kanji thế nào?",
+   "options": [
+    "使う",
+    "油",
+    "風邪",
+    "発明"
+   ],
+   "answer": "油",
+   "nghia": "Dầu",
+   "q_num": 6
+  },
+  {
+   "type": "H2K",
+   "prompt": "「まいばん」 viết Kanji thế nào?",
+   "options": [
+    "化粧品",
+    "歴史",
+    "毎晩",
+    "中止"
+   ],
+   "answer": "毎晩",
+   "nghia": "Mỗi tối",
+   "q_num": 7
+  },
+  {
+   "type": "H2K",
+   "prompt": "「れきし」 viết Kanji thế nào?",
+   "options": [
+    "茶色",
+    "歴史",
+    "調味料",
+    "大使館"
+   ],
+   "answer": "歴史",
+   "nghia": "Lịch sử",
+   "q_num": 8
+  },
+  {
+   "type": "K2H",
+   "prompt": "「黄色い」 đọc là gì?",
+   "options": [
+    "けしき",
+    "けんきゅうしゃ",
+    "いろ",
+    "きいろい"
+   ],
+   "answer": "きいろい",
+   "nghia": "Màu vàng (tính từ)",
+   "q_num": 9
+  },
+  {
+   "type": "H2K",
+   "prompt": "「けしき」 viết Kanji thế nào?",
+   "options": [
+    "景色",
+    "色んな",
+    "勉強",
+    "研究"
+   ],
+   "answer": "景色",
+   "nghia": "Cảnh vật, phong cảnh",
+   "q_num": 10
+  },
+  {
+   "type": "K2H",
+   "prompt": "「丸い」 đọc là gì?",
+   "options": [
+    "たに",
+    "かんじ",
+    "まるい",
+    "つかう"
+   ],
+   "answer": "まるい",
+   "nghia": "Tròn",
+   "q_num": 11
+  },
+  {
+   "type": "H2K",
+   "prompt": "「かぜ」 viết Kanji thế nào?",
+   "options": [
+    "歴史",
+    "化粧品",
+    "風",
+    "決まる"
+   ],
+   "answer": "風",
+   "nghia": "Gió",
+   "q_num": 12
+  },
+  {
+   "type": "K2H",
+   "prompt": "「散歩」 đọc là gì?",
+   "options": [
+    "れきし",
+    "きいろい",
+    "さんぽ",
+    "きいろ"
+   ],
+   "answer": "さんぽ",
+   "nghia": "Đi dạo",
+   "q_num": 13
+  },
+  {
+   "type": "K2H",
+   "prompt": "「大使館」 đọc là gì?",
+   "options": [
+    "とまる",
+    "ばんごはん",
+    "たいしかん",
+    "まる"
+   ],
+   "answer": "たいしかん",
+   "nghia": "Đại sứ quán",
+   "q_num": 14
+  },
+  {
+   "type": "K2H",
+   "prompt": "「興味」 đọc là gì?",
+   "options": [
+    "あじ",
+    "きいろい",
+    "はつめい",
+    "きょうみ"
+   ],
+   "answer": "きょうみ",
+   "nghia": "Hứng thú",
+   "q_num": 15
+  },
+  {
+   "type": "K2H",
+   "prompt": "「決まる」 đọc là gì?",
+   "options": [
+    "ばんごはん",
+    "きまる",
+    "むし",
+    "きめる"
+   ],
+   "answer": "きまる",
+   "nghia": "Được quyết định",
+   "q_num": 16
+  },
+  {
+   "type": "K2H",
+   "prompt": "「決める」 đọc là gì?",
+   "options": [
+    "あぶら",
+    "きめる",
+    "しよう",
+    "たいしかん"
+   ],
+   "answer": "きめる",
+   "nghia": "Quyết định",
+   "q_num": 17
+  },
+  {
+   "type": "H2K",
+   "prompt": "「ちょうみりょう」 viết Kanji thế nào?",
+   "options": [
+    "勉強",
+    "晩ご飯",
+    "調味料",
+    "信号"
+   ],
+   "answer": "調味料",
+   "nghia": "Gia vị",
+   "q_num": 18
+  },
+  {
+   "type": "H2K",
+   "prompt": "「はつおん」 viết Kanji thế nào?",
+   "options": [
+    "丸",
+    "発音",
+    "使用",
+    "丸い"
+   ],
+   "answer": "発音",
+   "nghia": "Phát âm",
+   "q_num": 19
+  },
+  {
+   "type": "K2H",
+   "prompt": "「化粧品」 đọc là gì?",
+   "options": [
+    "たいふう",
+    "あじ",
+    "ちゅうし",
+    "けしょうひん"
+   ],
+   "answer": "けしょうひん",
+   "nghia": "Mỹ phẩm",
+   "q_num": 20
+  },
+  {
+   "type": "H2K",
+   "prompt": "「とめる」 viết Kanji thế nào?",
+   "options": [
+    "漢字",
+    "電話番号",
+    "船",
+    "止める"
+   ],
+   "answer": "止める",
+   "nghia": "Dừng (tha động)",
+   "q_num": 21
+  },
+  {
+   "type": "K2H",
+   "prompt": "「黄色」 đọc là gì?",
+   "options": [
+    "いろんな",
+    "けしき",
+    "たに",
+    "きいろ"
+   ],
+   "answer": "きいろ",
+   "nghia": "Màu vàng",
+   "q_num": 22
+  },
+  {
+   "type": "K2H",
+   "prompt": "「今晩」 đọc là gì?",
+   "options": [
+    "こんばん",
+    "はっけん",
+    "かぜ",
+    "たいしかん"
+   ],
+   "answer": "こんばん",
+   "nghia": "Tối nay",
+   "q_num": 23
+  },
+  {
+   "type": "K2H",
+   "prompt": "「信号」 đọc là gì?",
+   "options": [
+    "しゅっぱつ",
+    "しんごう",
+    "ばんごはん",
+    "けんきゅう"
+   ],
+   "answer": "しんごう",
+   "nghia": "Đèn giao thông",
+   "q_num": 24
+  },
+  {
+   "type": "H2K",
+   "prompt": "「ちゅうし」 viết Kanji thế nào?",
+   "options": [
+    "決める",
+    "茶色",
+    "中止",
+    "散歩"
+   ],
+   "answer": "中止",
+   "nghia": "Hủy bỏ, ngừng",
+   "q_num": 25
+  },
+  {
+   "type": "K2H",
+   "prompt": "「暗証番号」 đọc là gì?",
+   "options": [
+    "はつおん",
+    "ちゅうし",
+    "あんしょうばんごう",
+    "かんじ"
+   ],
+   "answer": "あんしょうばんごう",
+   "nghia": "Mã PIN",
+   "q_num": 26
+  },
+  {
+   "type": "K2H",
+   "prompt": "「風邪」 đọc là gì?",
+   "options": [
+    "まる",
+    "さんぽ",
+    "かぜ",
+    "ふね"
+   ],
+   "answer": "かぜ",
+   "nghia": "Cảm lạnh",
+   "q_num": 27
+  },
+  {
+   "type": "H2K",
+   "prompt": "「はつめい」 viết Kanji thế nào?",
+   "options": [
+    "谷",
+    "止まる",
+    "発明",
+    "使う"
+   ],
+   "answer": "発明",
+   "nghia": "Phát minh",
+   "q_num": 28
+  },
+  {
+   "type": "K2H",
+   "prompt": "「商品」 đọc là gì?",
+   "options": [
+    "さんぽ",
+    "はつおん",
+    "けんきゅうしゃ",
+    "しょうひん"
+   ],
+   "answer": "しょうひん",
+   "nghia": "Hàng hóa",
+   "q_num": 29
+  },
+  {
+   "type": "H2K",
+   "prompt": "「はっけん」 viết Kanji thế nào?",
+   "options": [
+    "発見",
+    "油",
+    "発売",
+    "商品"
+   ],
+   "answer": "発見",
+   "nghia": "Phát hiện",
+   "q_num": 30
+  }
+ ],
+ "4": [
+  {
+   "type": "H2K",
+   "prompt": "「きゅうりょう」 viết Kanji thế nào?",
+   "options": [
+    "速い",
+    "給料",
+    "顔",
+    "万里の長城"
+   ],
+   "answer": "給料",
+   "nghia": "Tiền lương",
+   "q_num": 1
+  },
+  {
+   "type": "H2K",
+   "prompt": "「なく」 viết Kanji thế nào?",
+   "options": [
+    "若い",
+    "野球",
+    "鳴く",
+    "交通"
+   ],
+   "answer": "鳴く",
+   "nghia": "Kêu (động vật)",
+   "q_num": 2
+  },
+  {
+   "type": "H2K",
+   "prompt": "「やきゅう」 viết Kanji thế nào?",
+   "options": [
+    "電話番号",
+    "顔",
+    "野球",
+    "番組"
+   ],
+   "answer": "野球",
+   "nghia": "Bóng chày",
+   "q_num": 3
+  },
+  {
+   "type": "K2H",
+   "prompt": "「今週」 đọc là gì?",
+   "options": [
+    "こんしゅう",
+    "なく",
+    "さらいしゅう",
+    "たべほうだい"
+   ],
+   "answer": "こんしゅう",
+   "nghia": "Tuần này",
+   "q_num": 4
+  },
+  {
+   "type": "K2H",
+   "prompt": "「食べ放題」 đọc là gì?",
+   "options": [
+    "さといも",
+    "りょうり",
+    "ざいりょう",
+    "たべほうだい"
+   ],
+   "answer": "たべほうだい",
+   "nghia": "Ăn thoải mái (buffet)",
+   "q_num": 5
+  },
+  {
+   "type": "H2K",
+   "prompt": "「なる」 viết Kanji thế nào?",
+   "options": [
+    "島",
+    "私",
+    "電話番号",
+    "鳴る"
+   ],
+   "answer": "鳴る",
+   "nghia": "Reo, kêu (chuông)",
+   "q_num": 6
+  },
+  {
+   "type": "H2K",
+   "prompt": "「あんしょうばんごう」 viết Kanji thế nào?",
+   "options": [
+    "交番",
+    "通う",
+    "教科書",
+    "暗証番号"
+   ],
+   "answer": "暗証番号",
+   "nghia": "Mã PIN",
+   "q_num": 7
+  },
+  {
+   "type": "K2H",
+   "prompt": "「郵便局」 đọc là gì?",
+   "options": [
+    "いちばん",
+    "ゆうびんきょく",
+    "しゅうまつ",
+    "やさい"
+   ],
+   "answer": "ゆうびんきょく",
+   "nghia": "Bưu điện",
+   "q_num": 8
+  },
+  {
+   "type": "K2H",
+   "prompt": "「宿題」 đọc là gì?",
+   "options": [
+    "はやい",
+    "でんわばんごう",
+    "あんしょうばんごう",
+    "しゅくだい"
+   ],
+   "answer": "しゅくだい",
+   "nghia": "Bài tập về nhà",
+   "q_num": 9
+  },
+  {
+   "type": "H2K",
+   "prompt": "「とり」 viết Kanji thế nào?",
+   "options": [
+    "野菜",
+    "里芋",
+    "鳥",
+    "宅配便"
+   ],
+   "answer": "鳥",
+   "nghia": "Chim",
+   "q_num": 10
+  },
+  {
+   "type": "K2H",
+   "prompt": "「週末」 đọc là gì?",
+   "options": [
+    "しょくりょうひん",
+    "しゅうまつ",
+    "ちょうみりょう",
+    "しゅうり"
+   ],
+   "answer": "しゅうまつ",
+   "nghia": "Cuối tuần",
+   "q_num": 11
+  },
+  {
+   "type": "K2H",
+   "prompt": "「島」 đọc là gì?",
+   "options": [
+    "けしょう",
+    "しま",
+    "かかりいん",
+    "かんけい"
+   ],
+   "answer": "しま",
+   "nghia": "Đảo",
+   "q_num": 12
+  },
+  {
+   "type": "K2H",
+   "prompt": "「調味料」 đọc là gì?",
+   "options": [
+    "しゅうまつ",
+    "やさい",
+    "りよう",
+    "ちょうみりょう"
+   ],
+   "answer": "ちょうみりょう",
+   "nghia": "Gia vị",
+   "q_num": 13
+  },
+  {
+   "type": "H2K",
+   "prompt": "「りょうり」 viết Kanji thế nào?",
+   "options": [
+    "利用",
+    "交通",
+    "材料",
+    "料理"
+   ],
+   "answer": "料理",
+   "nghia": "Món ăn, nấu ăn",
+   "q_num": 14
+  },
+  {
+   "type": "H2K",
+   "prompt": "「きょうかしょ」 viết Kanji thế nào?",
+   "options": [
+    "不便",
+    "料理",
+    "係員",
+    "教科書"
+   ],
+   "answer": "教科書",
+   "nghia": "Sách giáo khoa",
+   "q_num": 15
+  },
+  {
+   "type": "K2H",
+   "prompt": "「私」 đọc là gì?",
+   "options": [
+    "やさい",
+    "さらいしゅう",
+    "わたし",
+    "おくさん"
+   ],
+   "answer": "わたし",
+   "nghia": "Tôi",
+   "q_num": 16
+  },
+  {
+   "type": "K2H",
+   "prompt": "「化粧品」 đọc là gì?",
+   "options": [
+    "こんしゅう",
+    "けしょうひん",
+    "しょくりょうひん",
+    "りょうり"
+   ],
+   "answer": "けしょうひん",
+   "nghia": "Mỹ phẩm",
+   "q_num": 17
+  },
+  {
+   "type": "K2H",
+   "prompt": "「無料」 đọc là gì?",
+   "options": [
+    "かがく",
+    "かよう",
+    "でんわばんごう",
+    "むりょう"
+   ],
+   "answer": "むりょう",
+   "nghia": "Miễn phí",
+   "q_num": 18
+  },
+  {
+   "type": "H2K",
+   "prompt": "「ぶんか」 viết Kanji thế nào?",
+   "options": [
+    "暗証番号",
+    "便利",
+    "文化",
+    "里芋"
+   ],
+   "answer": "文化",
+   "nghia": "Văn hóa",
+   "q_num": 19
+  },
+  {
+   "type": "K2H",
+   "prompt": "「化粧」 đọc là gì?",
+   "options": [
+    "ばんりのちょうじょう",
+    "りよう",
+    "かかりいん",
+    "けしょう"
+   ],
+   "answer": "けしょう",
+   "nghia": "Trang điểm",
+   "q_num": 20
+  },
+  {
+   "type": "H2K",
+   "prompt": "「かんけい」 viết Kanji thế nào?",
+   "options": [
+    "郵便局",
+    "交番",
+    "化粧",
+    "関係"
+   ],
+   "answer": "関係",
+   "nghia": "Quan hệ",
+   "q_num": 21
+  },
+  {
+   "type": "H2K",
+   "prompt": "「こうばん」 viết Kanji thế nào?",
+   "options": [
+    "週末",
+    "材料",
+    "交番",
+    "野球"
+   ],
+   "answer": "交番",
+   "nghia": "Đồn cảnh sát",
+   "q_num": 22
+  },
+  {
+   "type": "K2H",
+   "prompt": "「奥さん」 đọc là gì?",
+   "options": [
+    "かがく",
+    "あんしょうばんごう",
+    "かかりいん",
+    "おくさん"
+   ],
+   "answer": "おくさん",
+   "nghia": "Vợ (người khác)",
+   "q_num": 23
+  },
+  {
+   "type": "K2H",
+   "prompt": "「顔」 đọc là gì?",
+   "options": [
+    "おく",
+    "かお",
+    "あんしょうばんごう",
+    "わたし"
+   ],
+   "answer": "かお",
+   "nghia": "Mặt",
+   "q_num": 24
+  },
+  {
+   "type": "H2K",
+   "prompt": "「らいしゅう」 viết Kanji thế nào?",
+   "options": [
+    "来週",
+    "速い",
+    "私",
+    "宅配便"
+   ],
+   "answer": "来週",
+   "nghia": "Tuần sau",
+   "q_num": 25
+  },
+  {
+   "type": "K2H",
+   "prompt": "「通う」 đọc là gì?",
+   "options": [
+    "かよう",
+    "さといも",
+    "ゆうびんきょく",
+    "らいしゅう"
+   ],
+   "answer": "かよう",
+   "nghia": "Đi lại thường xuyên",
+   "q_num": 26
+  },
+  {
+   "type": "H2K",
+   "prompt": "「かがく」 viết Kanji thế nào?",
+   "options": [
+    "修理",
+    "来週",
+    "科学",
+    "速い"
+   ],
+   "answer": "科学",
+   "nghia": "Khoa học",
+   "q_num": 27
+  },
+  {
+   "type": "K2H",
+   "prompt": "「若い」 đọc là gì?",
+   "options": [
+    "らいしゅう",
+    "もんだい",
+    "わかい",
+    "しょくりょうひん"
+   ],
+   "answer": "わかい",
+   "nghia": "Trẻ",
+   "q_num": 28
+  },
+  {
+   "type": "H2K",
+   "prompt": "「せんしゅう」 viết Kanji thế nào?",
+   "options": [
+    "鳴る",
+    "先週",
+    "暗証番号",
+    "電話番号"
+   ],
+   "answer": "先週",
+   "nghia": "Tuần trước",
+   "q_num": 29
+  },
+  {
+   "type": "H2K",
+   "prompt": "「しゅうり」 viết Kanji thế nào?",
+   "options": [
+    "今週",
+    "顔",
+    "通う",
+    "修理"
+   ],
+   "answer": "修理",
+   "nghia": "Sửa chữa",
+   "q_num": 30
+  }
+ ],
+ "5": [
+  {
+   "type": "H2K",
+   "prompt": "「くろ」 viết Kanji thế nào?",
+   "options": [
+    "黒",
+    "弟",
+    "医者",
+    "社員"
+   ],
+   "answer": "黒",
+   "nghia": "Màu đen",
+   "q_num": 1
+  },
+  {
+   "type": "H2K",
+   "prompt": "「あく」 viết Kanji thế nào?",
+   "options": [
+    "駅員",
+    "店長",
+    "会社員",
+    "開く"
+   ],
+   "answer": "開く",
+   "nghia": "Mở (tự động)",
+   "q_num": 2
+  },
+  {
+   "type": "H2K",
+   "prompt": "「おねえさん」 viết Kanji thế nào?",
+   "options": [
+    "黒",
+    "都合",
+    "全員",
+    "お姉さん"
+   ],
+   "answer": "お姉さん",
+   "nghia": "Chị gái (người khác)",
+   "q_num": 3
+  },
+  {
+   "type": "K2H",
+   "prompt": "「考える」 đọc là gì?",
+   "options": [
+    "かんがえる",
+    "えきいん",
+    "みせ",
+    "あね"
+   ],
+   "answer": "かんがえる",
+   "nghia": "Suy nghĩ",
+   "q_num": 4
+  },
+  {
+   "type": "H2K",
+   "prompt": "「てんちょう」 viết Kanji thế nào?",
+   "options": [
+    "店長",
+    "駅員",
+    "姉",
+    "地下鉄"
+   ],
+   "answer": "店長",
+   "nghia": "Quản lý cửa hàng",
+   "q_num": 5
+  },
+  {
+   "type": "K2H",
+   "prompt": "「閉まる」 đọc là gì?",
+   "options": [
+    "きょうだい",
+    "てんすう",
+    "みせ",
+    "しまる"
+   ],
+   "answer": "しまる",
+   "nghia": "Đóng (tự động)",
+   "q_num": 6
+  },
+  {
+   "type": "K2H",
+   "prompt": "「社員」 đọc là gì?",
+   "options": [
+    "こうさてん",
+    "きょうだい",
+    "かんがえる",
+    "しゃいん"
+   ],
+   "answer": "しゃいん",
+   "nghia": "Nhân viên công ty",
+   "q_num": 7
+  },
+  {
+   "type": "H2K",
+   "prompt": "「こくばん」 viết Kanji thế nào?",
+   "options": [
+    "黒板",
+    "全員",
+    "全然",
+    "点"
+   ],
+   "answer": "黒板",
+   "nghia": "Bảng đen",
+   "q_num": 8
+  },
+  {
+   "type": "K2H",
+   "prompt": "「閉じる」 đọc là gì?",
+   "options": [
+    "とじる",
+    "てんすう",
+    "しまい",
+    "ひきだし"
+   ],
+   "answer": "とじる",
+   "nghia": "Đóng lại",
+   "q_num": 9
+  },
+  {
+   "type": "K2H",
+   "prompt": "「店員」 đọc là gì?",
+   "options": [
+    "まっくろ",
+    "てんいん",
+    "かいし",
+    "かんがえる"
+   ],
+   "answer": "てんいん",
+   "nghia": "Nhân viên cửa hàng",
+   "q_num": 10
+  },
+  {
+   "type": "K2H",
+   "prompt": "「全員」 đọc là gì?",
+   "options": [
+    "ぎもん",
+    "みせ",
+    "しゃいん",
+    "ぜんいん"
+   ],
+   "answer": "ぜんいん",
+   "nghia": "Tất cả mọi người",
+   "q_num": 11
+  },
+  {
+   "type": "H2K",
+   "prompt": "「つま」 viết Kanji thế nào?",
+   "options": [
+    "妻",
+    "支度",
+    "暑い",
+    "真っ黒"
+   ],
+   "answer": "妻",
+   "nghia": "Vợ",
+   "q_num": 12
+  },
+  {
+   "type": "K2H",
+   "prompt": "「駅員」 đọc là gì?",
+   "options": [
+    "えきいん",
+    "おとうとさん",
+    "したく",
+    "けんきゅうしゃ"
+   ],
+   "answer": "えきいん",
+   "nghia": "Nhân viên nhà ga",
+   "q_num": 13
+  },
+  {
+   "type": "K2H",
+   "prompt": "「姉」 đọc là gì?",
+   "options": [
+    "ぜんぜん",
+    "ぎもん",
+    "てんちょう",
+    "あね"
+   ],
+   "answer": "あね",
+   "nghia": "Chị gái",
+   "q_num": 14
+  },
+  {
+   "type": "H2K",
+   "prompt": "「おくる」 viết Kanji thế nào?",
+   "options": [
+    "送る",
+    "妻",
+    "開始",
+    "駅員"
+   ],
+   "answer": "送る",
+   "nghia": "Gửi, tiễn",
+   "q_num": 15
+  },
+  {
+   "type": "H2K",
+   "prompt": "「こんど」 viết Kanji thế nào?",
+   "options": [
+    "都合",
+    "天気予報",
+    "今度",
+    "社員"
+   ],
+   "answer": "今度",
+   "nghia": "Lần này, lần sau",
+   "q_num": 16
+  },
+  {
+   "type": "K2H",
+   "prompt": "「黒い」 đọc là gì?",
+   "options": [
+    "はいしゃ",
+    "しまい",
+    "きっさてん",
+    "くろい"
+   ],
+   "answer": "くろい",
+   "nghia": "Đen (tính từ)",
+   "q_num": 17
+  },
+  {
+   "type": "H2K",
+   "prompt": "「てん」 viết Kanji thế nào?",
+   "options": [
+    "弱い",
+    "点",
+    "研究者",
+    "引き出し"
+   ],
+   "answer": "点",
+   "nghia": "Điểm",
+   "q_num": 18
+  },
+  {
+   "type": "H2K",
+   "prompt": "「しつもん」 viết Kanji thế nào?",
+   "options": [
+    "弱い",
+    "兄弟",
+    "全員",
+    "質問"
+   ],
+   "answer": "質問",
+   "nghia": "Câu hỏi",
+   "q_num": 19
+  },
+  {
+   "type": "K2H",
+   "prompt": "「点数」 đọc là gì?",
+   "options": [
+    "てんすう",
+    "おっと",
+    "つごう",
+    "しつもん"
+   ],
+   "answer": "てんすう",
+   "nghia": "Điểm số",
+   "q_num": 20
+  },
+  {
+   "type": "H2K",
+   "prompt": "「いもうと」 viết Kanji thế nào?",
+   "options": [
+    "送る",
+    "点",
+    "妹",
+    "今度"
+   ],
+   "answer": "妹",
+   "nghia": "Em gái",
+   "q_num": 21
+  },
+  {
+   "type": "H2K",
+   "prompt": "「したく」 viết Kanji thế nào?",
+   "options": [
+    "社員",
+    "喫茶店",
+    "支度",
+    "会社員"
+   ],
+   "answer": "支度",
+   "nghia": "Chuẩn bị",
+   "q_num": 22
+  },
+  {
+   "type": "K2H",
+   "prompt": "「天気」 đọc là gì?",
+   "options": [
+    "こんど",
+    "くろ",
+    "けんきゅうしゃ",
+    "てんき"
+   ],
+   "answer": "てんき",
+   "nghia": "Thời tiết",
+   "q_num": 23
+  },
+  {
+   "type": "K2H",
+   "prompt": "「〜度」 đọc là gì?",
+   "options": [
+    "みせ",
+    "ぎもん",
+    "よわい",
+    "ど"
+   ],
+   "answer": "ど",
+   "nghia": "Độ (đơn vị)",
+   "q_num": 24
+  },
+  {
+   "type": "K2H",
+   "prompt": "「医者」 đọc là gì?",
+   "options": [
+    "かす",
+    "とじる",
+    "いしゃ",
+    "えきいん"
+   ],
+   "answer": "いしゃ",
+   "nghia": "Bác sĩ",
+   "q_num": 25
+  },
+  {
+   "type": "H2K",
+   "prompt": "「おとうとさん」 viết Kanji thế nào?",
+   "options": [
+    "自然",
+    "姉妹",
+    "今度",
+    "弟さん"
+   ],
+   "answer": "弟さん",
+   "nghia": "Em trai (người khác)",
+   "q_num": 26
+  },
+  {
+   "type": "H2K",
+   "prompt": "「とかい」 viết Kanji thế nào?",
+   "options": [
+    "疑問",
+    "全然",
+    "姉妹",
+    "都会"
+   ],
+   "answer": "都会",
+   "nghia": "Thành phố, đô thị",
+   "q_num": 27
+  },
+  {
+   "type": "H2K",
+   "prompt": "「みせ」 viết Kanji thế nào?",
+   "options": [
+    "地下鉄",
+    "店",
+    "疑問",
+    "天気"
+   ],
+   "answer": "店",
+   "nghia": "Cửa hàng",
+   "q_num": 28
+  },
+  {
+   "type": "K2H",
+   "prompt": "「弟」 đọc là gì?",
+   "options": [
+    "おとうと",
+    "きょうだい",
+    "ど",
+    "ぎもん"
+   ],
+   "answer": "おとうと",
+   "nghia": "Em trai",
+   "q_num": 29
+  },
+  {
+   "type": "K2H",
+   "prompt": "「夫」 đọc là gì?",
+   "options": [
+    "しつもん",
+    "ぎもん",
+    "おっと",
+    "しめる"
+   ],
+   "answer": "おっと",
+   "nghia": "Chồng",
+   "q_num": 30
+  }
+ ],
+ "6": [
+  {
+   "type": "K2H",
+   "prompt": "「遅延」 đọc là gì?",
+   "options": [
+    "ようじ",
+    "ちえん",
+    "きる",
+    "せいふく"
+   ],
+   "answer": "ちえん",
+   "nghia": "Trì hoãn, chậm trễ",
+   "q_num": 1
+  },
+  {
+   "type": "H2K",
+   "prompt": "「ゆび」 viết Kanji thế nào?",
+   "options": [
+    "指",
+    "大事",
+    "早起き",
+    "空港"
+   ],
+   "answer": "指",
+   "nghia": "Ngón tay",
+   "q_num": 2
+  },
+  {
+   "type": "H2K",
+   "prompt": "「きもの」 viết Kanji thế nào?",
+   "options": [
+    "目薬",
+    "洋服",
+    "薬",
+    "着物"
+   ],
+   "answer": "着物",
+   "nghia": "Kimono",
+   "q_num": 3
+  },
+  {
+   "type": "H2K",
+   "prompt": "「ようじ」 viết Kanji thế nào?",
+   "options": [
+    "火事",
+    "洋服",
+    "用事",
+    "上着"
+   ],
+   "answer": "用事",
+   "nghia": "Việc cần làm",
+   "q_num": 4
+  },
+  {
+   "type": "K2H",
+   "prompt": "「上着」 đọc là gì?",
+   "options": [
+    "うわぎ",
+    "ゆびわ",
+    "おしえる",
+    "おきゃくさま"
+   ],
+   "answer": "うわぎ",
+   "nghia": "Áo khoác ngoài",
+   "q_num": 5
+  },
+  {
+   "type": "K2H",
+   "prompt": "「音楽」 đọc là gì?",
+   "options": [
+    "にっき",
+    "おくさま",
+    "ゆうきゅう",
+    "おんがく"
+   ],
+   "answer": "おんがく",
+   "nghia": "Âm nhạc",
+   "q_num": 6
+  },
+  {
+   "type": "H2K",
+   "prompt": "「おこす」 viết Kanji thế nào?",
+   "options": [
+    "有名人",
+    "起こす",
+    "指輪",
+    "空港"
+   ],
+   "answer": "起こす",
+   "nghia": "Đánh thức, gây ra",
+   "q_num": 7
+  },
+  {
+   "type": "K2H",
+   "prompt": "「指輪」 đọc là gì?",
+   "options": [
+    "よやく",
+    "ゆびわ",
+    "せいふく",
+    "たのしむ"
+   ],
+   "answer": "ゆびわ",
+   "nghia": "Nhẫn",
+   "q_num": 8
+  },
+  {
+   "type": "H2K",
+   "prompt": "「たのしみ」 viết Kanji thế nào?",
+   "options": [
+    "押す",
+    "上着",
+    "楽しみ",
+    "工事"
+   ],
+   "answer": "楽しみ",
+   "nghia": "Sự mong đợi, niềm vui",
+   "q_num": 9
+  },
+  {
+   "type": "K2H",
+   "prompt": "「押す」 đọc là gì?",
+   "options": [
+    "おす",
+    "ようしょく",
+    "ちこく",
+    "たのしむ"
+   ],
+   "answer": "おす",
+   "nghia": "Đẩy, nhấn",
+   "q_num": 10
+  },
+  {
+   "type": "H2K",
+   "prompt": "「ゆうめい」 viết Kanji thế nào?",
+   "options": [
+    "予想",
+    "奥様",
+    "有名",
+    "起こす"
+   ],
+   "answer": "有名",
+   "nghia": "Nổi tiếng",
+   "q_num": 11
+  },
+  {
+   "type": "H2K",
+   "prompt": "「はやおき」 viết Kanji thế nào?",
+   "options": [
+    "奥様",
+    "洋服",
+    "早起き",
+    "大事"
+   ],
+   "answer": "早起き",
+   "nghia": "Dậy sớm",
+   "q_num": 12
+  },
+  {
+   "type": "K2H",
+   "prompt": "「工事」 đọc là gì?",
+   "options": [
+    "こうじ",
+    "たのしい",
+    "ようふく",
+    "きょういく"
+   ],
+   "answer": "こうじ",
+   "nghia": "Công trình",
+   "q_num": 13
+  },
+  {
+   "type": "H2K",
+   "prompt": "「せいふく」 viết Kanji thế nào?",
+   "options": [
+    "楽器",
+    "制服",
+    "予想",
+    "事故"
+   ],
+   "answer": "制服",
+   "nghia": "Đồng phục",
+   "q_num": 14
+  },
+  {
+   "type": "H2K",
+   "prompt": "「てんきよほう」 viết Kanji thế nào?",
+   "options": [
+    "指輪",
+    "数える",
+    "洋服",
+    "天気予報"
+   ],
+   "answer": "天気予報",
+   "nghia": "Dự báo thời tiết",
+   "q_num": 15
+  },
+  {
+   "type": "K2H",
+   "prompt": "「着る」 đọc là gì?",
+   "options": [
+    "おんがく",
+    "かじ",
+    "こえ",
+    "きる"
+   ],
+   "answer": "きる",
+   "nghia": "Mặc",
+   "q_num": 16
+  },
+  {
+   "type": "H2K",
+   "prompt": "「おしえる」 viết Kanji thế nào?",
+   "options": [
+    "予約",
+    "予定",
+    "教える",
+    "予習"
+   ],
+   "answer": "教える",
+   "nghia": "Dạy",
+   "q_num": 17
+  },
+  {
+   "type": "K2H",
+   "prompt": "「才能」 đọc là gì?",
+   "options": [
+    "かぞえる",
+    "さいのう",
+    "ゆび",
+    "ふく"
+   ],
+   "answer": "さいのう",
+   "nghia": "Tài năng",
+   "q_num": 18
+  },
+  {
+   "type": "H2K",
+   "prompt": "「しちゃく」 viết Kanji thế nào?",
+   "options": [
+    "教える",
+    "楽しむ",
+    "試着",
+    "事務所"
+   ],
+   "answer": "試着",
+   "nghia": "Mặc thử",
+   "q_num": 19
+  },
+  {
+   "type": "K2H",
+   "prompt": "「服」 đọc là gì?",
+   "options": [
+    "はやおき",
+    "くすり",
+    "そだてる",
+    "ふく"
+   ],
+   "answer": "ふく",
+   "nghia": "Quần áo",
+   "q_num": 20
+  },
+  {
+   "type": "H2K",
+   "prompt": "「てんさい」 viết Kanji thế nào?",
+   "options": [
+    "大事",
+    "日記",
+    "楽しみ",
+    "天才"
+   ],
+   "answer": "天才",
+   "nghia": "Thiên tài",
+   "q_num": 21
+  },
+  {
+   "type": "K2H",
+   "prompt": "「楽器」 đọc là gì?",
+   "options": [
+    "がっき",
+    "おしえる",
+    "かず",
+    "めぐすり"
+   ],
+   "answer": "がっき",
+   "nghia": "Nhạc cụ",
+   "q_num": 22
+  },
+  {
+   "type": "K2H",
+   "prompt": "「楽しむ」 đọc là gì?",
+   "options": [
+    "そだつ",
+    "よやく",
+    "きょういく",
+    "たのしむ"
+   ],
+   "answer": "たのしむ",
+   "nghia": "Hưởng thụ",
+   "q_num": 23
+  },
+  {
+   "type": "K2H",
+   "prompt": "「予習」 đọc là gì?",
+   "options": [
+    "くすり",
+    "よしゅう",
+    "おこす",
+    "しごと"
+   ],
+   "answer": "よしゅう",
+   "nghia": "Học trước bài",
+   "q_num": 24
+  },
+  {
+   "type": "K2H",
+   "prompt": "「目薬」 đọc là gì?",
+   "options": [
+    "めぐすり",
+    "きょうしつ",
+    "すうじ",
+    "ゆび"
+   ],
+   "answer": "めぐすり",
+   "nghia": "Thuốc nhỏ mắt",
+   "q_num": 25
+  },
+  {
+   "type": "H2K",
+   "prompt": "「よてい」 viết Kanji thế nào?",
+   "options": [
+    "教える",
+    "日記",
+    "楽しみ",
+    "予定"
+   ],
+   "answer": "予定",
+   "nghia": "Dự định, kế hoạch",
+   "q_num": 26
+  },
+  {
+   "type": "K2H",
+   "prompt": "「数」 đọc là gì?",
+   "options": [
+    "おきゃくさま",
+    "きょうし",
+    "かず",
+    "すうじ"
+   ],
+   "answer": "かず",
+   "nghia": "Số lượng",
+   "q_num": 27
+  },
+  {
+   "type": "H2K",
+   "prompt": "「おきる」 viết Kanji thế nào?",
+   "options": [
+    "数える",
+    "制服",
+    "事故",
+    "起きる"
+   ],
+   "answer": "起きる",
+   "nghia": "Thức dậy, xảy ra",
+   "q_num": 28
+  },
+  {
+   "type": "H2K",
+   "prompt": "「だいじ」 viết Kanji thế nào?",
+   "options": [
+    "早起き",
+    "数学",
+    "仕事",
+    "大事"
+   ],
+   "answer": "大事",
+   "nghia": "Quan trọng",
+   "q_num": 29
+  },
+  {
+   "type": "K2H",
+   "prompt": "「教育」 đọc là gì?",
+   "options": [
+    "おす",
+    "きょういく",
+    "そだつ",
+    "きょうし"
+   ],
+   "answer": "きょういく",
+   "nghia": "Giáo dục",
+   "q_num": 30
+  }
+ ],
+ "7": [
+  {
+   "type": "K2H",
+   "prompt": "「経済」 đọc là gì?",
+   "options": [
+    "けいざい",
+    "きゅうけいしつ",
+    "もんく",
+    "かいぎしつ"
+   ],
+   "answer": "けいざい",
+   "nghia": "Kinh tế",
+   "q_num": 1
+  },
+  {
+   "type": "K2H",
+   "prompt": "「実験」 đọc là gì?",
+   "options": [
+    "ほんや",
+    "ぜんぶ",
+    "はね",
+    "じっけん"
+   ],
+   "answer": "じっけん",
+   "nghia": "Thí nghiệm",
+   "q_num": 2
+  },
+  {
+   "type": "H2K",
+   "prompt": "「えき」 viết Kanji thế nào?",
+   "options": [
+    "駅",
+    "乗り場",
+    "論文",
+    "売り場"
+   ],
+   "answer": "駅",
+   "nghia": "Nhà ga",
+   "q_num": 3
+  },
+  {
+   "type": "H2K",
+   "prompt": "「けいと」 viết Kanji thế nào?",
+   "options": [
+    "文句",
+    "毛糸",
+    "入院",
+    "降りる"
+   ],
+   "answer": "毛糸",
+   "nghia": "Len",
+   "q_num": 4
+  },
+  {
+   "type": "H2K",
+   "prompt": "「こうじょう」 viết Kanji thế nào?",
+   "options": [
+    "習う",
+    "試験",
+    "工場",
+    "系"
+   ],
+   "answer": "工場",
+   "nghia": "Nhà máy",
+   "q_num": 5
+  },
+  {
+   "type": "K2H",
+   "prompt": "「馬」 đọc là gì?",
+   "options": [
+    "おりがみ",
+    "よしゅう",
+    "れんしゅう",
+    "うま"
+   ],
+   "answer": "うま",
+   "nghia": "Ngựa",
+   "q_num": 6
+  },
+  {
+   "type": "H2K",
+   "prompt": "「しけん」 viết Kanji thế nào?",
+   "options": [
+    "駅前",
+    "細い",
+    "入院",
+    "試験"
+   ],
+   "answer": "試験",
+   "nghia": "Kỳ thi",
+   "q_num": 7
+  },
+  {
+   "type": "K2H",
+   "prompt": "「緑」 đọc là gì?",
+   "options": [
+    "でんきや",
+    "みどり",
+    "さくぶん",
+    "だいがくいん"
+   ],
+   "answer": "みどり",
+   "nghia": "Màu xanh lá",
+   "q_num": 8
+  },
+  {
+   "type": "K2H",
+   "prompt": "「病院」 đọc là gì?",
+   "options": [
+    "よしゅう",
+    "しょくどう",
+    "かみ",
+    "びょういん"
+   ],
+   "answer": "びょういん",
+   "nghia": "Bệnh viện",
+   "q_num": 9
+  },
+  {
+   "type": "H2K",
+   "prompt": "「きょうしつ」 viết Kanji thế nào?",
+   "options": [
+    "赤",
+    "電気屋",
+    "系",
+    "教室"
+   ],
+   "answer": "教室",
+   "nghia": "Phòng học",
+   "q_num": 10
+  },
+  {
+   "type": "K2H",
+   "prompt": "「反対」 đọc là gì?",
+   "options": [
+    "はんたい",
+    "えきまえ",
+    "へや",
+    "みどり"
+   ],
+   "answer": "はんたい",
+   "nghia": "Phản đối, ngược lại",
+   "q_num": 11
+  },
+  {
+   "type": "H2K",
+   "prompt": "「あか」 viết Kanji thế nào?",
+   "options": [
+    "赤",
+    "駐車場",
+    "論文",
+    "電気屋"
+   ],
+   "answer": "赤",
+   "nghia": "Màu đỏ",
+   "q_num": 12
+  },
+  {
+   "type": "H2K",
+   "prompt": "「ぜんぶ」 viết Kanji thế nào?",
+   "options": [
+    "習う",
+    "全部",
+    "赤",
+    "入院"
+   ],
+   "answer": "全部",
+   "nghia": "Tất cả",
+   "q_num": 13
+  },
+  {
+   "type": "K2H",
+   "prompt": "「美容院」 đọc là gì?",
+   "options": [
+    "はんたい",
+    "こまかい",
+    "てがみ",
+    "びよういん"
+   ],
+   "answer": "びよういん",
+   "nghia": "Tiệm làm đẹp",
+   "q_num": 14
+  },
+  {
+   "type": "H2K",
+   "prompt": "「はしる」 viết Kanji thế nào?",
+   "options": [
+    "休憩室",
+    "走る",
+    "赤",
+    "経済"
+   ],
+   "answer": "走る",
+   "nghia": "Chạy",
+   "q_num": 15
+  },
+  {
+   "type": "H2K",
+   "prompt": "「おりる」 viết Kanji thế nào?",
+   "options": [
+    "降る",
+    "降りる",
+    "申し込み用紙",
+    "場所"
+   ],
+   "answer": "降りる",
+   "nghia": "Xuống (xe)",
+   "q_num": 16
+  },
+  {
+   "type": "K2H",
+   "prompt": "「電気屋」 đọc là gì?",
+   "options": [
+    "ふる",
+    "でんきや",
+    "もうしこみようし",
+    "きょうしつ"
+   ],
+   "answer": "でんきや",
+   "nghia": "Tiệm điện máy",
+   "q_num": 17
+  },
+  {
+   "type": "K2H",
+   "prompt": "「屋上」 đọc là gì?",
+   "options": [
+    "ちゅうしゃじょう",
+    "おくじょう",
+    "しょくどう",
+    "ぜったいに"
+   ],
+   "answer": "おくじょう",
+   "nghia": "Sân thượng",
+   "q_num": 18
+  },
+  {
+   "type": "K2H",
+   "prompt": "「会場」 đọc là gì?",
+   "options": [
+    "ろんぶん",
+    "ぜったいに",
+    "かいじょう",
+    "けいと"
+   ],
+   "answer": "かいじょう",
+   "nghia": "Hội trường",
+   "q_num": 19
+  },
+  {
+   "type": "K2H",
+   "prompt": "「細い」 đọc là gì?",
+   "options": [
+    "ならう",
+    "こうじょう",
+    "ほそい",
+    "もんく"
+   ],
+   "answer": "ほそい",
+   "nghia": "Mỏng, gầy",
+   "q_num": 20
+  },
+  {
+   "type": "K2H",
+   "prompt": "「食堂」 đọc là gì?",
+   "options": [
+    "おりがみ",
+    "あか",
+    "しょくどう",
+    "のりば"
+   ],
+   "answer": "しょくどう",
+   "nghia": "Nhà ăn, quán ăn",
+   "q_num": 21
+  },
+  {
+   "type": "H2K",
+   "prompt": "「てがみ」 viết Kanji thế nào?",
+   "options": [
+    "赤",
+    "復習",
+    "練習",
+    "手紙"
+   ],
+   "answer": "手紙",
+   "nghia": "Thư",
+   "q_num": 22
+  },
+  {
+   "type": "H2K",
+   "prompt": "「けい」 viết Kanji thế nào?",
+   "options": [
+    "系",
+    "本屋",
+    "部屋",
+    "全部"
+   ],
+   "answer": "系",
+   "nghia": "Hệ, dòng",
+   "q_num": 23
+  },
+  {
+   "type": "K2H",
+   "prompt": "「紙」 đọc là gì?",
+   "options": [
+    "かみ",
+    "あかい",
+    "ぶん",
+    "けいざい"
+   ],
+   "answer": "かみ",
+   "nghia": "Giấy",
+   "q_num": 24
+  },
+  {
+   "type": "K2H",
+   "prompt": "「羽」 đọc là gì?",
+   "options": [
+    "はしる",
+    "はね",
+    "かいじょう",
+    "れんしゅう"
+   ],
+   "answer": "はね",
+   "nghia": "Cánh (chim)",
+   "q_num": 25
+  },
+  {
+   "type": "H2K",
+   "prompt": "「ろんぶん」 viết Kanji thế nào?",
+   "options": [
+    "羽",
+    "論文",
+    "細かい",
+    "部長"
+   ],
+   "answer": "論文",
+   "nghia": "Luận văn",
+   "q_num": 26
+  },
+  {
+   "type": "H2K",
+   "prompt": "「さくぶん」 viết Kanji thế nào?",
+   "options": [
+    "文句",
+    "作文",
+    "習う",
+    "赤ちゃん"
+   ],
+   "answer": "作文",
+   "nghia": "Bài văn, tập làm văn",
+   "q_num": 27
+  },
+  {
+   "type": "H2K",
+   "prompt": "「ばしょ」 viết Kanji thế nào?",
+   "options": [
+    "文",
+    "入院",
+    "折り紙",
+    "場所"
+   ],
+   "answer": "場所",
+   "nghia": "Địa điểm",
+   "q_num": 28
+  },
+  {
+   "type": "K2H",
+   "prompt": "「練習」 đọc là gì?",
+   "options": [
+    "ぶちょう",
+    "ちゅうしゃじょう",
+    "れんしゅう",
+    "うま"
+   ],
+   "answer": "れんしゅう",
+   "nghia": "Luyện tập",
+   "q_num": 29
+  },
+  {
+   "type": "H2K",
+   "prompt": "「あかちゃん」 viết Kanji thế nào?",
+   "options": [
+    "毛糸",
+    "赤ちゃん",
+    "細かい",
+    "病院"
+   ],
+   "answer": "赤ちゃん",
+   "nghia": "Em bé",
+   "q_num": 30
+  }
+ ],
+ "8": [
+  {
+   "type": "H2K",
+   "prompt": "「よる」 viết Kanji thế nào?",
+   "options": [
+    "夜",
+    "お金持ち",
+    "作家",
+    "家族"
+   ],
+   "answer": "夜",
+   "nghia": "Đêm",
+   "q_num": 1
+  },
+  {
+   "type": "H2K",
+   "prompt": "「しずか」 viết Kanji thế nào?",
+   "options": [
+    "静か",
+    "家賃",
+    "今夜",
+    "旅館"
+   ],
+   "answer": "静か",
+   "nghia": "Yên tĩnh",
+   "q_num": 2
+  },
+  {
+   "type": "H2K",
+   "prompt": "「いえ」 viết Kanji thế nào?",
+   "options": [
+    "宅配便",
+    "急行",
+    "作業",
+    "家"
+   ],
+   "answer": "家",
+   "nghia": "Nhà",
+   "q_num": 3
+  },
+  {
+   "type": "K2H",
+   "prompt": "「青い」 đọc là gì?",
+   "options": [
+    "いそぐ",
+    "あおい",
+    "さっか",
+    "とくに"
+   ],
+   "answer": "あおい",
+   "nghia": "Xanh (tính từ)",
+   "q_num": 4
+  },
+  {
+   "type": "H2K",
+   "prompt": "「きゅうこう」 viết Kanji thế nào?",
+   "options": [
+    "静か",
+    "急行",
+    "実家",
+    "作る"
+   ],
+   "answer": "急行",
+   "nghia": "Tàu nhanh",
+   "q_num": 5
+  },
+  {
+   "type": "K2H",
+   "prompt": "「旅行客」 đọc là gì?",
+   "options": [
+    "さいてい",
+    "りょこうきゃく",
+    "えいが",
+    "はれる"
+   ],
+   "answer": "りょこうきゃく",
+   "nghia": "Khách du lịch",
+   "q_num": 6
+  },
+  {
+   "type": "K2H",
+   "prompt": "「答える」 đọc là gì?",
+   "options": [
+    "おたく",
+    "はれる",
+    "よる",
+    "こたえる"
+   ],
+   "answer": "こたえる",
+   "nghia": "Trả lời",
+   "q_num": 7
+  },
+  {
+   "type": "H2K",
+   "prompt": "「あお」 viết Kanji thế nào?",
+   "options": [
+    "晴れ",
+    "青",
+    "最低",
+    "急ぐ"
+   ],
+   "answer": "青",
+   "nghia": "Màu xanh",
+   "q_num": 8
+  },
+  {
+   "type": "K2H",
+   "prompt": "「最低」 đọc là gì?",
+   "options": [
+    "はれる",
+    "とくに",
+    "さいてい",
+    "おかねもち"
+   ],
+   "answer": "さいてい",
+   "nghia": "Thấp nhất, tệ nhất",
+   "q_num": 9
+  },
+  {
+   "type": "H2K",
+   "prompt": "「たくはいびん」 viết Kanji thế nào?",
+   "options": [
+    "青い",
+    "作る",
+    "家",
+    "宅配便"
+   ],
+   "answer": "宅配便",
+   "nghia": "Dịch vụ giao hàng",
+   "q_num": 10
+  },
+  {
+   "type": "K2H",
+   "prompt": "「気持ち」 đọc là gì?",
+   "options": [
+    "かいとう",
+    "きゅうこう",
+    "きもち",
+    "こたえる"
+   ],
+   "answer": "きもち",
+   "nghia": "Cảm giác",
+   "q_num": 11
+  },
+  {
+   "type": "K2H",
+   "prompt": "「映画」 đọc là gì?",
+   "options": [
+    "あおい",
+    "えいが",
+    "はれ",
+    "たけ"
+   ],
+   "answer": "えいが",
+   "nghia": "Phim",
+   "q_num": 12
+  },
+  {
+   "type": "H2K",
+   "prompt": "「こたえ」 viết Kanji thế nào?",
+   "options": [
+    "答え",
+    "お金持ち",
+    "夜行バス",
+    "作家"
+   ],
+   "answer": "答え",
+   "nghia": "Câu trả lời",
+   "q_num": 13
+  },
+  {
+   "type": "K2H",
+   "prompt": "「今夜」 đọc là gì?",
+   "options": [
+    "えいご",
+    "びじゅつかん",
+    "こんや",
+    "りょこうきゃく"
+   ],
+   "answer": "こんや",
+   "nghia": "Tối nay",
+   "q_num": 14
+  },
+  {
+   "type": "H2K",
+   "prompt": "「はれる」 viết Kanji thế nào?",
+   "options": [
+    "急に",
+    "特別",
+    "家賃",
+    "晴れる"
+   ],
+   "answer": "晴れる",
+   "nghia": "(Trời) tạnh, quang",
+   "q_num": 15
+  },
+  {
+   "type": "H2K",
+   "prompt": "「ほんとう」 viết Kanji thế nào?",
+   "options": [
+    "本当",
+    "英語",
+    "青い",
+    "旅館"
+   ],
+   "answer": "本当",
+   "nghia": "Thật sự",
+   "q_num": 16
+  },
+  {
+   "type": "H2K",
+   "prompt": "「えいがかん」 viết Kanji thế nào?",
+   "options": [
+    "低い",
+    "宅配便",
+    "映画館",
+    "今夜"
+   ],
+   "answer": "映画館",
+   "nghia": "Rạp chiếu phim",
+   "q_num": 17
+  },
+  {
+   "type": "H2K",
+   "prompt": "「じっか」 viết Kanji thế nào?",
+   "options": [
+    "実家",
+    "急に",
+    "家族",
+    "特急"
+   ],
+   "answer": "実家",
+   "nghia": "Nhà (quê nhà)",
+   "q_num": 18
+  },
+  {
+   "type": "H2K",
+   "prompt": "「けんちくか」 viết Kanji thế nào?",
+   "options": [
+    "お金持ち",
+    "建築家",
+    "特別",
+    "お弁当"
+   ],
+   "answer": "建築家",
+   "nghia": "Kiến trúc sư",
+   "q_num": 19
+  },
+  {
+   "type": "H2K",
+   "prompt": "「おべんとう」 viết Kanji thế nào?",
+   "options": [
+    "お弁当",
+    "今夜",
+    "お金持ち",
+    "作文"
+   ],
+   "answer": "お弁当",
+   "nghia": "Cơm hộp",
+   "q_num": 20
+  },
+  {
+   "type": "K2H",
+   "prompt": "「お金持ち」 đọc là gì?",
+   "options": [
+    "おきゃくさま",
+    "ほんとう",
+    "おかねもち",
+    "もつ"
+   ],
+   "answer": "おかねもち",
+   "nghia": "Người giàu",
+   "q_num": 21
+  },
+  {
+   "type": "K2H",
+   "prompt": "「特急」 đọc là gì?",
+   "options": [
+    "とっきゅう",
+    "はれ",
+    "えいがかん",
+    "あおい"
+   ],
+   "answer": "とっきゅう",
+   "nghia": "Tàu tốc hành",
+   "q_num": 22
+  },
+  {
+   "type": "H2K",
+   "prompt": "「はれ」 viết Kanji thế nào?",
+   "options": [
+    "建築家",
+    "持つ",
+    "家族",
+    "晴れ"
+   ],
+   "answer": "晴れ",
+   "nghia": "Trời nắng, quang đãng",
+   "q_num": 23
+  },
+  {
+   "type": "K2H",
+   "prompt": "「当たる」 đọc là gì?",
+   "options": [
+    "あおい",
+    "けんちくか",
+    "あたる",
+    "おたく"
+   ],
+   "answer": "あたる",
+   "nghia": "Trúng, đúng",
+   "q_num": 24
+  },
+  {
+   "type": "H2K",
+   "prompt": "「とくべつ」 viết Kanji thế nào?",
+   "options": [
+    "救急車",
+    "特に",
+    "お宅",
+    "特別"
+   ],
+   "answer": "特別",
+   "nghia": "Đặc biệt",
+   "q_num": 25
+  },
+  {
+   "type": "K2H",
+   "prompt": "「家族」 đọc là gì?",
+   "options": [
+    "きもち",
+    "つくる",
+    "たけ",
+    "かぞく"
+   ],
+   "answer": "かぞく",
+   "nghia": "Gia đình",
+   "q_num": 26
+  },
+  {
+   "type": "K2H",
+   "prompt": "「作家」 đọc là gì?",
+   "options": [
+    "りょかん",
+    "びじゅつかん",
+    "さっか",
+    "しずか"
+   ],
+   "answer": "さっか",
+   "nghia": "Nhà văn",
+   "q_num": 27
+  },
+  {
+   "type": "K2H",
+   "prompt": "「救急車」 đọc là gì?",
+   "options": [
+    "きゅうきゅうしゃ",
+    "やちん",
+    "おきゃくさま",
+    "とくべつ"
+   ],
+   "answer": "きゅうきゅうしゃ",
+   "nghia": "Xe cứu thương",
+   "q_num": 28
+  },
+  {
+   "type": "K2H",
+   "prompt": "「英語」 đọc là gì?",
+   "options": [
+    "あお",
+    "えいご",
+    "たくはいびん",
+    "はれる"
+   ],
+   "answer": "えいご",
+   "nghia": "Tiếng Anh",
+   "q_num": 29
+  },
+  {
+   "type": "K2H",
+   "prompt": "「竹」 đọc là gì?",
+   "options": [
+    "たけ",
+    "ほんとう",
+    "りょこうきゃく",
+    "おきゃくさま"
+   ],
+   "answer": "たけ",
+   "nghia": "Tre",
+   "q_num": 30
+  }
+ ],
+ "9": [
+  {
+   "type": "K2H",
+   "prompt": "「世界」 đọc là gì?",
+   "options": [
+    "むぎ",
+    "みち",
+    "せかい",
+    "ず"
+   ],
+   "answer": "せかい",
+   "nghia": "Thế giới",
+   "q_num": 1
+  },
+  {
+   "type": "K2H",
+   "prompt": "「置く」 đọc là gì?",
+   "options": [
+    "うつす",
+    "ひる",
+    "おく",
+    "し"
+   ],
+   "answer": "おく",
+   "nghia": "Đặt, để",
+   "q_num": 2
+  },
+  {
+   "type": "K2H",
+   "prompt": "「集める」 đọc là gì?",
+   "options": [
+    "ひるね",
+    "あつめる",
+    "むら",
+    "どうぐ"
+   ],
+   "answer": "あつめる",
+   "nghia": "Thu thập, tập hợp (tha động)",
+   "q_num": 3
+  },
+  {
+   "type": "K2H",
+   "prompt": "「真面目」 đọc là gì?",
+   "options": [
+    "みち",
+    "ほし",
+    "すすむ",
+    "まじめ"
+   ],
+   "answer": "まじめ",
+   "nghia": "Nghiêm túc, chăm chỉ",
+   "q_num": 4
+  },
+  {
+   "type": "K2H",
+   "prompt": "「営業」 đọc là gì?",
+   "options": [
+    "えいぎょう",
+    "のりば",
+    "のりかえ",
+    "せかいじゅう"
+   ],
+   "answer": "えいぎょう",
+   "nghia": "Kinh doanh, hoạt động",
+   "q_num": 5
+  },
+  {
+   "type": "H2K",
+   "prompt": "「ひるごはん」 viết Kanji thế nào?",
+   "options": [
+    "春",
+    "授業",
+    "道路",
+    "昼ご飯"
+   ],
+   "answer": "昼ご飯",
+   "nghia": "Cơm trưa",
+   "q_num": 6
+  },
+  {
+   "type": "H2K",
+   "prompt": "「まんなか」 viết Kanji thế nào?",
+   "options": [
+    "世界",
+    "真ん中",
+    "何曜日",
+    "集まる"
+   ],
+   "answer": "真ん中",
+   "nghia": "Chính giữa",
+   "q_num": 7
+  },
+  {
+   "type": "H2K",
+   "prompt": "「ふゆやすみ」 viết Kanji thế nào?",
+   "options": [
+    "冬休み",
+    "授業",
+    "真っ暗",
+    "終わる"
+   ],
+   "answer": "冬休み",
+   "nghia": "Nghỉ đông",
+   "q_num": 8
+  },
+  {
+   "type": "H2K",
+   "prompt": "「のる」 viết Kanji thế nào?",
+   "options": [
+    "乗る",
+    "春",
+    "世話",
+    "水曜日"
+   ],
+   "answer": "乗る",
+   "nghia": "Lên xe, cưỡi",
+   "q_num": 9
+  },
+  {
+   "type": "H2K",
+   "prompt": "「せわ」 viết Kanji thế nào?",
+   "options": [
+    "世話",
+    "集める",
+    "眠る",
+    "乗る"
+   ],
+   "answer": "世話",
+   "nghia": "Sự chăm sóc",
+   "q_num": 10
+  },
+  {
+   "type": "K2H",
+   "prompt": "「千葉県」 đọc là gì?",
+   "options": [
+    "まじめ",
+    "ねむい",
+    "まっくら",
+    "ちばけん"
+   ],
+   "answer": "ちばけん",
+   "nghia": "Tỉnh Chiba",
+   "q_num": 11
+  },
+  {
+   "type": "H2K",
+   "prompt": "「し」 viết Kanji thế nào?",
+   "options": [
+    "世界",
+    "残業",
+    "真ん中",
+    "〜市"
+   ],
+   "answer": "〜市",
+   "nghia": "Thành phố ...",
+   "q_num": 12
+  },
+  {
+   "type": "H2K",
+   "prompt": "「すすむ」 viết Kanji thế nào?",
+   "options": [
+    "作業",
+    "大阪府",
+    "夏",
+    "進む"
+   ],
+   "answer": "進む",
+   "nghia": "Tiến lên, tiến triển",
+   "q_num": 13
+  },
+  {
+   "type": "H2K",
+   "prompt": "「まっくら」 viết Kanji thế nào?",
+   "options": [
+    "図",
+    "以上",
+    "真っ暗",
+    "以内"
+   ],
+   "answer": "真っ暗",
+   "nghia": "Tối đen",
+   "q_num": 14
+  },
+  {
+   "type": "K2H",
+   "prompt": "「終わる」 đọc là gì?",
+   "options": [
+    "おわる",
+    "さどう",
+    "すすむ",
+    "せかいじゅう"
+   ],
+   "answer": "おわる",
+   "nghia": "Kết thúc",
+   "q_num": 15
+  },
+  {
+   "type": "K2H",
+   "prompt": "「以上」 đọc là gì?",
+   "options": [
+    "く",
+    "おおさかふ",
+    "いじょう",
+    "すすむ"
+   ],
+   "answer": "いじょう",
+   "nghia": "Trở lên",
+   "q_num": 16
+  },
+  {
+   "type": "H2K",
+   "prompt": "「はる」 viết Kanji thế nào?",
+   "options": [
+    "春",
+    "夏",
+    "眠い",
+    "図"
+   ],
+   "answer": "春",
+   "nghia": "Mùa xuân",
+   "q_num": 17
+  },
+  {
+   "type": "H2K",
+   "prompt": "「ひる」 viết Kanji thế nào?",
+   "options": [
+    "水曜日",
+    "営業",
+    "昼",
+    "以外"
+   ],
+   "answer": "昼",
+   "nghia": "Buổi trưa",
+   "q_num": 18
+  },
+  {
+   "type": "H2K",
+   "prompt": "「しんがく」 viết Kanji thế nào?",
+   "options": [
+    "大阪府",
+    "村",
+    "茶道",
+    "進学"
+   ],
+   "answer": "進学",
+   "nghia": "Học lên (cấp học cao hơn)",
+   "q_num": 19
+  },
+  {
+   "type": "K2H",
+   "prompt": "「大阪府」 đọc là gì?",
+   "options": [
+    "おおさかふ",
+    "しやくしょ",
+    "すいようび",
+    "いか"
+   ],
+   "answer": "おおさかふ",
+   "nghia": "Tỉnh Osaka (phủ)",
+   "q_num": 20
+  },
+  {
+   "type": "K2H",
+   "prompt": "「写真」 đọc là gì?",
+   "options": [
+    "ちばけん",
+    "しゃしん",
+    "みち",
+    "うつす"
+   ],
+   "answer": "しゃしん",
+   "nghia": "Ảnh",
+   "q_num": 21
+  },
+  {
+   "type": "H2K",
+   "prompt": "「すいようび」 viết Kanji thế nào?",
+   "options": [
+    "集める",
+    "水曜日",
+    "冬休み",
+    "地図"
+   ],
+   "answer": "水曜日",
+   "nghia": "Thứ Tư",
+   "q_num": 22
+  },
+  {
+   "type": "H2K",
+   "prompt": "「なつやすみ」 viết Kanji thế nào?",
+   "options": [
+    "夏休み",
+    "冬",
+    "麦",
+    "〜市"
+   ],
+   "answer": "夏休み",
+   "nghia": "Nghỉ hè",
+   "q_num": 23
+  },
+  {
+   "type": "H2K",
+   "prompt": "「すいみん」 viết Kanji thế nào?",
+   "options": [
+    "大阪府",
+    "真ん中",
+    "乗り換え",
+    "睡眠"
+   ],
+   "answer": "睡眠",
+   "nghia": "Giấc ngủ",
+   "q_num": 24
+  },
+  {
+   "type": "K2H",
+   "prompt": "「区」 đọc là gì?",
+   "options": [
+    "えいぎょう",
+    "く",
+    "のりば",
+    "まんなか"
+   ],
+   "answer": "く",
+   "nghia": "Quận, khu",
+   "q_num": 25
+  },
+  {
+   "type": "K2H",
+   "prompt": "「卒業」 đọc là gì?",
+   "options": [
+    "さどう",
+    "そつぎょう",
+    "うつす",
+    "いか"
+   ],
+   "answer": "そつぎょう",
+   "nghia": "Tốt nghiệp",
+   "q_num": 26
+  },
+  {
+   "type": "H2K",
+   "prompt": "「むら」 viết Kanji thế nào?",
+   "options": [
+    "村",
+    "写真",
+    "営業",
+    "進学"
+   ],
+   "answer": "村",
+   "nghia": "Làng",
+   "q_num": 27
+  },
+  {
+   "type": "K2H",
+   "prompt": "「以下」 đọc là gì?",
+   "options": [
+    "あつまる",
+    "どうぐ",
+    "いか",
+    "のる"
+   ],
+   "answer": "いか",
+   "nghia": "Trở xuống",
+   "q_num": 28
+  },
+  {
+   "type": "K2H",
+   "prompt": "「乗り換え」 đọc là gì?",
+   "options": [
+    "なつ",
+    "むぎ",
+    "のりかえ",
+    "なつやすみ"
+   ],
+   "answer": "のりかえ",
+   "nghia": "Chuyển tuyến",
+   "q_num": 29
+  },
+  {
+   "type": "K2H",
+   "prompt": "「図書館」 đọc là gì?",
+   "options": [
+    "しゃしん",
+    "としょかん",
+    "いがい",
+    "あつめる"
+   ],
+   "answer": "としょかん",
+   "nghia": "Thư viện",
+   "q_num": 30
+  }
+ ]
+};
+
 
 /* ============================================================
    GIAI DOAN 2: Dang nhap thuc su bang Firebase Authentication +
@@ -11408,6 +14940,18 @@ const UNITS_META = [
   { so: 12, ten: '副詞B・連体詞', vi: 'Phó từ B & liên từ', range: '846–880', active: true },
 ];
 
+const KANJI_TESTS_META = [
+  { id: 1, label: 'Chương 1 – 2', active: true },
+  { id: 2, label: 'Chương 3 – 4', active: true },
+  { id: 3, label: 'Chương 5 – 6', active: true },
+  { id: 4, label: 'Chương 7 – 8', active: true },
+  { id: 5, label: 'Chương 9 – 10', active: true },
+  { id: 6, label: 'Chương 11 – 12', active: true },
+  { id: 7, label: 'Chương 13 – 14', active: true },
+  { id: 8, label: 'Chương 15 – 16', active: true },
+  { id: 9, label: 'Chương 17 – 18 – 19', active: true },
+];
+
 let state = {
   screen: 'login',
   quiz: null,
@@ -11467,7 +15011,7 @@ async function doLogin() {
       lastLoginAt: firebase.firestore.FieldValue.serverTimestamp(),
     }, { merge: true });
     startSessionWatcher(uid, mySessionId);
-    go('dashboard');
+    go('section-select');
   } catch (e) {
     btn.disabled = false;
     btn.textContent = 'Đăng nhập';
@@ -11484,6 +15028,34 @@ function mapFirebaseError(code) {
     'auth/too-many-requests': 'Bạn thử sai quá nhiều lần, vui lòng thử lại sau.',
   };
   return map[code] || ('Đăng nhập thất bại (' + code + ')');
+}
+
+function renderSectionSelect() {
+  root.innerHTML = `
+    ${brandHeader()}
+    <div class="card">
+      <div class="pill-header">Chọn mục học</div>
+      <div class="unit-grid" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));">
+        <button class="unit-tile" id="sec-n3" style="text-align:left;">
+          <div class="u-num">語</div>
+          <div class="u-name">Luyện tập từ vựng N3</div>
+          <div class="u-range">12 Unit · 24 đề · 880 từ</div>
+        </button>
+        <button class="unit-tile" id="sec-kanji" style="text-align:left;">
+          <div class="u-num">漢</div>
+          <div class="u-name">Luyện Kanji N4</div>
+          <div class="u-range">19 chương · 203 chữ Hán</div>
+        </button>
+      </div>
+    </div>
+    <footer class="app-footer">Đã đăng nhập: ${escapeHtml((auth.currentUser && auth.currentUser.email) || '')} · <a href="#" id="logout-link">Đăng xuất</a></footer>
+  `;
+  document.getElementById('sec-n3').addEventListener('click', () => go('dashboard'));
+  document.getElementById('sec-kanji').addEventListener('click', () => go('kanji-dashboard'));
+  document.getElementById('logout-link').addEventListener('click', (e) => {
+    e.preventDefault();
+    forceLogout('');
+  });
 }
 
 function renderDashboard() {
@@ -11508,11 +15080,13 @@ function renderDashboard() {
   root.innerHTML = `
     ${brandHeader()}
     <div class="card">
+      <button class="btn btn-ghost" id="back-home" style="margin-bottom:16px;">← Trang chủ</button>
       <div class="pill-header">Chọn Unit</div>
       <div class="unit-grid">${tiles}</div>
     </div>
     <footer class="app-footer">Đã đăng nhập: ${escapeHtml((auth.currentUser && auth.currentUser.email) || '')} · <a href="#" id="logout-link">Đăng xuất</a></footer>
   `;
+  document.getElementById('back-home').addEventListener('click', () => go('section-select'));
   root.querySelectorAll('.unit-tile[data-unit]').forEach(el => {
     el.addEventListener('click', () => go('unit-detail', { currentUnit: parseInt(el.dataset.unit) }));
   });
@@ -11530,8 +15104,8 @@ function brandHeader() {
         <path d="M42 12c-6-4-12-4-18 0v24c6-4 12-4 18 0V12z" fill="#fbe7d3" stroke="#bd6f4f" stroke-width="2"/>
       </svg>
       <div class="brand-text">
-        <div class="brand-title">耳から覚える N3</div>
-        <div class="brand-sub">Luyện từ vựng · Mimi Kara Oboeru</div>
+        <div class="brand-title">Luyện thi JLPT</div>
+        <div class="brand-sub">Từ vựng N3 · Kanji N4</div>
       </div>
     </div>`;
 }
@@ -11696,12 +15270,175 @@ function renderResult() {
   document.getElementById('btn-home').addEventListener('click', () => go('dashboard'));
 }
 
+/* ============================================================
+   PHAN LUYEN KANJI N4 (tai su dung cung co che quiz voi phan N3,
+   chi khac nguon du lieu va cach hien thi prompt/option).
+   ============================================================ */
+function renderKanjiDashboard() {
+  const tiles = KANJI_TESTS_META.map(t => {
+    if (t.active) {
+      return `
+        <button class="unit-tile" data-kanji-test="${t.id}">
+          <div class="u-num">${t.id}</div>
+          <div class="u-name">Đề ${t.id}</div>
+          <div class="u-range">${t.label} · 30 câu</div>
+        </button>`;
+    }
+    return `
+      <div class="unit-tile locked">
+        <div class="u-num">${t.id}</div>
+        <div class="u-name">Đề ${t.id}</div>
+        <div class="u-range">${t.label}</div>
+        <div class="badge-soon">Sắp ra mắt</div>
+      </div>`;
+  }).join('');
+
+  root.innerHTML = `
+    ${brandHeader()}
+    <div class="card">
+      <button class="btn btn-ghost" id="back-home" style="margin-bottom:16px;">← Trang chủ</button>
+      <div class="pill-header">Luyện Kanji N4 — chọn đề</div>
+      <p style="color:var(--navy-deep); margin-top:-6px; font-size:0.88rem;">
+        Mỗi đề = nội dung 2 chương, gồm 15 câu Kanji→Hiragana và 15 câu Hiragana→Kanji.
+      </p>
+      <div class="unit-grid">${tiles}</div>
+    </div>
+    <footer class="app-footer">Đã đăng nhập: ${escapeHtml((auth.currentUser && auth.currentUser.email) || '')} · <a href="#" id="logout-link">Đăng xuất</a></footer>
+  `;
+  document.getElementById('back-home').addEventListener('click', () => go('section-select'));
+  root.querySelectorAll('.unit-tile[data-kanji-test]').forEach(el => {
+    el.addEventListener('click', () => startKanjiTest(parseInt(el.dataset.kanjiTest)));
+  });
+  document.getElementById('logout-link').addEventListener('click', (e) => {
+    e.preventDefault();
+    forceLogout('');
+  });
+}
+
+function startKanjiTest(testId) {
+  const source = testId === 1 ? KANJI_DE1 : KANJI_TESTS_2_9[String(testId)];
+  const questions = JSON.parse(JSON.stringify(source));
+  go('kanji-quiz', { kquiz: { questions, index: 0, answers: {}, testId } });
+}
+
+function renderKanjiQuiz() {
+  const { questions, index, answers, testId } = state.kquiz;
+  const q = questions[index];
+  const total = questions.length;
+  const selected = answers[q.q_num];
+
+  const optionsHtml = q.options.map((opt, i) => {
+    const letter = String.fromCharCode(65 + i);
+    const isSel = selected === opt;
+    return `
+      <button class="option ${isSel ? 'selected' : ''}" data-opt="${escapeAttr(opt)}">
+        <span class="opt-letter">${letter}</span>
+        <span class="jp" style="font-size:1.15rem;">${escapeHtml(opt)}</span>
+      </button>`;
+  }).join('');
+
+  const isLast = index === total - 1;
+  const kindLabel = q.type === 'K2H' ? 'Kanji → Hiragana' : 'Hiragana → Kanji';
+
+  root.innerHTML = `
+    ${brandHeader()}
+    <div class="card">
+      <div class="progress-row">
+        <div class="progress-track"><div class="progress-fill" style="width:${(index / total) * 100}%"></div></div>
+        <div class="progress-label">Câu ${index + 1}/${total}</div>
+      </div>
+      <div class="q-number-badge">${q.q_num}</div>
+      <div style="font-size:0.78rem; color:var(--terracotta); font-weight:600; margin-bottom:6px;">${kindLabel}</div>
+      <div class="q-prompt">${formatPrompt(q)}</div>
+      <div class="option-list">${optionsHtml}</div>
+      <div class="quiz-nav">
+        <button class="btn btn-ghost" id="btn-prev" ${index === 0 ? 'disabled' : ''}>← Câu trước</button>
+        <button class="btn btn-primary" id="btn-next" ${selected ? '' : 'disabled'}>
+          ${isLast ? 'Nộp bài' : 'Câu tiếp →'}
+        </button>
+      </div>
+    </div>
+  `;
+
+  root.querySelectorAll('.option').forEach(el => {
+    el.addEventListener('click', () => {
+      state.kquiz.answers[q.q_num] = el.dataset.opt;
+      renderKanjiQuiz();
+    });
+  });
+  document.getElementById('btn-prev').addEventListener('click', () => {
+    state.kquiz.index = Math.max(0, index - 1);
+    renderKanjiQuiz();
+  });
+  document.getElementById('btn-next').addEventListener('click', () => {
+    if (isLast) { submitKanjiQuiz(); } else { state.kquiz.index = index + 1; renderKanjiQuiz(); }
+  });
+}
+
+function submitKanjiQuiz() {
+  const { questions, answers, testId } = state.kquiz;
+  let correct = 0;
+  const detail = questions.map(q => {
+    const your = answers[q.q_num];
+    const ok = your === q.answer;
+    if (ok) correct++;
+    return Object.assign({}, q, { your, ok });
+  });
+  saveKanjiAttemptToFirestore(testId, correct, questions.length);
+  go('kanji-result', { lastKanjiResult: { correct, total: questions.length, detail, testId } });
+}
+
+function saveKanjiAttemptToFirestore(testId, correct, total) {
+  const user = auth.currentUser;
+  if (!user) return;
+  db.collection(USERS_COLLECTION).doc(user.uid).collection('kanji_attempts').add({
+    test: testId, score: correct, total: total,
+    createdAt: firebase.firestore.FieldValue.serverTimestamp(),
+  }).catch(err => console.error('Khong luu duoc lich su lam bai Kanji:', err));
+}
+
+function renderKanjiResult() {
+  const { correct, total, detail, testId } = state.lastKanjiResult;
+  const pct = Math.round((correct / total) * 100);
+  const items = detail.map(d => `
+    <div class="review-item ${d.ok ? 'correct' : 'wrong'}">
+      <div class="r-prompt">Câu ${d.q_num}: ${formatPrompt(d)} <span style="color:var(--terracotta); font-weight:400;">(${escapeHtml(d.nghia)})</span></div>
+      ${d.ok
+        ? `<div class="r-line correct-ans">✓ Bạn chọn đúng: ${escapeHtml(d.answer)}</div>`
+        : `<div class="r-line your">✗ Bạn chọn: ${escapeHtml(d.your || '(bỏ trống)')}</div>
+           <div class="r-line correct-ans">✓ Đáp án đúng: ${escapeHtml(d.answer)}</div>`}
+    </div>
+  `).join('');
+
+  root.innerHTML = `
+    ${brandHeader()}
+    <div class="card">
+      <div class="score-hero">
+        <div class="score-num">${correct}/${total}</div>
+        <div class="score-sub">${pct}% chính xác — Kanji N4 · Đề ${testId}</div>
+      </div>
+      <div style="display:flex; gap:12px; justify-content:center; margin-bottom:26px;">
+        <button class="btn btn-primary" id="btn-retry">Làm lại đề này</button>
+        <button class="btn btn-ghost" id="btn-home">Về danh sách đề</button>
+      </div>
+      <div class="pill-header">Xem lại đáp án</div>
+      ${items}
+    </div>
+  `;
+  document.getElementById('btn-retry').addEventListener('click', () => startKanjiTest(testId));
+  document.getElementById('btn-home').addEventListener('click', () => go('kanji-dashboard'));
+}
+
 function render() {
   if (state.screen === 'login') return renderLogin();
+  if (state.screen === 'section-select') return renderSectionSelect();
   if (state.screen === 'dashboard') return renderDashboard();
   if (state.screen === 'unit-detail') return renderUnitDetail();
   if (state.screen === 'quiz') return renderQuiz();
   if (state.screen === 'result') return renderResult();
+  if (state.screen === 'kanji-dashboard') return renderKanjiDashboard();
+  if (state.screen === 'kanji-quiz') return renderKanjiQuiz();
+  if (state.screen === 'kanji-result') return renderKanjiResult();
 }
 
 /* Khoi dong: dung Firebase onAuthStateChanged de kiem tra da dang nhap chua.
@@ -11717,7 +15454,7 @@ auth.onAuthStateChanged(async (user) => {
     const data = doc.data();
     if (data && data.activeSessionId === mySessionId) {
       startSessionWatcher(user.uid, mySessionId);
-      go('dashboard');
+      go('section-select');
     } else {
       forceLogout('Tài khoản này đã được đăng nhập ở một thiết bị khác.');
     }
