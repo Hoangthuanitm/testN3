@@ -2760,65 +2760,37 @@ function fcPickDistractors(values, correct, n, extra) {
   return cand.slice(0, n);
 }
 
-function fcKanjiQuestions(setId, idxs) {
-  const CARDS = FC_SETS[setId].cards();
-  const deck = idxs.map(i => CARDS[i]);
-  const allHV = CARDS.map(c => c.hanviet);
-  const allKanji = CARDS.map(c => c.kanji);
-  const allKun = CARDS.map(c => c.kun);
-  const allOn = CARDS.map(c => c.on);
-  const qs = [];
-  deck.forEach(c => {
-    const readingTypes = [];
-    if (c.kun) readingTypes.push(['kun', c.kun]);
-    if (c.on) readingTypes.push(['on', c.on]);
-    const kinds = [];
-    if (c.hanviet) kinds.push('hv');
-    if (readingTypes.length) { kinds.push('read'); kinds.push('kanjiFromRead'); }
-    if (!kinds.length) return;
-    const kind = kinds[Math.floor(Math.random() * kinds.length)];
-    if (kind === 'hv') {
-      const distractors = fcPickDistractors(deck.map(x => x.hanviet), c.hanviet, 3, allHV);
-      if (distractors.length < 3) return;
-      qs.push({ type: 'A', prompt: `Chữ 「${c.kanji}」 có âm Hán Việt là gì?`, options: fcShuffle([c.hanviet, ...distractors]), answer: c.hanviet });
-    } else if (kind === 'read') {
-      const [rt, val] = readingTypes[Math.floor(Math.random() * readingTypes.length)];
-      const pool = rt === 'kun' ? allKun : allOn;
-      const distractors = fcPickDistractors(deck.map(x => rt === 'kun' ? x.kun : x.on), val, 3, pool);
-      if (distractors.length < 3) return;
-      qs.push({ type: 'B', prompt: `Âm ${rt === 'kun' ? 'Kun' : 'on'} của chữ 「${c.kanji}」 là gì?`, options: fcShuffle([val, ...distractors]), answer: val });
-    } else {
-      const [rt, val] = readingTypes[Math.floor(Math.random() * readingTypes.length)];
-      const distractors = fcPickDistractors(deck.map(x => x.kanji), c.kanji, 3, allKanji);
-      if (distractors.length < 3) return;
-      qs.push({ type: 'C', prompt: `Chữ Hán nào có âm ${rt === 'kun' ? 'Kun' : 'on'} là 「${val}」?`, options: fcShuffle([c.kanji, ...distractors]), answer: c.kanji });
-    }
-  });
-  return qs;
+function fcReadingPairs(setId, cards) {
+  if (setId === 'shin') return cards.map(c => ({ surface: c.word, reading: c.reading }));
+  return cards.map(c => {
+    const opts = [];
+    if (c.kun) opts.push(c.kun);
+    if (c.on) opts.push(c.on);
+    if (!opts.length) return null;
+    return { surface: c.kanji, reading: opts[Math.floor(Math.random() * opts.length)] };
+  }).filter(Boolean);
 }
 
-function fcShinQuestions(idxs) {
-  const CARDS = SHIN_CARDS;
-  const deck = idxs.map(i => CARDS[i]);
-  const allMeanings = CARDS.map(c => c.meaning);
-  const allWords = CARDS.map(c => c.word);
+/* 2 dạng luyện tập giống hệt phần "Luyện Kanji N4" gốc:
+   K2H = cho chữ/từ, chọn đúng cách đọc (hiragana) ;
+   H2K = cho cách đọc, chọn đúng chữ/từ viết bằng Kanji. */
+function fcFlashPracticeQuestions(setId, idxs) {
+  const S = FC_SETS[setId];
+  const CARDS = S.cards();
+  const allPairs = fcReadingPairs(setId, CARDS);
+  const allSurface = allPairs.map(p => p.surface);
+  const allReading = allPairs.map(p => p.reading);
+  const deckPairs = fcReadingPairs(setId, idxs.map(i => CARDS[i]));
   const qs = [];
-  deck.forEach(c => {
-    const kinds = ['A', 'B'];
-    if (c.example && c.example.includes(c.word)) kinds.push('C');
-    const type = kinds[Math.floor(Math.random() * kinds.length)];
-    if (type === 'A') {
-      const distractors = fcPickDistractors(deck.map(x => x.meaning), c.meaning, 3, allMeanings);
+  deckPairs.forEach(p => {
+    if (Math.random() < 0.5) {
+      const distractors = fcPickDistractors(deckPairs.map(x => x.reading), p.reading, 3, allReading);
       if (distractors.length < 3) return;
-      qs.push({ type: 'A', prompt: `「${c.word}」 nghĩa là gì?`, options: fcShuffle([c.meaning, ...distractors]), answer: c.meaning });
-    } else if (type === 'B') {
-      const distractors = fcPickDistractors(deck.map(x => x.word), c.word, 3, allWords);
-      if (distractors.length < 3) return;
-      qs.push({ type: 'B', prompt: `Từ nào có nghĩa là "${c.meaning}"?`, options: fcShuffle([c.word, ...distractors]), answer: c.word });
+      qs.push({ type: 'K2H', prompt: `「${p.surface}」 đọc là gì?`, options: fcShuffle([p.reading, ...distractors]), answer: p.reading });
     } else {
-      const distractors = fcPickDistractors(deck.map(x => x.word), c.word, 3, allWords);
+      const distractors = fcPickDistractors(deckPairs.map(x => x.surface), p.surface, 3, allSurface);
       if (distractors.length < 3) return;
-      qs.push({ type: 'C', prompt: `Điền từ đúng vào chỗ trống: ${c.example.replace(c.word, '＿＿＿')}`, options: fcShuffle([c.word, ...distractors]), answer: c.word });
+      qs.push({ type: 'H2K', prompt: `「${p.reading}」 viết Kanji thế nào?`, options: fcShuffle([p.surface, ...distractors]), answer: p.surface });
     }
   });
   return qs;
@@ -2829,7 +2801,7 @@ function startFlashQuiz(chapter) {
   const S = FC_SETS[setId];
   const idxs = [];
   S.cards().forEach((c, i) => { if (chapter === 'all' || String(c[S.key]) === String(chapter)) idxs.push(i); });
-  let questions = setId === 'shin' ? fcShinQuestions(idxs) : fcKanjiQuestions(setId, idxs);
+  let questions = fcFlashPracticeQuestions(setId, idxs);
   questions = fcShuffle(questions).map((q, i) => Object.assign({}, q, { q_num: i + 1 }));
   go('flash-quiz', { fquiz: { setId, chapter, questions, index: 0, answers: {} } });
 }
