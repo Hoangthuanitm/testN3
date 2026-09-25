@@ -2859,29 +2859,58 @@ function fcFlashPracticeQuestions(setId, idxs) {
 /* Luyện tập cho bộ TỪ VỰNG Shinkanzen TV N3: 2 dạng như phần
    "Luyện tập từ vựng N3" gốc — cho từ tiếng Nhật chọn nghĩa tiếng
    Việt (và ngược lại), và cho 1 câu có chỗ trống chọn từ phù hợp. */
+/* Ngữ cảnh ngay sau chỗ trống của 1 từ, dùng để tránh chọn nhiễu mà
+   khi điền vào CÙNG một chỗ trống đó vẫn tạo thành câu đúng ngữ pháp
+   (ví dụ: nhiều tính từ chỉ tính cách đều có ví dụ dạng "＿＿＿人" —
+   nhiễu là tính từ khác cũng hợp lệ về ngữ pháp dù nghĩa khác nhau). */
+function fcBlankContext(c) {
+  if (!c.example || !c.example.includes(c.word)) return null;
+  const idx = c.example.indexOf(c.word);
+  const full = c.example.replace(c.word, '\u0000');
+  const after = c.example.slice(idx + c.word.length, idx + c.word.length + 2);
+  return { full, after };
+}
+
 function fcShinQuestions(idxs) {
   const CARDS = SHIN_CARDS;
   const deck = idxs.map(i => CARDS[i]);
   const qs = [];
   deck.forEach(c => {
-    const kinds = ['A', 'B'];
-    if (c.example && c.example.includes(c.word)) kinds.push('C');
-    const type = kinds[Math.floor(Math.random() * kinds.length)];
-    if (type === 'A') {
-      // Nhiễu loại theo "meaning" (chính là giá trị hiển thị) — không thể trùng nghĩa đúng.
-      const distractors = fcPickDistractorsKeyed(deck, c, 'meaning', 'meaning', 3, CARDS);
-      if (distractors.length < 3) return;
-      qs.push({ type: 'A', prompt: `「${c.word}」 nghĩa là gì?`, options: fcShuffle([c.meaning, ...distractors]), answer: c.meaning });
-    } else if (type === 'B') {
-      // Nhiễu phải khác NGHĨA và khác luôn CHỮ — 1 từ có 2 mục nghĩa khác nhau (đa nghĩa)
-      // vẫn phải bị loại để không lặp lại chính từ đúng dưới một nghĩa khác.
-      const distractors = fcPickDistractorsBy(deck, it => it.word === c.word || it.meaning === c.meaning, it => it.word, 3, CARDS);
-      if (distractors.length < 3) return;
-      qs.push({ type: 'B', prompt: `Từ nào có nghĩa là "${c.meaning}"?`, options: fcShuffle([c.word, ...distractors]), answer: c.word });
-    } else {
-      const distractors = fcPickDistractorsBy(deck, it => it.word === c.word || it.meaning === c.meaning, it => it.word, 3, CARDS);
-      if (distractors.length < 3) return;
-      qs.push({ type: 'C', prompt: `Điền từ đúng vào chỗ trống: ${c.example.replace(c.word, '＿＿＿')}`, options: fcShuffle([c.word, ...distractors]), answer: c.word });
+    const canC = c.example && c.example.includes(c.word);
+    const order = fcShuffle(canC ? ['A', 'B', 'C'] : ['A', 'B']);
+    for (const type of order) {
+      if (type === 'A') {
+        // Nhiễu loại theo "meaning" (chính là giá trị hiển thị) — không thể trùng nghĩa đúng.
+        const distractors = fcPickDistractorsBy(deck, it => it.meaning === c.meaning, it => it.meaning, 3, CARDS);
+        if (distractors.length < 3) continue;
+        qs.push({ type: 'A', prompt: `「${c.word}」 nghĩa là gì?`, options: fcShuffle([c.meaning, ...distractors]), answer: c.meaning });
+        break;
+      } else if (type === 'B') {
+        // Nhiễu phải khác NGHĨA và khác luôn CHỮ — 1 từ có 2 mục nghĩa khác nhau (đa nghĩa)
+        // vẫn phải bị loại để không lặp lại chính từ đúng dưới một nghĩa khác.
+        const distractors = fcPickDistractorsBy(deck, it => it.word === c.word || it.meaning === c.meaning, it => it.word, 3, CARDS);
+        if (distractors.length < 3) continue;
+        qs.push({ type: 'B', prompt: `Từ nào có nghĩa là "${c.meaning}"?`, options: fcShuffle([c.word, ...distractors]), answer: c.word });
+        break;
+      } else {
+        // Điền vào chỗ trống: loại nhiễu nào mà khi điền vào CÙNG chỗ trống này
+        // (cùng câu, hoặc cùng chữ ngay sau chỗ trống) vẫn tạo câu hợp lệ về ngữ pháp.
+        const ctx = fcBlankContext(c);
+        const conflict = it => {
+          const ic = fcBlankContext(it);
+          if (ic && ic.full === ctx.full) return true;
+          if (ic && ctx.after && ic.after === ctx.after && /[\u4E00-\u9FFF]/.test(ctx.after[0])) return true;
+          // Chỗ trống đứng ngay trước "人" (mô tả tính cách): BẤT KỲ tính từ nào
+          // (kết thúc い/な/した/いた) cũng điền được về ngữ pháp, nên phải loại
+          // hết các từ dạng tính từ khác, không chỉ những từ trùng ví dụ.
+          if (ctx.after && ctx.after[0] === '人' && /(い|な|した|いた)$/.test(it.word)) return true;
+          return false;
+        };
+        const distractors = fcPickDistractorsBy(deck, it => it.word === c.word || it.meaning === c.meaning || conflict(it), it => it.word, 3, CARDS);
+        if (distractors.length < 3) continue;
+        qs.push({ type: 'C', prompt: `Điền từ đúng vào chỗ trống: ${c.example.replace(c.word, '＿＿＿')}`, options: fcShuffle([c.word, ...distractors]), answer: c.word });
+        break;
+      }
     }
   });
   return qs;
